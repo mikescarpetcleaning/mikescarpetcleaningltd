@@ -14,15 +14,15 @@ export class Slider {
     end: number;
     change: number;
 
-    constructor(wrapper: string, prev: string, next: string, bulletBox: string, transitionSpeed: number) {
-        this.wrapper = document.querySelector(wrapper);
-        this.prev = document.querySelector(prev);
-        this.next = document.querySelector(next);
-        this.bulletBox = document.querySelector(bulletBox);
+    constructor(wrapper?: string, prev?: string, next?: string, bulletBox?: string, transitionSpeed?: number) {
+        this.wrapper = wrapper ? document.querySelector(wrapper) : null;
+        this.prev = prev ? document.querySelector(prev): null;
+        this.next = next ? document.querySelector(next): null;
+        this.bulletBox = bulletBox ? document.querySelector(bulletBox) : null;
         this.limit = this.wrapper ? this.wrapper.children.length : 0;
         this.current = 0;
         this.bullets = [];
-        this.speed = transitionSpeed;
+        this.speed = transitionSpeed ? transitionSpeed : 0;
         this.transitioning = false;
         this.swiping = true;
         this.tracking = false;

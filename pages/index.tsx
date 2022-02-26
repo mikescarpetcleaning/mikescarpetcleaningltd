@@ -8,6 +8,7 @@ import Hero from '../components/Hero'
 import Nav from '../components/Nav'
 import Reviews from '../components/Reviews'
 import Why from '../components/Why'
+import Frequent from '../components/Frequent'
 
 const Home: NextPage = () => {
   return (
@@ -27,6 +28,7 @@ const Home: NextPage = () => {
         culpa qui officia deserunt mollit anim id est laborum." 
       />
       <Reviews />
+      <Frequent />
       <Family 
         image="/baby.jpg"
         heading1="Powerful Clean,"
