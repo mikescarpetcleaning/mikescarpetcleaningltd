@@ -1,0 +1,116 @@
+.reviews {
+    padding-top: 48px;
+    padding-bottom: 64px;
+}
+.reviews h2 {
+    text-transform: uppercase;
+    max-width: 700px;
+    margin: 0 auto 24px;
+}
+.reviews p {
+    max-width: 775px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+.slide {
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    background: var(--gray);
+    margin: 0 20px;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    padding: 40px 36px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img {
+    margin-bottom: 22px;
+}
+.card h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0 0 8px 0;
+}
+.card p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.card h4 {
+    margin-top: auto;
+}
+.slider {
+    overflow: hidden;
+    padding: 58px 0 70px;
+    position: relative;
+}
+.prev {
+    width: 50px;
+    height:50px;
+    cursor: pointer;
+    position: absolute;
+    left: 3%;
+    top: calc(50% - 25px);
+}
+.next {
+    width: 50px;
+    height:50px;
+    cursor: pointer;
+    position: absolute;
+    right: 3%;
+    top: calc(50% - 25px);
+}
+.bullets {
+    display: flex;
+}
+.mobileSlider {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        display: none;
+    }
+    .bullets {
+        margin: 0 auto;
+    }
+    .prev {
+        position: relative;
+    }
+    .next {
+        position: relative;
+    }
+    .navBox {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 24px auto 36px;
+        max-width: 500px;
+    }
+    .mobileSlider {
+        display: block;
+        overflow: hidden;
+        position: relative;
+    }
+}

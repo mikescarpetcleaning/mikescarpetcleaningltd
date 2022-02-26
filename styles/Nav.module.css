@@ -1,0 +1,38 @@
+.nav {
+    background: rgba(255, 255, 255, 0.7);
+    display: grid;
+    grid-template-columns: 110px 1fr 320px;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 0 40px;
+    position: absolute;
+    z-index: 5;
+}
+.imageContainer {
+    height: 70px;
+    position: relative;
+}
+.menuLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.menuLinks li:not(:last-child) {
+    margin-right: 25px;
+}
+.menuLinks li {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s;
+}
+.menuLinks li:hover {
+    transform: scale(1.05);
+}

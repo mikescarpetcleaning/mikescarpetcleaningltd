@@ -1,0 +1,68 @@
+.why {
+    background: var(--gray);
+    padding: 64px 5% 48px 5%;
+}
+.why h2 {
+    text-transform: uppercase;
+    margin-bottom: 12px
+}
+.why p {
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 655px;
+    margin: 0 auto;
+}
+.cards {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.card {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
+    margin: 30px 25px 0px 25px;
+    position: relative;
+}
+.imgContainer {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin: 50px auto 30px;
+}
+.flag {
+    width: 100%;
+    background-image: url("/flag-small-right-yellow.png");
+}
+.flag h3 {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+.why.btn {
+    margin: 0 auto !important;
+}

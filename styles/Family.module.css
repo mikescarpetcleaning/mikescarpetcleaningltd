@@ -1,0 +1,36 @@
+.family {
+    width: 100%;
+    height: 41.66vw;
+    background-image: url("/mom-and-dad.jpg");
+    background-size: cover;
+    padding-top: 48px;
+}
+.flag {
+    width: 750px;
+    height: 150px;
+    margin-left: auto;
+    background-image: url("/yellow-big-right-down.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flag h2 {
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+.family p {
+    width: 750px;
+    margin-left: auto;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 70px;
+    
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
