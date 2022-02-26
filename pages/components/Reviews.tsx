@@ -101,9 +101,9 @@ const Reviews: NextPage = () => {
                         <path d="M35 5 l-20 20 l20 20" 
                             fill="none" 
                             stroke="black" 
-                            stroke-width="5px" 
-                            stroke-linecap="round" 
-                            shape-rendering="crispEdges">
+                            strokeWidth="5px" 
+                            strokeLinecap="round" 
+                            shapeRendering="crispEdges">
                         </path>
                     </svg>
                 </div>
@@ -112,9 +112,9 @@ const Reviews: NextPage = () => {
                         <path d="M15 5 l20 20 l-20 20" 
                             fill="none" 
                             stroke="black" 
-                            stroke-width="5px" 
-                            stroke-linecap="round" 
-                            shape-rendering="crispEdges">
+                            strokeWidth="5px" 
+                            strokeLinecap="round" 
+                            shapeRendering="crispEdges">
                         </path>
                     </svg>
                 </div>
@@ -196,9 +196,9 @@ const Reviews: NextPage = () => {
                             <path d="M35 5 l-20 20 l20 20" 
                                 fill="none" 
                                 stroke="black" 
-                                stroke-width="5px" 
-                                stroke-linecap="round" 
-                                shape-rendering="crispEdges">
+                                strokeWidth="5px" 
+                                strokeLinecap="round" 
+                                shapeRendering="crispEdges">
                             </path>
                         </svg>
                     </div>
@@ -208,9 +208,9 @@ const Reviews: NextPage = () => {
                             <path d="M15 5 l20 20 l-20 20" 
                                 fill="none" 
                                 stroke="black" 
-                                stroke-width="5px" 
-                                stroke-linecap="round" 
-                                shape-rendering="crispEdges">
+                                strokeWidth="5px" 
+                                strokeLinecap="round" 
+                                shapeRendering="crispEdges">
                             </path>
                         </svg>
                     </div>
