@@ -1,0 +1,107 @@
+.newsletter {
+    min-height: 500px;
+    width: 100%;
+    background-image: url("/city.jpg");
+    background-size: cover;
+    padding: 72px 0 64px;
+}
+.flag {
+    background-image: url("/yellow-left-wide.png");
+    background-repeat: no-repeat;
+    background-size: 75% 100%;
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.whiteFlag {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 75%, transparent 75%);
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.whiteFlag p {
+    max-width: 440px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+.flag h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+.form {
+    margin: 24px auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+.emailBox {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    margin-right: 20px;
+}
+.zipBox {
+    position: relative;
+    width: 150px;
+    height: 60px;
+    margin-right: 20px;
+}
+.form input {
+    background: white;
+    border: none;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+.formBtn {
+    background: var(--yellow);
+    border: none;
+    border-radius: 20px;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.form label {
+    position: absolute;
+    top: 34%;
+    left: 20px;
+    opacity: 0.5;
+    transition: all 0.3s;
+    pointer-events: none;
+}
+.emailBox:focus-within label,
+.zipBox:focus-within label {
+    opacity: 0;
+}
+.submitted {
+    background: rgba(255, 255, 255, 0.8);
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+.submitDetails {
+    margin-left: 24px;
+}
+.submitDetails h3 {
+    margin: 0 0 8px;
+}
+.submitDetails p {
+    margin: 0;
+}

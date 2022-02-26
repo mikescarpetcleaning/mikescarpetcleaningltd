@@ -14,7 +14,9 @@ const Family: FC<props> = ({ image, heading1, heading2, body }) => {
             <div className={styles.flag}>
                 <h2>{heading1}<br/>{heading2}</h2>
             </div>
-            <p>{body}</p>
+            <div className={styles.whiteFlag}>
+                <p>{body}</p>
+            </div>
         </section>
     )
 }

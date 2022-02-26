@@ -6,10 +6,11 @@
     padding-top: 48px;
 }
 .flag {
-    width: 750px;
+    width: 60%;
     height: 150px;
     margin-left: auto;
     background-image: url("/yellow-big-right-down.png");
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,18 +20,20 @@
     text-transform: uppercase;
     display: block;
 }
-.family p {
-    width: 750px;
+.whiteFlag {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 50px;
     margin-left: auto;
     margin-top: 20px;
-    background: rgba(255, 255, 255, 0.7);
-    padding: 70px;
-    
+}
+.family p {
+    margin: auto;
+    max-width: 600px;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
-
 }

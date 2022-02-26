@@ -9,7 +9,7 @@
 .h1 {
     display: flex;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 0;
     width: 942px;
     height: 150px;
     background-image: url("/flag-left-yellow.png");
@@ -46,7 +46,7 @@
 .contactFlag {
     position: absolute;
     right: 0;
-    top: 80px;
+    top: 0;
     width: 361px;
     height: 98px;
     background-image: url("/contact-flag.png")

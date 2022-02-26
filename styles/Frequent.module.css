@@ -4,13 +4,13 @@
     display: flex;
 }
 .leftHand {
-    width: 750px;
+    width: 60%;
 }
 .slider {
     overflow: hidden;
     width: 750px;
     text-align: center;
-    margin-left: auto;
+    margin: auto;
     position: relative;
 }
 .slide {
@@ -49,12 +49,13 @@
     cursor: pointer;
 }
 .flag {
-    width: 750px;
+    width: 100%;
     height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/yellow-left-wide.png")
+    background-image: url("/yellow-left-wide.png");
+    background-size: 100% 100%;
 }
 .flag h2 {
     text-transform: uppercase;
