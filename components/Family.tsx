@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import styles from "../../styles/Family.module.css";
+import styles from "../styles/Family.module.css";
 
 type props = {
     image: string,

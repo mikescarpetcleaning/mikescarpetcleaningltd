@@ -2,12 +2,12 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import Announcement from './components/Announcement'
-import Family from './components/Family'
-import Hero from './components/Hero'
-import Nav from './components/Nav'
-import Reviews from './components/Reviews'
-import Why from './components/Why'
+import Announcement from '../components/Announcement'
+import Family from '../components/Family'
+import Hero from '../components/Hero'
+import Nav from '../components/Nav'
+import Reviews from '../components/Reviews'
+import Why from '../components/Why'
 
 const Home: NextPage = () => {
   return (

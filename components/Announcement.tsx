@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import styles from "../../styles/Announcement.module.css"
+import styles from "../styles/Announcement.module.css"
 
 const Announcement: FC<any> = () => {
     return (

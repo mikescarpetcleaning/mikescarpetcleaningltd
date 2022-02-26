@@ -3,7 +3,7 @@ import Image from 'next/image';
 import logo from "/public/logo.png";
 import Link from 'next/link';
 
-import styles from "../../styles/Nav.module.css";
+import styles from "../styles/Nav.module.css";
 
 const Nav: FC<any> = () => {
     return (

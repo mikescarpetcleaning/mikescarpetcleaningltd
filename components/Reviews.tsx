@@ -171,7 +171,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import { useRef, useEffect } from 'react';
 
-import styles from "../../styles/Reviews.module.css";
+import styles from "../styles/Reviews.module.css";
 import Link from 'next/link';
 
 const Reviews: NextPage = () => {

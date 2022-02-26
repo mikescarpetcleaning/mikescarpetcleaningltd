@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import styles from "../../styles/Why.module.css";
+import styles from "../styles/Why.module.css";
 
 const Why: NextPage = () => {
     return (
