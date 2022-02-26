@@ -1,4 +1,4 @@
-class Slider {
+export default class Slider {
     wrapper: HTMLElement | null;
     prev: HTMLElement | null;
     next: HTMLElement | null;
@@ -162,5 +162,3 @@ class Slider {
         }
     }
 }
-
-export default Slider;
