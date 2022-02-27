@@ -9,9 +9,8 @@ const Footer: FC = () => {
         <footer className={styles.footer}>
             <div className={styles.left}>
                 <p>
-                    Excel Carpet Cleaning<br/>
-                    26828 Maple Valley Hwy Suite 194<br/>
-                    Maple Valley, WA 98038<br/><br/>
+                    Excel Carpet Cleaning Services LLC.<br/>
+                    Serving you since 1991.<br/><br/>
                     excelcarpetcleaning@gmail.com<br/>
                     (425) 394-0404<br/>
                 </p>
@@ -19,6 +18,9 @@ const Footer: FC = () => {
             </div>
             <div className={styles.right}>
                 <ul className={styles.menuLinks}>
+                    <li>
+                        <Link href="/contact">Privacy Policy</Link>
+                    </li>
                     <li>
                         <Link href="/services">Services / Pricing</Link>
                     </li>
@@ -30,6 +32,9 @@ const Footer: FC = () => {
                     </li>
                     <li>
                         <Link href="/contact">Gallery</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact">Contact</Link>
                     </li>
                 </ul>
             </div>

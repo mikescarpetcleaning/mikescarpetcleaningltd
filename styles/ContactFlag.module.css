@@ -1,0 +1,43 @@
+.contactFlag {
+    position: absolute;
+    right: 0;
+    top: 120px;
+    width: 361px;
+    height: 98px;
+    background-image: url("/contact-flag.png");
+    background-repeat: no-repeat;
+    transition: all 0.3s, background-image 0s;
+    z-index: 4;
+}
+.contactFlag * {
+    transition: all 0s;
+}
+.contactFlag p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 0 58px;
+    color: white;
+}
+.contactFlag a {
+    color: white;
+    border: 3px solid white;
+    border-radius: 99vh;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    height: 45px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: 70px;
+}

@@ -15,6 +15,10 @@
 .imageContainer {
     height: 70px;
     position: relative;
+    transition: all 0.3s;
+}
+.imageContainer:hover {
+    transform: scale(1.05);
 }
 .menuLinks {
     display: flex;

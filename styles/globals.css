@@ -81,6 +81,7 @@ input:focus, textarea {
   z-index: 5;
   background-image: url("/mail.png") !important;
   background-size: 100% 100% !important;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 .fixed-contact * {
