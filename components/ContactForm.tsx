@@ -11,7 +11,9 @@ const ContactForm: FC = () => {
         const pathName = window.location.pathname;
         setCurrentUrl(pathName);
         const contactForm = document.querySelector(".contact-form");
-        new Modal(".contact-modal", contactForm as Element, ".skip-to-contact").init();
+        if (!document.querySelector(".contact-modal")?.contains(contactForm)) {
+            new Modal(".contact-modal", contactForm as Element, ".skip-to-contact").init();
+        }
     }, [])
     return (
         <>

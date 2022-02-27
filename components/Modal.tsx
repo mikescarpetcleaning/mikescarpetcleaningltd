@@ -6,10 +6,10 @@ export class Modal {
   closeEl: HTMLElement | null; 
 
   constructor(container: string, content?: Element, closeEl?: string) {
-    document.querySelector(".contact-modal")?.remove();
-    const newContainer = document.createElement("div");
-    newContainer.classList.add("contact-modal");
-    document.body.appendChild(newContainer);
+    // document.querySelector(".contact-modal")?.remove();
+    // const newContainer = document.createElement("div");
+    // newContainer.classList.add("contact-modal");
+    // document.body.appendChild(newContainer);
     this.closeEl = closeEl ? document.querySelector(closeEl) : null;
     this.content = content || `<p>No modal found</p>`;
     this.mount = document.querySelector(container);
