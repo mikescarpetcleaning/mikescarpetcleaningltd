@@ -11,7 +11,7 @@ export class Modal {
         <div class="contact-form">
             <h2>HAVE A QUESTION?</h2>
             <p style="font-size:20px;line-height:1;margin:12px auto">We have answers.</p>
-            <form name="modal-form" data-netlify=true>
+            <form name="modal-form" method="POST" data-netlify="true">
               <input type="hidden" name="modal-form" value="contact">
               <label for="email">Email Address</label>
               <input name="email" />
@@ -88,7 +88,7 @@ export class Modal {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: JSON.stringify(new URLSearchParams(formData.toString())),
         })
-          .then(() => console.log("Form successfully submitted"))
+          .then((res) => console.log("Form successfully submitted"))
           .catch((error) => alert(error));
       };
     }
