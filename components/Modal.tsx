@@ -11,14 +11,15 @@ export class Modal {
         <div class="contact-form">
             <h2>HAVE A QUESTION?</h2>
             <p style="font-size:20px;line-height:1;margin:12px auto">We have answers.</p>
-            <form>
-            <label for="email">Email Address</label>
-            <input name="email" />
-            <label for="name">Name</label>
-            <input name="name" />
-            <label for="message">Message</label>
-            <textarea name="message"></textarea>
-            <button type="submit">SUBMIT</button>
+            <form name="modal-form" data-netlify=true>
+              <input type="hidden" name="modal-form" value="contact">
+              <label for="email">Email Address</label>
+              <input name="email" />
+              <label for="name">Name</label>
+              <input name="name" />
+              <label for="message">Message</label>
+              <textarea name="message"></textarea>
+              <button type="submit">SUBMIT</button>
             </form>
             <a class="skip-to-contact" href="/contact">VIEW CONTACT PAGE</p>
         </div>
@@ -50,6 +51,7 @@ export class Modal {
         this.openModal();
       }
     })
+    return this;
   }
   openModal() {
     if (this.mount) {
@@ -64,6 +66,7 @@ export class Modal {
       });
       this.mount.classList.add("modal-open");
       this.body!.style.overflow = "hidden";
+      this.addSubmitHandler()
     }
   }
   closeModal() {
@@ -71,5 +74,24 @@ export class Modal {
       this.mount.classList.remove("modal-open");
       this.body!.style.overflow = "unset";
     }
+  }
+  addSubmitHandler() {
+    console.log("added")
+    const form = this.contentContainer.querySelector("form");
+    console.log(form)
+    const formData = form ? new FormData(form): null;
+    const handleSubmit = (e: any) => {
+      e.preventDefault();
+      if (formData) {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: JSON.stringify(new URLSearchParams(formData.toString())),
+        })
+          .then(() => console.log("Form successfully submitted"))
+          .catch((error) => alert(error));
+      };
+    }
+   form?.addEventListener("submit", handleSubmit);
   }
 }
