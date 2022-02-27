@@ -6,10 +6,13 @@ import { Modal } from './Modal';
 import flagStyles from "../styles/ContactFlag.module.css";
 
 const ContactForm: FC = () => {
+    const [currentUrl, setCurrentUrl] = useState('')
     useEffect(() => {
+        const pathName = window.location.pathname;
+        setCurrentUrl(pathName);
         const contactForm = document.querySelector(".contact-form");
-        new Modal(".contact-modal", contactForm as Element).init();
-    })
+        new Modal(".contact-modal", contactForm as Element, ".skip-to-contact").init();
+    }, [])
     return (
         <>
             <div className="contact-modal"></div>
@@ -25,7 +28,7 @@ const ContactForm: FC = () => {
                 <form name="modal-form" method="POST" data-netlify="true">
                     <input type="hidden" name="modal-form" value="modal-form" />
                     <label htmlFor="email">Email Address</label>
-                    <input name="email" type="email" />
+                    <input name="email" type="email" required/>
                     <label htmlFor="name">Name</label>
                     <input name="name" type="text" />
                     <label htmlFor="message">Message</label>

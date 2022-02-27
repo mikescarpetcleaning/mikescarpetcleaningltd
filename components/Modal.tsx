@@ -3,16 +3,24 @@ export class Modal {
   mount: HTMLElement | null;
   body: HTMLElement | null;
   contentContainer: HTMLElement;
+  closeEl: HTMLElement | null; 
 
-  constructor(container: string, content?: Element) {
+  constructor(container: string, content?: Element, closeEl?: string) {
+    document.querySelector(".contact-modal")?.remove();
+    const newContainer = document.createElement("div");
+    newContainer.classList.add("contact-modal");
+    document.body.appendChild(newContainer);
+    this.closeEl = closeEl ? document.querySelector(closeEl) : null;
     this.content = content || `<p>No modal found</p>`;
     this.mount = document.querySelector(container);
+    if (this.mount) this.mount.innerHTML = "";
     this.contentContainer = document.createElement("div");
     this.contentContainer.classList.add("content-container");
     this.body = document.querySelector("body");
     this.mount?.appendChild(this.contentContainer);
     this.mount?.addEventListener("click", (e) => {
       if (!this.contentContainer.contains(e.target as Node)) {
+        console.log(e.target)
         this.closeModal();
       }
     });
@@ -40,6 +48,9 @@ export class Modal {
         this.openModal();
       }
     })
+    if (this.closeEl) {
+      this.closeEl.addEventListener("click", () => this.closeModal())
+    }
     return this;
   }
   openModal() {
