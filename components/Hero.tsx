@@ -7,7 +7,7 @@ import styles from "../styles/Hero.module.css";
 const Hero: FC<any> = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.contactFlag}>
+            <div className={[styles.contactFlag, "contactFlag"].join(' ')}>
                 <p>Need more info?</p>
                 <Link href="/contact">
                     CONTACT US

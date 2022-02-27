@@ -69,3 +69,114 @@ a {
 input:focus, textarea {
   outline: none !important;
 }
+
+.fixed-contact {
+  border-radius: 50%;
+  height:75px !important;
+  width:75px !important;
+  position: fixed !important;
+  top: unset !important;
+  bottom: 5% !important;
+  right: 5% !important;
+  z-index: 5;
+  background-image: url("/mail.png") !important;
+  background-size: 100% 100% !important;
+  cursor: pointer;
+}
+.fixed-contact * {
+  opacity: 0 !important;
+}
+.goingDown * {
+  transition: all 0.3s 0.3s !important;
+}
+.contact-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: none;
+  transition: all 0.5s, z-index 0s 0.5s;
+}
+.contact-modal * {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.modal-open {
+  transition: all 0.5s, z-index 0s !important;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.6);
+}
+.contact-modal.modal-open * {
+  opacity: 1;
+}
+.content-container {
+  position: relative;
+}
+.close-btn {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 32px;
+  z-index: 999;
+  cursor: pointer;
+}
+.contact-form {
+  width: 50vw;
+  min-height: 400px;
+  padding: 30px;
+  background: white;
+  text-align: center;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input {
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.contact-form form textarea {
+  resize: none;
+  height: 60px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.contact-form button {
+  border: 3px solid black;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  line-height: 1px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 24px auto 12px;
+  background: transparent;
+  font-weight: 700;
+}
+.skip-to-contact {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.contact-form form label {
+  margin: 24px 0 12px;
+  text-align: left;
+  font-size: 12px;
+}
