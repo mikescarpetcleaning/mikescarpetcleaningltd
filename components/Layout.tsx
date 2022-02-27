@@ -7,22 +7,14 @@ import flagStyles from "../styles/ContactFlag.module.css";
 import Link from "next/link";
 import { useEffect } from "react";
 import { Modal } from "./Modal";
+import ContactForm from "./ContactForm";
 
 const Layout = (props: any) => {
-    useEffect(() => {
-        new Modal(".contact-modal").init();
-      }, [])
     return (
         <>
-            <div className="contact-modal"></div>
             <Announcement />
             <Nav />
-            <div className={[flagStyles.contactFlag, "contactFlag"].join(' ')}>
-                <p>Need more info?</p>
-                <Link href="/contact">
-                    CONTACT US
-                </Link>
-            </div>
+            <ContactForm />
             {props.children}
             <Newsletter />
             <Footer />

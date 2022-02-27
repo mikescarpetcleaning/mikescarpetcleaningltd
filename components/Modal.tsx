@@ -1,31 +1,11 @@
-// @ts-nocheck
-
 export class Modal {
-  content: string;
+  content: Element | string;
   mount: HTMLElement | null;
   body: HTMLElement | null;
   contentContainer: HTMLElement;
 
-  constructor(container: string, content?: string) {
-    this.content = content
-      ? content
-      : `
-        <div class="contact-form">
-            <h2>HAVE A QUESTION?</h2>
-            <p style="font-size:20px;line-height:1;margin:12px auto">We have answers.</p>
-            <form name="modal-form" method="POST" data-netlify="true">
-              <input type="hidden" name="modal-form" value="modal-form">
-              <label for="email">Email Address</label>
-              <input name="email" type="email" />
-              <label for="name">Name</label>
-              <input name="name" type="text" />
-              <label for="message">Message</label>
-              <textarea name="message" value="message"></textarea>
-              <button type="submit">SUBMIT</button>
-            </form>
-            <a class="skip-to-contact" href="/contact">VIEW CONTACT PAGE</p>
-        </div>
-      `;
+  constructor(container: string, content?: Element) {
+    this.content = content || `<p>No modal found</p>`;
     this.mount = document.querySelector(container);
     this.contentContainer = document.createElement("div");
     this.contentContainer.classList.add("content-container");
@@ -36,6 +16,13 @@ export class Modal {
         this.closeModal();
       }
     });
+    if (this.mount) {
+      if (typeof this.content != 'string') {
+        this.contentContainer.appendChild(this.content);  
+      } else {
+        this.contentContainer.innerHTML = this.content;  
+      }
+    }
   }
   init() {
     const contact = document.querySelector(".contactFlag");
@@ -57,8 +44,12 @@ export class Modal {
   }
   openModal() {
     if (this.mount) {
-      this.contentContainer.innerHTML = this.content;
-
+      if (typeof this.content != 'string') {
+        this.contentContainer.innerHTML = "";
+        this.contentContainer.appendChild(this.content);  
+      } else {
+        this.contentContainer.innerHTML = this.content;  
+      }
       const closeBtn = document.createElement("div");
       closeBtn.innerHTML = `&#10005;`;
       closeBtn.classList.add("close-btn");
@@ -68,7 +59,6 @@ export class Modal {
       });
       this.mount.classList.add("modal-open");
       this.body!.style.overflow = "hidden";
-      this.addSubmitHandler()
     }
   }
   closeModal() {
@@ -76,22 +66,5 @@ export class Modal {
       this.mount.classList.remove("modal-open");
       this.body!.style.overflow = "unset";
     }
-  }
-  addSubmitHandler() {
-    const form = this.contentContainer.querySelector("form");
-    const formData = form ? new FormData(form) : null;
-    const handleSubmit = (e: any) => {
-      e.preventDefault();
-      if (formData) {
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData).toString(),
-        })
-          .then((res) => console.log(res))
-          .catch((error) => alert(error));
-      };
-    }
-   form?.addEventListener("submit", handleSubmit);
   }
 }
