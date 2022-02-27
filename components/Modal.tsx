@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 export class Modal {
   content: string;
   mount: HTMLElement | null;
@@ -78,14 +80,13 @@ export class Modal {
   addSubmitHandler() {
     const form = this.contentContainer.querySelector("form");
     const formData = form ? new FormData(form) : null;
-    console.log(new URLSearchParams(formData?.toString()).toString(),)
     const handleSubmit = (e: any) => {
       e.preventDefault();
       if (formData) {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: new URLSearchParams(formData.toString()).toString(),
+          body: new URLSearchParams(formData).toString(),
         })
           .then((res) => console.log(res))
           .catch((error) => alert(error));
