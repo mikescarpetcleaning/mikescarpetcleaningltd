@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Script from 'next/script';
 
 const Scheduling: NextPage = () => {
     return (
@@ -12,7 +13,7 @@ const Scheduling: NextPage = () => {
                 frameBorder="0">
             </iframe>
             
-            <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+            <Script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></Script>
         </>
     )
 }
