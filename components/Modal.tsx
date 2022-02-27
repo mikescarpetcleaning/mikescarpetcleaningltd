@@ -14,7 +14,7 @@ export class Modal {
             <h2>HAVE A QUESTION?</h2>
             <p style="font-size:20px;line-height:1;margin:12px auto">We have answers.</p>
             <form name="modal-form" method="POST" data-netlify="true">
-              <input type="hidden" name="modal-form" value="contact">
+              <input type="hidden" name="modal-form" value="modal-form">
               <label for="email">Email Address</label>
               <input name="email" type="email" />
               <label for="name">Name</label>
