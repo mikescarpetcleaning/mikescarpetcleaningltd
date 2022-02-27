@@ -14,11 +14,11 @@ export class Modal {
             <form name="modal-form" method="POST" data-netlify="true">
               <input type="hidden" name="modal-form" value="contact">
               <label for="email">Email Address</label>
-              <input name="email" />
+              <input name="email" type="email" />
               <label for="name">Name</label>
-              <input name="name" />
+              <input name="name" type="text" />
               <label for="message">Message</label>
-              <textarea name="message"></textarea>
+              <textarea name="message" value="message"></textarea>
               <button type="submit">SUBMIT</button>
             </form>
             <a class="skip-to-contact" href="/contact">VIEW CONTACT PAGE</p>
@@ -76,19 +76,17 @@ export class Modal {
     }
   }
   addSubmitHandler() {
-    console.log("added")
     const form = this.contentContainer.querySelector("form");
-    console.log(form)
-    const formData = form ? new FormData(form): null;
+    const formData = form ? new FormData(form) : null;
     const handleSubmit = (e: any) => {
       e.preventDefault();
       if (formData) {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: JSON.stringify(new URLSearchParams(formData.toString())),
+          body: new URLSearchParams(formData).toString(),
         })
-          .then((res) => console.log("Form successfully submitted"))
+          .then(() => console.log("Form successfully submitted"))
           .catch((error) => alert(error));
       };
     }
