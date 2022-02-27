@@ -32,7 +32,11 @@ const ContactForm: FC = () => {
                     <textarea name="message"></textarea>
                     <button type="submit">SUBMIT</button>
                 </form>
-                <a className="skip-to-contact" href="/contact">VIEW CONTACT PAGE</a>
+                <Link href="/contact">
+                    <a className="skip-to-contact">
+                        VIEW CONTACT PAGE
+                    </a>
+                </Link>
             </div>
         </>
     )
