@@ -138,6 +138,7 @@ input:focus, textarea {
   padding: 30px;
   background: white;
   text-align: center;
+  position: relative;
 }
 .contact-form form {
   display: flex;
@@ -186,6 +187,7 @@ input:focus, textarea {
   font-weight: 700;
 }
 .bigBtn {
-  width: 380px;
+  width: fit-content;
+  padding: 0 18px;
   margin: 48px auto 0;
 }

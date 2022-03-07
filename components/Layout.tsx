@@ -12,7 +12,7 @@ import ContactForm from "./ContactForm";
 const Layout = (props: any) => {
     return (
         <>
-            <Announcement />
+            <Announcement announcement={"SCHEDULE ONLINE 24/7!"}/>
             <Nav />
             <ContactForm />
             {props.children}

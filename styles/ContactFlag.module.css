@@ -1,13 +1,19 @@
 .contactFlag {
-    position: absolute;
-    right: 0;
-    top: 120px;
-    width: 361px;
-    height: 98px;
-    background-image: url("/contact-flag.png");
+    background: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    height:75px;
+    width:75px;
+    position: fixed;
+    top: unset;
+    bottom: 5%;
+    right: 3%;
+    z-index: 5;
+    background-image: url("/mail.png");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    transition: all 0.3s, background-image 0s;
-    z-index: 4;
+    cursor: pointer;
+    
 }
 .contactFlag * {
     transition: all 0s;
