@@ -1,0 +1,50 @@
+.faqAccordion {
+    padding: 64px 0;
+    background-image: url("/phone-man.jpg");
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.left {
+    width: 60%;
+    min-height: 50vw;
+}
+.flag {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    background-image: url("/flag-left-yellow.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 135px;
+}
+.flag h1 {
+    width: fit-content;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: center;
+    max-width: 544px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.accordion {
+    list-style: none;
+    width: 90%;
+    margin: 36px 0 36px auto;
+}
+.accordion h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.item {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}

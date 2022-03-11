@@ -191,3 +191,50 @@ input:focus, textarea {
   padding: 0 18px;
   margin: 48px auto 0;
 }
+
+.question {
+  padding: 24px 0;
+  position: relative;
+}
+.question::after {
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url("/down.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  position: absolute;
+  right: 0;
+  transition: all 0.3s;
+}
+.open .question::after {
+  transform: rotate(180deg);
+}
+.answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+.answer p {
+  padding: 12px 0;
+}
+.active-spot {
+  display: block !important;
+}
+.menu-item {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 24px 0;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 1px solid transparent;
+  width: fit-content;
+  transition: all 0.3s;
+}
+.menu-item.active-spot {
+  font-size: 24px;
+  border-bottom: 1px solid black;
+}

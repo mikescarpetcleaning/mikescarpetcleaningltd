@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Connect from '../serviceComponents/Connect';
 import ServiceHero from "../serviceComponents/ServiceHero";
 import ServiceItem from '../serviceComponents/ServiceItem';
 import ServiceNav from "../serviceComponents/ServiceNav";
@@ -95,6 +96,7 @@ const Services: NextPage<any> = (props: any) => {
             <ServiceNav />
             <ServiceItem itemDetails={carpetList} />
             <ServiceItem itemDetails={upholsteryList} />
+            <Connect />
         </>
     )
 }
