@@ -18,7 +18,7 @@ const carpetList = {
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
         imgSrc: "/carpet-home.jpg",
-        cta: `<a href="commercial-rates" class="subitem-cta">See Our Commercial Rates</a>`
+        cta: `<a href="commercial" class="subitem-cta">See Our Commercial Rates</a>`
     },
     {
         subHeading: "Pet Treatment",
@@ -60,7 +60,7 @@ const upholsteryList = {
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
         imgSrc: "/carpet-home.jpg",
-        cta: `<a href="commercial-rates" class="subitem-cta">See Our Commercial Rates</a>`
+        cta: `<a href="commercial" class="subitem-cta">See Our Commercial Rates</a>`
     },
     {
         subHeading: "Loveseat",

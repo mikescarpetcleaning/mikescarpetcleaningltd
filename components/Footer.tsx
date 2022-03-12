@@ -19,7 +19,7 @@ const Footer: FC = () => {
             <div className={styles.right}>
                 <ul className={styles.menuLinks}>
                     <li>
-                        <Link href="/contact">Privacy Policy</Link>
+                        <Link href="/privacy">Privacy Policy</Link>
                     </li>
                     <li>
                         <Link href="/services">Services / Pricing</Link>
@@ -31,10 +31,13 @@ const Footer: FC = () => {
                         <Link href="/faq">FAQ</Link>
                     </li>
                     <li>
-                        <Link href="/contact">Gallery</Link>
+                        <Link href="/gallery">Gallery</Link>
                     </li>
                     <li>
                         <Link href="/contact">Contact</Link>
+                    </li>
+                    <li>
+                        <Link href="/commercial">Commercial Cleaning</Link>
                     </li>
                 </ul>
             </div>
