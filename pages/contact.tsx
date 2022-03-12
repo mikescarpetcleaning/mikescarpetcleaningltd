@@ -1,12 +1,13 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import ContactForm from '../contactComponents/ContactForm';
 
 const Contact: NextPage = () => {
 
     return (
         <>
             <style>{`.contactFlag{display:none;}`}</style>
-            <h1>HI</h1>
+            <ContactForm />
         </>
     )
 }

@@ -7,14 +7,14 @@ import flagStyles from "../styles/ContactFlag.module.css";
 import Link from "next/link";
 import { useEffect } from "react";
 import { Modal } from "./Modal";
-import ContactForm from "./ContactForm";
+import ContactModal from "./ContactModal";
 
 const Layout = (props: any) => {
     return (
         <>
             <Announcement announcement={"SCHEDULE ONLINE 24/7!"}/>
             <Nav />
-            <ContactForm />
+            <ContactModal />
             {props.children}
             <Newsletter />
             <Footer />

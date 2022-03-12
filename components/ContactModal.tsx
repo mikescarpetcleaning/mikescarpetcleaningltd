@@ -5,7 +5,7 @@ import { FC, useEffect, useState } from 'react';
 import { Modal } from './Modal';
 import flagStyles from "../styles/ContactFlag.module.css";
 
-const ContactForm: FC = () => {
+const ContactModal: FC = () => {
     useEffect(() => {
         const opener = document.querySelector(".contactFlag");
         const modal = document.querySelector(".contact-modal");
@@ -57,4 +57,4 @@ const ContactForm: FC = () => {
     )
 }
 
-export default ContactForm
+export default ContactModal;

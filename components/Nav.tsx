@@ -24,7 +24,10 @@ const Nav: FC<any> = () => {
                     <Link href="/faq">FAQ</Link>
                 </li>
                 <li>
-                    <Link href="/contact">Gallery</Link>
+                    <Link href="/gallery">Gallery</Link>
+                </li>
+                <li>
+                    <Link href="/contact">Contact</Link>
                 </li>
             </ul>
             <Link href="/scheduling">
