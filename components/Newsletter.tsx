@@ -58,7 +58,7 @@ const Newsletter: FC = () => {
                 <div className={styles.emailBox}>
                     <label htmlFor="email-newsletter">Email Address</label>
                     <input 
-                        id="email-newletter"
+                        id="email-newsletter"
                         ref={email} 
                         name="email"
                         type="email"
