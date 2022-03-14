@@ -50,6 +50,7 @@ export default function ContactForm() {
             {!submitted ? 
             <form name="contact" method="POST" data-netlify="true" ref={contactForm} >
                 <input type="hidden" name="form-name" value="contact" />
+                <label style={{ display: 'none' }} htmlFor="name">name</label>
                 <input 
                     onChange={handleChange}
                     id="name" 
@@ -58,6 +59,7 @@ export default function ContactForm() {
                     type="text"
                     placeholder="Name*"
                 />
+                <label style={{ display: 'none' }} htmlFor="email">email</label>
                 <input 
                     onChange={handleChange}
                     id="email" 
@@ -67,6 +69,7 @@ export default function ContactForm() {
                     placeholder="Email Address*"
                     required
                 />
+                <label style={{ display: 'none' }} htmlFor="phone">phone</label>
                 <input 
                     onChange={handleChange}
                     id="phone" 
@@ -75,6 +78,7 @@ export default function ContactForm() {
                     type="text"
                     placeholder="Phone Number"
                 />
+                <label style={{ display: 'none' }} htmlFor="message">message</label>
                 <textarea
                     onChange={handleChange}
                     id="message" 
