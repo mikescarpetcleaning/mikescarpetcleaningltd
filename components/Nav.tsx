@@ -10,7 +10,7 @@ const Nav: FC<any> = () => {
         <nav className={styles.nav}>
             <Link href="/">
                 <a className={styles.imageContainer}>
-                    <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" />
+                    <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" alt="excel carpet cleaning logo" />
                 </a>
             </Link>
             <ul className={styles.menuLinks}>

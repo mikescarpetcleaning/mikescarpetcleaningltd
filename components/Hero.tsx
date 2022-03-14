@@ -19,7 +19,7 @@ const Hero: FC<any> = () => {
             </div>
             <div className={styles.iicrc}>
                 <div className={styles.iicrcImageContainer}>
-                    <Image src={iicrc} layout="fill" objectFit="contain" objectPosition="left" />
+                    <Image src={iicrc} layout="fill" objectFit="contain" objectPosition="left" alt="IICRC Logo" />
                 </div>
                 <h3>IICRC Trained Technicians!</h3>
             </div>

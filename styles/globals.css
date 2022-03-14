@@ -238,3 +238,21 @@ input:focus, textarea {
   font-size: 24px;
   border-bottom: 1px solid black;
 }
+.pp {
+  max-width: 750px;
+  width: 90%;
+  margin: 64px auto;
+}
+.pp h2 {
+  font-size: 20px;
+}
+.pp h1,
+.pp h2,
+.pp h3,
+.pp h4,
+.pp h5 {
+  text-align: left;
+}
+button {
+  cursor: pointer;
+}

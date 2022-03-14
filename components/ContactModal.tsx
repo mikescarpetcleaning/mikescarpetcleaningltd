@@ -38,12 +38,12 @@ const ContactModal: FC = () => {
                     <p style={{fontSize: '20px', lineHeight:'1', margin:'12px auto'}}>We have answers.</p>
                     <form name="modal-form" method="POST" data-netlify="true">
                         <input type="hidden" name="modal-form" value="modal-form" />
-                        <label htmlFor="email">Email Address</label>
-                        <input name="email" type="email" required/>
-                        <label htmlFor="name">Name</label>
-                        <input name="name" type="text" />
-                        <label htmlFor="message">Message</label>
-                        <textarea name="message"></textarea>
+                        <label htmlFor="email-modal">Email Address</label>
+                        <input id="email-modal" name="email" type="email" required/>
+                        <label htmlFor="name-modal">Name</label>
+                        <input id="name-modal" name="name" type="text" />
+                        <label htmlFor="message-modal">Message</label>
+                        <textarea id="message-modal" name="message"></textarea>
                         <button type="submit">SUBMIT</button>
                     </form>
                     <Link href="/contact">

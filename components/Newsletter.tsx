@@ -56,8 +56,9 @@ const Newsletter: FC = () => {
             {!submitted ? 
             <form className={styles.form} onSubmit={onSubmit}>
                 <div className={styles.emailBox}>
-                    <label htmlFor="email">Email Address</label>
+                    <label htmlFor="email-newsletter">Email Address</label>
                     <input 
+                        id="email-newletter"
                         ref={email} 
                         name="email"
                         type="email"
@@ -67,8 +68,9 @@ const Newsletter: FC = () => {
                     />
                 </div>
                 <div className={styles.zipBox}>
-                    <label htmlFor="zip">Zip Code</label>
+                    <label htmlFor="zip-newsletter">Zip Code</label>
                     <input 
+                        id="zip-newsletter"
                         ref={zip}
                         name="zip" 
                         onChange={onChange}
@@ -76,7 +78,7 @@ const Newsletter: FC = () => {
                         required
                     />
                 </div>
-                <button className={styles.formBtn} type="submit">
+                <button className={styles.formBtn} type="submit" title="newsletter-submit-button">
                     <svg height="50px" width="50px">
                         <path d="M15 5 l20 20 l-20 20" 
                             fill="none" 
@@ -90,7 +92,7 @@ const Newsletter: FC = () => {
             </form>
             :
             <div className={styles.submitted}>
-                <Image src="/submit.png" layout="fixed" height="75px" width="75px" loading="lazy" />
+                <Image src="/submit.png" layout="fixed" height="75px" width="75px" loading="lazy" alt="submission recieved checkmark" />
                 <div className={styles.submitDetails}>
                     <h3>Thank you for your submission!</h3>
                     <p>Our Team will be in contact with you soon.</p>   

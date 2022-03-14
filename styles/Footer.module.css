@@ -24,3 +24,6 @@
     list-style: none;
     padding: 0;
 }
+.footer img {
+    cursor: pointer;
+}
