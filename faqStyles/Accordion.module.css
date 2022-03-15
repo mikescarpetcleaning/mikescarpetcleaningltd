@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    background-image: url("/flag-left-yellow.webp");
+    background-image: url("/flag-left-yellow.webp"), url("/flag-left-yellow.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 135px;

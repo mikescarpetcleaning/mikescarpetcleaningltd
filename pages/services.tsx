@@ -93,7 +93,7 @@ const Services: NextPage<any> = (props: any) => {
     return (
         <>
             <ServiceHero />
-            <ServiceNav />
+            {/* <ServiceNav /> */}
             <ServiceItem itemDetails={carpetList} />
             <ServiceItem itemDetails={upholsteryList} />
             <Connect />

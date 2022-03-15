@@ -6,12 +6,12 @@ import { Slider } from '../components/Slider';
 
 const Gallery: NextPage<any> = () => {
     useEffect(() => {
-        const slider = new Slider(".slider-wrapper", ".prev", ".next", undefined, 500).init();
+        const slider = new Slider(".slider-wrapper", ".prev", ".gallery-next", undefined, 500).init();
     }, [])
     return (
         <>
             <div style={{width: '100%', overflow: 'hidden', height: '100vh', position: 'relative'}}className="slider">
-                <div className="prev" style={{ width: '50px', height: '50px', position: 'absolute', top: 'calc(50% - 25px)', left: 0, zIndex: 5}}>
+                <div className="gallery-prev">
                     <svg height="50px" width="50px">
                         <path d="M35 5 l-20 20 l20 20" 
                             fill="none" 
@@ -22,7 +22,7 @@ const Gallery: NextPage<any> = () => {
                         </path>
                     </svg>
                 </div>
-                <div className="next" style={{ width: '50px', height: '50px', position: 'absolute', top: 'calc(50% - 25px)', right: 0, zIndex: 5 }}>
+                <div className="gallery-next">
                     <svg height="50px" width="50px">
                         <path d="M15 5 l20 20 l-20 20" 
                             fill="none" 

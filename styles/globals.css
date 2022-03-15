@@ -256,3 +256,36 @@ input:focus, textarea {
 button {
   cursor: pointer;
 }
+.gallery-next {
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 3%; 
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.gallery-next svg,
+.gallery-prev svg {
+  transform: scale(0.5);
+  z-index: 3;
+}
+.gallery-prev {
+  background: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 3%; 
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
