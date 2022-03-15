@@ -1,12 +1,12 @@
 .newsletter {
     min-height: 500px;
     width: 100%;
-    background-image: url("/city.jpg");
+    background-image: url("/city.webp");
     background-size: cover;
     padding: 72px 0 64px;
 }
 .flag {
-    background-image: url("/yellow-left-wide.png");
+    background-image: url("/yellow-left-wide.webp");
     background-repeat: no-repeat;
     background-size: 75% 100%;
     width: 100%;

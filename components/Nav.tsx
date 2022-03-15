@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 import Image from 'next/image';
-import logo from "/public/logo.png";
+import logo from "/public/logo.webp";
 import Link from 'next/link';
 
 import styles from "../styles/Nav.module.css";

@@ -14,7 +14,7 @@ const Home: NextPage = () => {
       <Hero />
       <Why />
       <Family 
-        image="/mom-and-dad.jpg" 
+        image="/mom-and-dad.webp" 
         heading1="Family Owned"
         heading2="And Operated"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -28,7 +28,7 @@ const Home: NextPage = () => {
       <Reviews />
       <Frequent />
       <Family 
-        image="/baby.jpg"
+        image="/baby.webp"
         heading1="Powerful Clean,"
         heading2="No Harmful Chemicals"
         body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 

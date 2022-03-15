@@ -5,7 +5,7 @@
     display: flex;
 }
 .flag {
-    background-image: url("/right-flag.png");
+    background-image: url("/right-flag.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 60%;

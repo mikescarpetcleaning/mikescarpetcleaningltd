@@ -1,12 +1,12 @@
 .connect {
     padding: 64px 0;
-    background-image: url("/truckmount-right.jpg");
+    background-image: url("/truckmount-right.webp");
     background-size: auto 100%;
     background-repeat: no-repeat;
     background-position: right;
 }
 .flag {
-    background-image: url("/yellow-left-wide.png");
+    background-image: url("/yellow-left-wide.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 60%;

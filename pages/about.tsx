@@ -14,7 +14,7 @@ const About: NextPage = () => {
                 <h2>A Commitment to quality service for over 30 years.</h2>
             </div>
             <div className={styles.hero}>
-                <Image src="/vans.jpg" layout="fill" objectFit="cover" alt="vans lined up" />
+                <Image src="/vans.webp" layout="fill" objectFit="cover" alt="vans lined up" />
             </div>
             <section className={styles.business}>
                 <div className={styles.deets}>
@@ -52,7 +52,7 @@ const About: NextPage = () => {
                 </div>
             </section>
             <Family 
-                image="/coats.jpg"
+                image="/coats.webp"
                 heading1="About"
                 heading2="Our Staff"
                 body="Our carpet cleaning technicians are IICRC trained and use the very best

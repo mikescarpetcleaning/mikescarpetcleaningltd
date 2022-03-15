@@ -80,7 +80,7 @@ input:focus, textarea {
   bottom: 5% !important;
   right: 5% !important;
   z-index: 5;
-  background-image: url("/mail.png") !important;
+  background-image: url("/mail.webp") !important;
   background-size: 100% 100% !important;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -200,7 +200,7 @@ input:focus, textarea {
   content: '';
   width: 30px;
   height: 30px;
-  background-image: url("/down.png");
+  background-image: url("/down.webp");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;

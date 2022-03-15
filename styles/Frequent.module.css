@@ -54,7 +54,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url("/yellow-left-wide.png");
+    background-image: url("/yellow-left-wide.webp");
     background-size: 100% 100%;
 }
 .flag h2 {

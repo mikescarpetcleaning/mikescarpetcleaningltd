@@ -108,7 +108,7 @@ const Frequent: FC<props> = () => {
                     <div className={[styles.wrapper, "image-wrapper"].join(' ')}>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.jpg"
+                                src="/carpet-home.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"
@@ -117,7 +117,7 @@ const Frequent: FC<props> = () => {
                         </div>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.jpg"
+                                src="/carpet-home.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"
@@ -126,7 +126,7 @@ const Frequent: FC<props> = () => {
                         </div>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.jpg"
+                                src="/carpet-home.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"
@@ -135,7 +135,7 @@ const Frequent: FC<props> = () => {
                         </div>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.jpg"
+                                src="/carpet-home.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"

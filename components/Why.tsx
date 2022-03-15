@@ -12,7 +12,7 @@ const Why: NextPage = () => {
             <div className={styles.cards}>
                 <div className={styles.card}>
                     <div className={styles.imgContainer}>
-                        <Image src="/iicrc-black.png" layout="fill" objectFit="contain" alt="IICRC Logo" />
+                        <Image src="/iicrc-black.webp" layout="fill" objectFit="contain" alt="IICRC Logo" />
                     </div>
                     <div className={styles.flag}>
                         <h3>
@@ -27,7 +27,7 @@ const Why: NextPage = () => {
                 </div>
                 <div className={styles.card}>
                     <div className={styles.imgContainer}>
-                        <Image src="/experience.png" layout="fill" objectFit="contain" alt="experienced technicians"/>
+                        <Image src="/experience.webp" layout="fill" objectFit="contain" alt="experienced technicians"/>
                     </div>
                     <div className={styles.flag}>
                         <h3>
@@ -42,7 +42,7 @@ const Why: NextPage = () => {
                 </div>
                 <div className={styles.card}>
                     <div className={styles.imgContainer}>
-                        <Image src="/hands.png" layout="fill" objectFit="contain" alt="hands and gear icon"/>
+                        <Image src="/hands.webp" layout="fill" objectFit="contain" alt="hands and gear icon"/>
                     </div>
                     <div className={styles.flag}>
                         <h3>

@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import styles from "../contactStyles/ContactForm.module.css";
-import checkmark from "../public/checkmark.png";
+import checkmark from "../public/checkmark.webp";
 
 export default function ContactForm() {
     const [submitted, setSubmitted] = useState(false);

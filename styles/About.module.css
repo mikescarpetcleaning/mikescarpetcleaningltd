@@ -11,7 +11,7 @@
     left: 0;
 }
 .flag {
-    background-image: url('/yellow-left-wide.png');
+    background-image: url('/yellow-left-wide.webp');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 40%;
@@ -33,7 +33,7 @@
     text-align: left;
 }
 .blackFlag {
-    background-image: url("/flag-left-black.png"), url("/flag-left-black.png");
+    background-image: url("/flag-left-black.webp"), url("/flag-left-black.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 50%;

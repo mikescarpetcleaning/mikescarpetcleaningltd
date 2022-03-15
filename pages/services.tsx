@@ -17,7 +17,7 @@ const carpetList = {
         <p>Minimum Charge: $169 (Up to 3 Rooms/Areas)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
-        imgSrc: "/carpet-home.jpg",
+        imgSrc: "/carpet-home.webp",
         cta: `<a href="commercial" class="subitem-cta">See Our Commercial Rates</a>`
     },
     {
@@ -30,7 +30,7 @@ const carpetList = {
         <p>Minimum Charge: $169 (Up to 3 Rooms/Areas)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
-        imgSrc: "/carpet-home.jpg"
+        imgSrc: "/carpet-home.webp"
     },
     {
         subHeading: "ScotchGard Carpet Protectant",
@@ -42,7 +42,7 @@ const carpetList = {
         <p>Minimum Charge: $169 (Up to 3 Rooms/Areas)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
-        imgSrc: "/carpet-home.jpg"
+        imgSrc: "/carpet-home.webp"
     }],
     ctaText: "Book Carpet Cleaning"
 }
@@ -59,7 +59,7 @@ const upholsteryList = {
         <p>Minimum Charge: $169 (Up to 3 Rooms/Areas)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
-        imgSrc: "/carpet-home.jpg",
+        imgSrc: "/carpet-home.webp",
         cta: `<a href="commercial" class="subitem-cta">See Our Commercial Rates</a>`
     },
     {
@@ -72,7 +72,7 @@ const upholsteryList = {
         <p>Minimum Charge: $169 (Up to 3 Rooms/Areas)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
-        imgSrc: "/carpet-home.jpg"
+        imgSrc: "/carpet-home.webp"
     },
     {
         subHeading: "etc.",
@@ -84,7 +84,7 @@ const upholsteryList = {
         <p>Minimum Charge: $169 (Up to 3 Rooms/Areas)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos  and large bonus rooms equal two areas. Max 14x14 ft per room/area.</p>
         </div>`,
-        imgSrc: "/carpet-home.jpg"
+        imgSrc: "/carpet-home.webp"
     }],
     ctaText: "Book Upholstery Cleaning"
 }

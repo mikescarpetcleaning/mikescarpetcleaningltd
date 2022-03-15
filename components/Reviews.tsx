@@ -35,7 +35,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 
@@ -50,7 +50,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 
@@ -67,7 +67,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 
@@ -82,7 +82,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 
@@ -125,7 +125,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 
@@ -142,7 +142,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 
@@ -159,7 +159,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 
@@ -176,7 +176,7 @@ const Reviews: NextPage = () => {
                         <div className={styles.card}>
                             <h3>Lorem Ipsum</h3>
                             <img 
-                                src="/yellow-stars.png"
+                                src="/yellow-stars.webp"
                                 width="200"
                                 alt="five-stars"
                                 loading="eager" 

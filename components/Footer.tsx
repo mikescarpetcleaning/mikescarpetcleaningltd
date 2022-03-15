@@ -15,7 +15,7 @@ const Footer: FC = () => {
                     (425) 394-0404<br/>
                 </p>
                 <Link href="https://www.facebook.com/excelcarpetcleaningincorporated/">
-                    <Image src="/facebook-white.png" layout="fixed" height="40px" width="40px" alt="facebook logo" />
+                    <Image src="/facebook-white.webp" layout="fixed" height="40px" width="40px" alt="facebook logo" />
                 </Link>
             </div>
             <div className={styles.right}>

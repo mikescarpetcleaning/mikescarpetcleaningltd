@@ -1,6 +1,6 @@
 .faqAccordion {
     padding: 64px 0;
-    background-image: url("/phone-man.jpg");
+    background-image: url("/phone-man.webp");
     background-size: auto 100%;
     background-position: right;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    background-image: url("/flag-left-yellow.png");
+    background-image: url("/flag-left-yellow.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 135px;

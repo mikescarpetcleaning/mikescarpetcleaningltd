@@ -1,7 +1,7 @@
 import type { FC } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import iicrc from "/public/iicrc.png";
+import iicrc from "/public/iicrc.webp";
 import styles from "../styles/Hero.module.css";
 
 const Hero: FC<any> = () => {
