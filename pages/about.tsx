@@ -14,7 +14,7 @@ const About: NextPage = () => {
                 <h2>A Commitment to quality service for over 30 years.</h2>
             </div>
             <div className={styles.hero}>
-                <Image src="/vans.webp" layout="fill" objectFit="cover" alt="vans pned up" />
+                <Image src="/vans.webp" layout="fill" objectFit="cover" alt="vans lined up" />
             </div>
             <section className={styles.business}>
                 <div className={styles.deets}>

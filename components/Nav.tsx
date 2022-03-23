@@ -1,4 +1,4 @@
-import type { FC } from 'react';
+import { FC, useRef } from 'react';
 import Image from 'next/image';
 import logo from "/public/logo.webp";
 import Link from 'next/link';
@@ -6,32 +6,50 @@ import Link from 'next/link';
 import styles from "../styles/Nav.module.css";
 
 const Nav: FC<any> = () => {
+    const menu = useRef<any>(null);
+    const toggleMenu = (isSchedule: boolean) => {
+        if (menu.current.style.left === "0px") {
+            menu.current.style.left = "-100%"
+        } else if (!isSchedule) {
+            menu.current.style.left = "0px"
+        }
+        
+    }
     return (
         <nav className={styles.nav}>
+            <div onClick={() => toggleMenu(false)} className={styles.burger}>
+                &nbsp;
+            </div>
             <Link href="/">
-                <a className={styles.imageContainer}>
+                <a onClick={() => toggleMenu(true)} className={styles.imageContainer}>
                     <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" alt="excel carpet cleaning logo" />
                 </a>
             </Link>
-            <ul className={styles.menuLinks}>
-                <li>
+            <Link href="tel:4253940404">
+                <a onClick={() => toggleMenu(true)} className={styles.phoneCall}>
+                    <Image src="/phone-icon.webp" layout="fill" objectFit="contain" objectPosition="left" alt="excel carpet cleaning logo" />
+                </a>
+            </Link>
+            
+            <ul ref={menu} className={styles.menuLinks}>
+                <li onClick={() => toggleMenu(false)}>
                     <Link href="/services">Services / Pricing</Link>
                 </li>
-                <li>
+                <li onClick={() => toggleMenu(false)}>
                     <Link href="/about">About Us</Link>
                 </li>
-                <li>
+                <li onClick={() => toggleMenu(false)}>
                     <Link href="/faq">FAQ</Link>
                 </li>
-                <li>
+                <li onClick={() => toggleMenu(false)}>
                     <Link href="/gallery">Gallery</Link>
                 </li>
-                <li>
+                <li onClick={() => toggleMenu(false)}>
                     <Link href="/contact">Contact</Link>
                 </li>
             </ul>
             <Link href="/scheduling">
-                <a className="btn">
+                <a onClick={() => toggleMenu(true)} className="btn">
                     Book Appointment
                 </a>
             </Link>

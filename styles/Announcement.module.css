@@ -1,6 +1,6 @@
 .announce {
     position: relative;
-    z-index: 5;
+    z-index: 7;
     background: black;
     color: white;
     display: flex;
@@ -14,4 +14,15 @@
     line-height: 22px;
     letter-spacing: 0em;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .splitter {
+        display: none;
+    }
+    .announce {
+        height: 40px;
+        font-size: 14px;
+        line-height: 18px;
+    }
 }

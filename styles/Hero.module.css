@@ -1,40 +1,44 @@
 .header {
-    height: 47.22vw;
+    min-height: calc(100vh - 120px);
     width: 100%;
     background-image: url("/hero.webp");
     background-size: cover;
     position: relative;
-    padding-top: 80px;
+    padding: 80px 0;
 }
-.h1 {
+.flag {
     display: flex;
     align-items: center;
     margin-top: 0;
-    width: 942px;
-    height: 150px;
+    width: fit-content;
+    height: fit-content;
     background-image: url("/flag-left-yellow.webp");
-    background-size: cover;
+    background-size: 100% 100%;
+    padding-left: 5%;
 }
-.h1 h1 {
-    margin-left: 80px;
+.flag h1 {
+    max-width: 850px;
     font-size: 64px;
     font-style: normal;
     font-weight: 800;
     line-height: 64px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 12px 0;
 }
-.h2 {
+.blackFlag {
     display: flex;
     align-items: center;
     margin-top: 15px;
-    width: 669px;
-    height: 110px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 5%;
     background-image: url("/flag-left-black.webp");
-    background-size: cover;
+    background-size: 100% 100%;
 }
-.h2 h2 {
-    margin-left: 80px;
+.blackFlag h2 {
+    max-width: 600px;
+    margin: 12px 0;
     color: white;
     font-size: 42px;
     font-style: normal;
@@ -44,12 +48,14 @@
     text-align: left;
 }
 .iicrc {
+    background-image: url("/flag-left-black.webp");
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
-    margin-left: 56px;
-    height: 70px;
-    width: 311px;
-    margin-top: 24px;
+    padding: 0 4%;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 12px;
 }
 .iicrcImageContainer {
     position: relative;
@@ -60,10 +66,73 @@
 }
 .iicrc h3 {
     color: white;
+    max-width: 250px;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 12px 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .flag h1 {
+        font-size: 48px;
+        line-height: 48px;
+        max-width: 650px;
+    }
+    .blackFlag h2 {
+        font-size: 36px;
+        line-height: 36px;
+        max-width: 500px;
+    }
+    .iicrc h3 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    .iicrcImageContainer {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 40px 0;
+        min-height: calc(100vh - 172px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flag {
+        width: 100%;
+        background-size: 200%;
+    }
+    .flag h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .blackFlag {
+        width: 100%;
+        background-size: 200%;
+    }
+    .blackFlag h2 {
+        font-size: 24px;
+        line-height: 24px;
+        max-width: 320px;
+        margin-right: 24px;
+    }
+    .iicrc {
+        width: 100%;
+        background-size: 200%;
+    }
+    .iicrc h3 {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .iicrcImageContainer {
+        height: 50px;
+        width: 50px;
+    }
 }

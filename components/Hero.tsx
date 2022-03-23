@@ -7,12 +7,12 @@ import styles from "../styles/Hero.module.css";
 const Hero: FC<any> = () => {
     return (
         <header className={styles.header}>
-            <div className={styles.h1}>
+            <div className={styles.flag}>
                 <h1>
                     PROFESSIONAL CARPET CLEANING SERVICES
                 </h1>
             </div>
-            <div className={styles.h2}>
+            <div className={styles.blackFlag}>
                 <h2>
                     TOP QUALITY CLEANING AT A FAIR PRICE
                 </h2>

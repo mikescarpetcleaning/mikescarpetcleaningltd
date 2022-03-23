@@ -43,6 +43,7 @@
 .flag {
     width: 100%;
     background-image: url("/flag-small-right-yellow.webp");
+    background-size: 100% 100%;
 }
 .flag h3 {
     font-size: 32px;
@@ -65,4 +66,48 @@
 }
 .why.btn {
     margin: 0 auto !important;
+}
+
+@media screen and (max-width: 1024px) {
+    .why {
+        padding: 32px 5%;
+    }
+    .why h2 {
+        margin: 0 auto 12px;
+    }
+    .why p {
+        font-size: 16px;
+        line-height: 19px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    .card p {
+        font-size: 16px;
+        line-height: 19px;
+        padding: 0 5%;
+        margin: 0 auto;
+    }
+    .cards {
+        margin-top: 0;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 24px 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .imgContainer {
+        height: 75px;
+        width: 75px;
+        margin: 0 auto;
+    }
+    .flag h3 {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 24px 0 16px;
+    }
 }
