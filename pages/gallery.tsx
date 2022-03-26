@@ -6,14 +6,14 @@ import { Slider } from '../components/Slider';
 
 const Gallery: NextPage<any> = () => {
     useEffect(() => {
-        const slider = new Slider(".slider-wrapper", ".prev", ".gallery-next", undefined, 500).init();
+        const slider = new Slider(".slider-wrapper", ".gallery-prev", ".gallery-next", undefined, 500).init();
     }, [])
     return (
         <>
             <div style={{width: '100%', overflow: 'hidden', height: '100vh', position: 'relative'}}className="slider">
                 <div className="gallery-prev">
                     <svg height="50px" width="50px">
-                        <path d="M35 5 l-20 20 l20 20" 
+                        <path d="M33 5 l-20 20 l20 20" 
                             fill="none" 
                             stroke="black" 
                             strokeWidth="5px" 
@@ -24,7 +24,7 @@ const Gallery: NextPage<any> = () => {
                 </div>
                 <div className="gallery-next">
                     <svg height="50px" width="50px">
-                        <path d="M15 5 l20 20 l-20 20" 
+                        <path d="M17 5 l20 20 l-20 20" 
                             fill="none" 
                             stroke="black" 
                             strokeWidth="5px" 
@@ -35,22 +35,22 @@ const Gallery: NextPage<any> = () => {
                 </div>
                 <div style={{ display: 'flex', height: '100%' }}className="slider-wrapper">
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={BASE_URL + '1c40nTDI7co7wWRpSjc-yNRG0StR6nU-p'} />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src={BASE_URL + '1c40nTDI7co7wWRpSjc-yNRG0StR6nU-p'} />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={BASE_URL + '1ilsD23oRsvlI0Eqb3_XkTp37NSkO2M2B'} />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src={BASE_URL + '1ilsD23oRsvlI0Eqb3_XkTp37NSkO2M2B'} />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={BASE_URL + '140shUyy3cySHBAk2jYu3fbMK6vWDPSSn'} />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src={BASE_URL + '140shUyy3cySHBAk2jYu3fbMK6vWDPSSn'} />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={BASE_URL + '1khmZhYQEGEul4_zNEkpdhFCJgs_oFMrq'} />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src={BASE_URL + '1khmZhYQEGEul4_zNEkpdhFCJgs_oFMrq'} />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={BASE_URL + '1XPuMB2VNjoGrkqR55_1lBa-Y0gSL2gE7'} />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src={BASE_URL + '1XPuMB2VNjoGrkqR55_1lBa-Y0gSL2gE7'} />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={BASE_URL + '1LE23DYR14T4U2xV9dPnZsaraAC_QIpAh'} />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src={BASE_URL + '1LE23DYR14T4U2xV9dPnZsaraAC_QIpAh'} />
                     </div>
                 </div>
             </div>

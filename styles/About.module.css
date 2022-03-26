@@ -14,8 +14,8 @@
     background-image: url('/yellow-left-wide.webp');
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 40%;
-    height: 100px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     position: absolute;
@@ -24,7 +24,7 @@
     z-index: 2;
 }
 .flag h1 {
-    margin-left: 80px;
+    margin: 18px 80px;
     font-size: 64px;
     font-style: normal;
     font-weight: 800;
@@ -36,9 +36,8 @@
     background-image: url("/flag-left-black.webp"), url("/flag-left-black.webp");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 55%;
-    height: 150px;
-    padding-right: 50px;
+    width: fit-content;
+    height: fit-content;
     display: flex;
     align-items: center;
     z-index: 2;
@@ -56,14 +55,14 @@
     border: 80px solid white;
 }
 .blackFlag h2 {
-    margin-left: 80px;
+    margin: 18px 120px 18px 80px;
     color: white;
     font-size: 42px;
     font-style: normal;
     font-weight: 700;
     line-height: 42px;
     letter-spacing: 0em;
-    max-width: 70%;
+    max-width: 500px;
     text-align: left;
     text-transform: uppercase;
 }
@@ -71,7 +70,7 @@
     margin: 0 0 48px;
     width: 700px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-    background: var(--gray);
+    background: #F8F8F8CC;
     padding: 36px;
     font-size: 20px;
     font-style: normal;
@@ -82,4 +81,48 @@
 }
 .card li {
     margin-bottom: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 50vh;
+    }
+    .flag {
+        position: relative;
+        width: 100%;
+        background-size: 200% 100%;
+        padding: 0 16px;
+        top: 0;
+    }
+    .flag h1 {
+        font-size: 48px;
+        line-height: 48px;
+        margin: 12px auto;
+        text-align: center;
+    }
+    .blackFlag {
+        position: relative;
+        width: 100%;
+        background-size: 200% 100%;
+        padding: 0 16px;
+        top: 0;
+    }
+    .blackFlag h2 {
+        margin: 12px auto;
+        text-align: center; 
+        font-size: 32px;
+        line-height: 32px;   
+    }
+    .business {
+        padding: 0;
+        border:0;
+    }
+    .card {
+        width: 100%;
+        border-radius: 0;
+        border-bottom: 1px solid black;
+        background: #FFFFFFB3;
+        box-shadow: none;
+        margin: 0;
+    }
 }

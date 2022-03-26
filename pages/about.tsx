@@ -55,7 +55,7 @@ const About: NextPage = () => {
             </section>
             <Family 
                 image="/coats.webp"
-                mobileImage="/coats.webp"
+                mobileImage="/staff-mobile.webp"
                 heading1="About"
                 heading2="Our Staff"
                 body="Our carpet cleaning technicians are IICRC trained and use the very best
