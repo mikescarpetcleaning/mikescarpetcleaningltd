@@ -1,9 +1,8 @@
 .family {
     width: 100%;
-    height: 41.66vw;
     background-image: url("/mom-and-dad.webp");
     background-size: cover;
-    padding-top: 48px;
+    padding: 64px 0 128px;
 }
 .flag {
     width: 60%;
@@ -36,4 +35,71 @@
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
+}
+.mobileImage {
+    display: none;
+}
+@media screen and (min-width: 1536px) {
+    .family {
+        height: 41.66vw;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .mobileImage {
+        display: block;
+    }
+    .family {
+        padding-top: 0;
+        padding-bottom: 0;
+        background-position: 60%;
+    }
+    .flag {
+        width: 100%;
+        background-size: 200%;
+        background-position: -100%;
+    }
+    .whiteFlag {
+        width: 100%;
+    }
+    .family h2 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .mobileImage {
+        position: relative;
+        height: 500px;
+        width: 100%;
+    }
+    .family p {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 768px) {
+    .flag {
+        background-image: url("/yellow-big-right-down.webp"), url("/yellow-big-right-down.webp");
+        height: 125px;
+    }
+    .whiteFlag {
+        margin-top: 0;
+        padding: 5%;
+        padding-bottom: 32px;
+        border-bottom: 1px solid black;
+    }
+    .family {
+        background-image: none !important;
+    }
+    .mobileImage {
+        height: 300px;
+    }
+    .family h2 {
+        font-size: 28px;
+        line-height: 32px;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .family p {
+        font-size: 18px;
+        line-height: 22px;
+        font-weight: 400;
+    }
 }

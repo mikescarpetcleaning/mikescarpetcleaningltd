@@ -105,3 +105,35 @@
 .submitDetails p {
     margin: 0;
 }
+
+@media screen and (max-width: 1024px) {
+    .flag {
+        background-size: 85% 100%
+    }
+    .whiteFlag {
+        background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 85%, transparent 85%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .form {
+        flex-direction: column;
+        width: 90%;
+    }
+    .form > * {
+        margin: 0;
+        margin-top: 12px;
+        width: 100%;
+    }
+    .flag {
+        background-size: 200%;
+    }
+    .whiteFlag {
+        background: rgba(255, 255, 255, 0.8);
+        padding: 0 12px;
+    }
+    .whiteFlag p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}

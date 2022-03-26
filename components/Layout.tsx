@@ -12,7 +12,7 @@ import ContactModal from "./ContactModal";
 const Layout = (props: any) => {
     return (
         <>
-            <Announcement announcement={"SCHEDULE ONLINE 24/7!"}/>
+            <Announcement announcement={"SCHEDULE ONLINE 24/7"}/>
             <Nav />
             <ContactModal />
             {props.children}

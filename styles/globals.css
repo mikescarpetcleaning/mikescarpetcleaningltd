@@ -30,6 +30,13 @@ a {
   box-sizing: border-box;
   font-family: 'Montserrat';
 }
+
+.max-w-limiter {
+  max-width: 1536px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .btn {
   width: 320px;
   height: 60px;

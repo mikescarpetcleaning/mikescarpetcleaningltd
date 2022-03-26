@@ -87,7 +87,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
     .slider {
         display: none;
     }
@@ -112,5 +112,41 @@
         display: block;
         overflow: hidden;
         position: relative;
+        padding-top: 36px;
+    }
+    .reviews h2 {
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .reviews p {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 650px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .reviews {
+        padding: 36px 5%;
+    }
+    .card p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .card {
+        padding: 28px 12px 12px 24px;
+        height: fit-content;
+        max-width: 300px;
+    }
+    .card h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .card img {
+        margin-bottom: 12px;
+        width: 150px;
+    }
+    .card h4 {
+        margin-top: 12px;
     }
 }

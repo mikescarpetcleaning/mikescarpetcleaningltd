@@ -108,6 +108,7 @@
     .flag {
         width: 100%;
         background-size: 200%;
+        padding-right: 5%;
     }
     .flag h1 {
         font-size: 36px;

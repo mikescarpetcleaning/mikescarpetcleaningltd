@@ -1,11 +1,16 @@
 .footer {
-    min-height: 340px;
     background: black;
+}
+.footerLayout {
+    min-height: 340px;
     padding: 64px 10%;
     display: flex;
     color: white;
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.footer * {
+.footerLayout * {
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -24,6 +29,35 @@
     list-style: none;
     padding: 0;
 }
-.footer img {
+.footerLayout img {
     cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .footerLayout {
+        flex-direction: column;
+        padding: 36px 5%;
+    }
+    .left,
+    .left p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .left p {
+        margin-bottom: 36px;
+    }
+    .right,
+    .right p {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .menuLinks * {
+        font-size: 18px;
+        line-height: 36px;
+        font-weight: 500;
+    }
 }
