@@ -1,9 +1,10 @@
 .nav {
     width: 100%;
-    height:100px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #555;
 }
 .menu {
     display: flex;
@@ -12,13 +13,55 @@
     padding: 0;
 }
 .menuItem {
-    margin: 0 24px;
-    font-size: 20px;
+    margin: 0 48px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 16px;
     letter-spacing: 0em;
     text-align: center;
     border-bottom: 2px solid black;
     text-transform: uppercase;
+}
+
+@media screen and (max-width: 820px) {
+    .menu::-webkit-scrollbar {
+        height: 5px;
+      }
+      
+      /* Track */
+      .menu::-webkit-scrollbar-track {
+            height: 5px;
+      }
+      
+      /* Handle */
+      .menu::-webkit-scrollbar-thumb {
+        background: #555;
+        border-radius: 5px;
+      }
+      
+      /* Handle on hover */
+      .menu::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    .nav {
+        height: auto;
+    }
+    .menu {
+        justify-content: flex-start;
+        padding: 32px 5%;
+        overflow-x: auto;
+        margin: 0;
+    }
+    .menuItem {
+        margin: 0 36px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    .menuItem:first-child {
+        margin-left: 0;
+    }
+    .menuItem:last-child {
+        margin-right: 0;
+    }
 }

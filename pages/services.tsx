@@ -6,7 +6,7 @@ import ServiceNav from "../serviceComponents/ServiceNav";
 
 const carpetList = {
     id: "carpets",
-    heading: "Carpets",
+    heading: "Carpet Cleaning",
     itemDetails: [{
         subHeading: "Truckmounted Steam Cleaning",
         process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -93,9 +93,9 @@ const Services: NextPage<any> = (props: any) => {
     return (
         <>
             <ServiceHero />
-            {/* <ServiceNav /> */}
+            <ServiceNav />
             <ServiceItem itemDetails={carpetList} />
-            <ServiceItem itemDetails={upholsteryList} />
+            {/* <ServiceItem itemDetails={upholsteryList} /> */}
             <Connect />
         </>
     )

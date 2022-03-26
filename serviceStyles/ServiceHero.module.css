@@ -26,3 +26,20 @@
     text-align: center;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-position: 50%;
+        height: 100px;
+    }
+    .flag {
+        width: 100%;
+        background-size: 200%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .flag h1 {
+        font-size: 36px;
+        line-height: 36px;
+    }
+}
