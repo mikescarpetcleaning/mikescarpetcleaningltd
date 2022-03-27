@@ -7,19 +7,22 @@ type props = any;
 
 const Frequent: FC<props> = () => {
     useEffect(() => {
+        const imageSlider = new Slider(
+            ".image-wrapper",
+            "",
+            "",
+            "",
+            300,
+            false
+        ).init();
         const frequentSlider = new Slider(
             ".frequent-wrapper",
             ".frequent-prev",
             ".frequent-next",
             ".frequent-bullets",
-            300
-        ).init();
-        const imageSlider = new Slider(
-            ".image-wrapper",
-            ".frequent-prev",
-            ".frequent-next",
-            "",
-            300
+            300,
+            undefined,
+            [imageSlider]
         ).init();
     }, [])
     return (

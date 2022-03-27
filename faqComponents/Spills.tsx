@@ -27,7 +27,7 @@ const Spills: FC = () => {
     return ( 
         <section className={styles.spills}>
             <div className={styles.flag}>
-                <h1>COMMON SPOT CLEANING TIPS</h1>
+                <h2>COMMON SPOT CLEANING TIPS</h2>
             </div>
             <div className={styles.left}>
                 <div ref={spotImages} className={styles.imageContainer}>

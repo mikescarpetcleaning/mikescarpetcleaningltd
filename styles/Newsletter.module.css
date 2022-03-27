@@ -127,6 +127,7 @@
     }
     .flag {
         background-size: 200%;
+        padding: 0 5%;
     }
     .whiteFlag {
         background: rgba(255, 255, 255, 0.8);

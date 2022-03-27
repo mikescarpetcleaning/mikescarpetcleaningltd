@@ -3,6 +3,8 @@ export class Slider {
     prev: HTMLElement | null;
     next: HTMLElement | null;
     bulletBox: HTMLElement | null;
+    touch: boolean | undefined;
+    partners: Slider[] | undefined;
     limit: number;
     current: number;
     bullets: HTMLElement[];
@@ -14,7 +16,7 @@ export class Slider {
     end: number;
     change: number;
 
-    constructor(wrapper?: string, prev?: string, next?: string, bulletBox?: string, transitionSpeed?: number) {
+    constructor(wrapper?: string, prev?: string, next?: string, bulletBox?: string, transitionSpeed?: number, touch?: boolean, partners?: Slider[]) {
         this.wrapper = wrapper ? document.querySelector(wrapper) : null;
         this.prev = prev ? document.querySelector(prev): null;
         this.next = next ? document.querySelector(next): null;
@@ -29,6 +31,8 @@ export class Slider {
         this.start = 0;
         this.end = 0;
         this.change = 0;
+        this.touch = touch;
+        this.partners = partners
     }
     init() {
         if (this.wrapper) {
@@ -44,44 +48,45 @@ export class Slider {
             this.wrapper.addEventListener("transitionend", () => {
                 this.transitioning = false;
             })
-
-            this.wrapper.addEventListener("touchstart", (e) => {
-                if (this.swiping && !this.transitioning) {
-          			this.wrapper!.style.transition = "none";
-          			this.start = e.touches[0].clientX;
-                }
-            });
-            this.wrapper.addEventListener("touchmove", (e) => {
-                if (this.swiping && !this.transitioning) {
-                    this.end = e.touches[0].clientX;
-                    this.change = (((this.end - this.start) / window.screen.width) * 100) - this.current * 100;
-                    if (this.change > 5 || this.change < -5) {
-                        this.tracking = true;
+            if (this.touch !== false) {
+                this.wrapper.addEventListener("touchstart", (e) => {
+                    if (this.swiping && !this.transitioning) {
+                        this.wrapper!.style.transition = "none";
+                        this.start = e.touches[0].clientX;
                     }
-                    if (this.tracking) {
-                        this.wrapper!.style.transform = `translateX(${this.change}%)`;
+                });
+                this.wrapper.addEventListener("touchmove", (e) => {
+                    if (this.swiping && !this.transitioning) {
+                        this.end = e.touches[0].clientX;
+                        this.change = (((this.end - this.start) / window.screen.width) * 100) - this.current * 100;
+                        if (this.change > 5 || this.change < -5) {
+                            this.tracking = true;
+                        }
+                        if (this.tracking) {
+                            this.wrapper!.style.transform = `translateX(${this.change}%)`;
+                        }
                     }
-                }
-            });
-            this.wrapper.addEventListener("touchend", (e) => {
-                if (this.swiping && !this.transitioning) {
-                    this.tracking = false;
-                    if (this.end == null) this.end = this.start;
-                    this.wrapper!.style.transition = "all 0.3s";
-                    if (this.start - this.end > 0 && this.start - this.end > 75) {
-                        this.nextSlide();
-                    } else if (this.start - this.end < 0 && this.start - this.end < -75) {
-                        this.prevSlide();
-                    } else if (this.current === 0) {
-                        this.wrapper!.style.transform = `translateX(0%)`;
-                    } else {
-                        this.wrapper!.style.transform = `translateX(${-1 * this.current}00%)`;
+                });
+                this.wrapper.addEventListener("touchend", (e) => {
+                    if (this.swiping && !this.transitioning) {
+                        this.tracking = false;
+                        if (this.end == null) this.end = this.start;
+                        this.wrapper!.style.transition = "all 0.3s";
+                        if (this.start - this.end > 0 && this.start - this.end > 75) {
+                            this.nextSlide();
+                        } else if (this.start - this.end < 0 && this.start - this.end < -75) {
+                            this.prevSlide();
+                        } else if (this.current === 0) {
+                            this.wrapper!.style.transform = `translateX(0%)`;
+                        } else {
+                            this.wrapper!.style.transform = `translateX(${-1 * this.current}00%)`;
+                        }
+                        this.start = 0;
+                        this.end = 0;
                     }
-                    this.start = 0;
-                    this.end = 0;
-                }
-                this.swiping = true;
-            });
+                    this.swiping = true;
+                });
+            }
         }
         if (this.prev) {
             this.prev.addEventListener("click", () => {
@@ -122,6 +127,7 @@ export class Slider {
                 }, {once:true})
             }
             this.setBullet();
+            if (this.partners) this.partners.forEach(partner => partner.prevSlide())
         }
     }
     nextSlide() {
@@ -138,6 +144,7 @@ export class Slider {
                 }, {once:true})
             }
             this.setBullet();
+            if (this.partners) this.partners.forEach(partner => partner.nextSlide())
         }
     }
     goTo(index: number) {
