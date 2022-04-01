@@ -19,7 +19,7 @@ const carpetList = {
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>
         </div>`,
         imgSrc: "/carpets-service.webp",
-        cta: `<a href="commercial" class="subitem-cta">See Our Commercial Rates</a>`
+        cta: `<a style="width:100%;height:100%" href="commercial" class="subitem-cta">See Our Commercial Rates</a>`
     },
     {
         subHeading: "Pet Treatment",
@@ -89,7 +89,7 @@ const hardSurfaceList = {
     heading: "Hard Surfaces",
     itemDetails: [{
         subHeading: "Tile Cleaning (floors only)",
-        process: "We start by spraying down the area with a high-powered, non-toxic cleaning agent. After some dwell time we use a spinning 1000 PSI jet to remove the dirt and water. Dries in minutes and leaves tile and grout look brand new.",
+        process: "We start by spraying down the area with a high-powered, non-toxic cleaning agent. After some dwell time we use a spinning 1000 PSI jet to remove the dirt and water. Dries in minutes and leaves tile and grout looking brand new.",
         pricing: `
         <div class="pricing-box">
         <p><span class="bold">Cleaning:</span> $0.75 per sq. ft.*</p>

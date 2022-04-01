@@ -28,7 +28,7 @@ const About: NextPage = () => {
                         <p>
                             We use state-of-the-art truck mounted
                             Hydramaster steam cleaning equipment, with
-                            drying times in as pttle as 2 to 3 hours!
+                            drying times in as pttle as little as 4 to 6 hours!
                         </p>
                         <p>
                             We appreciate your business, so give us a call
@@ -60,11 +60,11 @@ const About: NextPage = () => {
                 heading2="Our Staff"
                 body="Our carpet cleaning technicians are IICRC trained and use the very best
                 products and cleaning methods to insure the absolutely best results! Excel is family
-                owned and opporated. We consider ourselves to be forever students, always immersed in the 
+                owned and operated. We consider ourselves to be forever students, always immersed in the 
                 latest and greatest technologies and techniques. Our high standards and excitement about 
                 what we do has allowed this company to truly thrive for the last 30 years. We appreciate
                 your time and it has been a pleasure serving you! Give us a call today or schedule an
-                appointemt onpne 24/7 and we&apos;ll look forward to seeing you soon."  
+                appointment online 24/7 and we&apos;ll look forward to seeing you soon."  
             />
         </main>
     )
