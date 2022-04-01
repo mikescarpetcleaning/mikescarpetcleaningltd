@@ -28,7 +28,7 @@ const Reviews: NextPage = () => {
             <div className="max-w-limiter">
                 <h2>What Our Customers Are Saying</h2>
                 <p>
-                    We've given years of fair, honest, and reliable service and accumulated a long list of success stories
+                    We&apos;ve given years of fair, honest, and reliable service and accumulated a long list of success stories
                 </p>
                 <div className={styles.slider}>
                     <div className={[styles.wrapper, "reviews-wrapper"].join(' ')}>
@@ -95,7 +95,7 @@ const Reviews: NextPage = () => {
                                 <p>
                                     Mike was amazing. He cleaned our whole house on short notice as 
                                     we were moving in. The previous owners had pets and I am allergic. 
-                                    Haven't had any issues and the carpets look terrific. 
+                                    Haven&apos;t had any issues and the carpets look terrific. 
                                     Great experience and I highly recommend Mike and Excel!
                                 </p>
                                 <h4>David B.</h4>
@@ -194,7 +194,7 @@ const Reviews: NextPage = () => {
                                 <p>
                                     Mike was amazing. He cleaned our whole house on short notice as 
                                     we were moving in. The previous owners had pets and I am allergic. 
-                                    Haven't had any issues and the carpets look terrific. 
+                                    Haven&apos;t had any issues and the carpets look terrific. 
                                     Great experience and I highly recommend Mike and Excel!
                                 </p>
                                 <h4>David B.</h4>

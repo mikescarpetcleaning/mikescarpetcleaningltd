@@ -64,7 +64,7 @@ const About: NextPage = () => {
                 latest and greatest technologies and techniques. Our high standards and excitement about 
                 what we do has allowed this company to truly thrive for the last 30 years. We appreciate
                 your time and it has been a pleasure serving you! Give us a call today or schedule an
-                appointemt onpne 24/7 and we'll look forward to seeing you soon."  
+                appointemt onpne 24/7 and we&apos;ll look forward to seeing you soon."  
             />
         </main>
     )

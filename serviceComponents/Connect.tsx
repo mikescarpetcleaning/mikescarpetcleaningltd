@@ -13,7 +13,7 @@ const Connect: FC = () => {
                 <p>At Excel Carpet Cleaning, the safety of our
                     customers and employees is always on our minds. As
                     everyone is feeling the impact of the coronavirus
-                    (COVID-19), I want to share with you the steps we're
+                    (COVID-19), I want to share with you the steps we&apos;re
                     taking to help.
                     <br/><br/>
                     At this time, we are open for business and available to
@@ -26,7 +26,7 @@ const Connect: FC = () => {
                     equipment are exceptionally clean and sanitary, and
                     safe. The health and safety of our customers,
                     employees and our communities are very important to
-                    us, and we're committed to doing our part.
+                    us, and we&apos;re committed to doing our part.
                     <br/><br/>
                     Thank you for your business and trust in us.
                 </p>

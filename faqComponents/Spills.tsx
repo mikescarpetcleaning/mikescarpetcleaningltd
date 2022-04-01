@@ -54,7 +54,7 @@ const Spills: FC = () => {
                     should harden the wax enough to break it up and get more of it out.
                     To remove stains left from colored wax, try gently dabbing the stain with a rag dampened
                     with rubbing alcohol. Be sure to use the clear alcohol, not the colored ones. If the alcohol
-                    doesn't do the trick, you can try using dry cleaning solvent.
+                    doesn&apos;t do the trick, you can try using dry cleaning solvent.
                     When done removing the candle wax out of the carpet, rinse the area with clean water. Blot
                     up the excess water, and dry the area quickly. A fan can help with this. Quick drying
                     prevents any of the dye stains deeper down from wicking up of the surface.
