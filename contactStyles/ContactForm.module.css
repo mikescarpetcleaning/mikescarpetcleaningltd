@@ -78,6 +78,7 @@
     height: 120px;
 }
 .btn {
+    user-select:none;
     display: flex;
     justify-content: center;
     align-items: center;

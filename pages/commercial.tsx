@@ -8,14 +8,14 @@ const carpetList = {
     heading: "Carpets",
     itemDetails: [{
         subHeading: "Truckmount or Encapsulant Cleaning",
-        process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        process: "Truckmounted steam cleaning is just one of the highly effective methods we provide to our commercial clients. Most of our commercial customers opt for the low moisture encapsulant cleaning system. This method is extremely effective for low nap commercial carpets and dries very quickly.",
         pricing: `
         <div class="pricing-box">
         <p class="bold">24 to 30 cents per sq. ft.</p>
         <p>Minimum Charge: $199</p>
-        <p>Price per foot is lower as size increases. The given discount is determined upon inspecction but the final price will always fall within this range. Prices are always set up front to maintain the transparent and honest nature of our company.</p>
+        <p>Price per foot is lower as size increases. The given discount is determined upon inspection.</p>
         </div>`,
-        imgSrc: "/carpet-home.webp"
+        imgSrc: "/commercial.webp"
     }],
     ctaText: "Book Carpet Cleaning"
 }
@@ -24,14 +24,14 @@ const tileList = {
     heading: "Hard Surfaces",
     itemDetails: [{
         subHeading: "Tile / Cement Cleaning and Sealant",
-        process: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        process: "The same high-powered and high perform cleaning methods can be used in a commercial setting. Our presprays and extraction tools can get dirt and stains out more effectively than any other method.",
         pricing: `
         <div class="pricing-box">
         <p class="bold">$0.50 to $1 per sq. ft.</p>
         <p>Minimum Charge: $199</p>
-        <p>Price per foot is lower as size increases. The given discount is determined upon inspecction but the final price will always fall within this range. Prices are always set up front to maintain the transparent and honest nature of our company.</p>
+        <p>Price per foot is lower as size increases. The given discount is determined upon inspection.</p>
         </div>`,
-        imgSrc: "/carpet-home.webp"
+        imgSrc: "/commercial-tile.webp"
     }],
     ctaText: "Book Hard Surface Cleaning"
 }
