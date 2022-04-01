@@ -1,4 +1,4 @@
-const siteUrl = "https://www.excelcarpetcleaning.com";
+const siteUrl = "https://excelcarpetcleaning.netlify.app";
 
 module.exports = {
     siteUrl,
