@@ -27,73 +27,78 @@ const Reviews: NextPage = () => {
         <section className={styles.reviews}>
             <div className="max-w-limiter">
                 <h2>What Our Customers Are Saying</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                <p>
+                    We've given years of fair, honest, and reliable service and accumulated a long list of success stories
                 </p>
                 <div className={styles.slider}>
                     <div className={[styles.wrapper, "reviews-wrapper"].join(' ')}>
                         <div className={styles.slide}>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Highly Recommended!</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
                                 />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                <p>
+                                    The carpet on our stairs was so dirty that I was wondering if we just needed 
+                                    to replace that carpet. Jeff from Excel showed up promptly 
+                                    for our 1pm appointment and did an excellent job. It even 
+                                    looks as though most, if not all, of the stains in the 
+                                    carpet on our stairs came out. Highly recommended!
                                 </p>
-                                <h4>1</h4>
+                                <h4>Jeff C.</h4>
                             </div>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Amazing Job</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
                                 /> 
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                <p>
+                                    Amazing job cleaning serious pet issues.  My kitty had a medical issue 
+                                    so to say there was a mess was an understatement. Carpet came out clean, 
+                                    smell gone. 100% recommend!
                                 </p>
-                                <h4>2</h4>
+                                <h4>Ulibee C.</h4>
                             </div>
                         </div>
                         <div className={styles.slide}>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Awesome Customer Service</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
                                 />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                <p>
+                                    Excel Carpet Cleaning went above and beyond to fit the timelines 
+                                    I needed and a last minute change when we were selling our home 
+                                    and moving into a new one. I am very impressed by the results but 
+                                    most importantly their awesome customer service. They are our 
+                                    carpet cleaner of choice from now on!
                                 </p>
-                                <h4>3</h4>
+                                <h4>Lindsay M.</h4>
                             </div>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Great Experience</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
                                 />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                <p>
+                                    Mike was amazing. He cleaned our whole house on short notice as 
+                                    we were moving in. The previous owners had pets and I am allergic. 
+                                    Haven't had any issues and the carpets look terrific. 
+                                    Great experience and I highly recommend Mike and Excel!
                                 </p>
-                                <h4>4</h4>
+                                <h4>David B.</h4>
                             </div>
                         </div>
                     </div>
@@ -124,70 +129,75 @@ const Reviews: NextPage = () => {
                     <div className={[styles.wrapper, "reviews-wrapper-m"].join(' ')}>
                         <div className={styles.slide}>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Highly Recommended!</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
                                 />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                <p>
+                                    The carpet on our stairs was so dirty that I was wondering if we just needed 
+                                    to replace that carpet. Jeff from Excel showed up promptly 
+                                    for our 1pm appointment and did an excellent job. It even 
+                                    looks as though most, if not all, of the stains in the 
+                                    carpet on our stairs came out. Highly recommended!
                                 </p>
-                                <h4>1</h4>
+                                <h4>Jeff C.</h4>
                             </div>
                         </div>
                         <div className={styles.slide}>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Amazing Job</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
-                                />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                /> 
+                                <p>
+                                    Amazing job cleaning serious pet issues.  My kitty had a medical issue 
+                                    so to say there was a mess was an understatement. Carpet came out clean, 
+                                    smell gone. 100% recommend!
                                 </p>
-                                <h4>2</h4>
+                                <h4>Ulibee C.</h4>
                             </div>
                         </div>
                         <div className={styles.slide}>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Awesome Customer Service</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
                                 />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                <p>
+                                    Excel Carpet Cleaning went above and beyond to fit the timelines 
+                                    I needed and a last minute change when we were selling our home 
+                                    and moving into a new one. I am very impressed by the results but 
+                                    most importantly their awesome customer service. They are our 
+                                    carpet cleaner of choice from now on!
                                 </p>
-                                <h4>3</h4>
+                                <h4>Lindsay M.</h4>
                             </div>
                         </div>
                         <div className={styles.slide}>
                             <div className={styles.card}>
-                                <h3>Lorem Ipsum</h3>
+                                <h3>Great Experience</h3>
                                 <img 
                                     src="/yellow-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
                                 />
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                                    nisi ut aliquip ex ea commodo consequat.
+                                <p>
+                                    Mike was amazing. He cleaned our whole house on short notice as 
+                                    we were moving in. The previous owners had pets and I am allergic. 
+                                    Haven't had any issues and the carpets look terrific. 
+                                    Great experience and I highly recommend Mike and Excel!
                                 </p>
-                                <h4>4</h4>
+                                <h4>David B.</h4>
                             </div>
                         </div>
                     </div>

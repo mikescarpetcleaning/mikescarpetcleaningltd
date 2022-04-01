@@ -40,7 +40,7 @@ const FaqAccordion: FC<any> = ({ faqs }: any) => {
                                     {faq.question}
                                 </h2>
                                 <div className="answer">
-                                    <p>{faq.answer}</p>
+                                    <p dangerouslySetInnerHTML={{__html: faq.answer}}></p>
                                 </div>
                             </li>
                         )

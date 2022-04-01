@@ -35,43 +35,43 @@ const Frequent: FC<props> = () => {
                     <div className={[styles.wrapper, "frequent-wrapper"].join(' ')}>
                         <div className={styles.slide}>
                             <h3>Carpet Cleaning</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit 
-                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                                occaecat cupidatat non proident.</p>
+                            <p>
+                                We do truckmounted steam cleaning using state of the art 
+                                HydraMaster CDS units. Our 4 step cleaning process is 
+                                proven to be the most effective method of cleaning the 
+                                market has to offer. Our machines are so powerful that 
+                                you can expect a dry time between 2 and 4 hours under typcial 
+                                circumstances.
+                            </p>
                         </div>
                         <div className={styles.slide}>
-                            <h3>Carpet Cleaning</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit 
-                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                                occaecat cupidatat non proident.</p>
+                            <h3>Upholstery Cleaning</h3>
+                            <p>
+                                Cleaning upholstery is a job best left to the pros. We are masters 
+                                of cleaning delicate fibers and restoring the life of old 
+                                furniture. Most furniture can be steam cleaned using the truckmount 
+                                but we can also perform highly effective low moisture cleans on 
+                                more delicate materials.
+                            </p>
                         </div>
                         <div className={styles.slide}>
-                            <h3>Carpet Cleaning</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit 
-                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                                occaecat cupidatat non proident.</p>
+                            <h3>Tile Cleaning</h3>
+                            <p>
+                                Nothing can make that old, dirty tile shine like our high powered 
+                                tile spinner. 1000 psi water and powerful cleaning detergents blast 
+                                the dirt off of tile and leave those grout lines looking brand new. 
+                                Not to mention, it dries in mere minutes and can be sealed to leave a 
+                                shine lasting for years to come.
+                            </p>
                         </div>
                         <div className={styles.slide}>
-                            <h3>Carpet Cleaning</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                                Duis aute irure dolor in reprehenderit in voluptate velit 
-                                esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                                occaecat cupidatat non proident.</p>
+                            <h3>Air Duct Cleaning</h3>
+                            <p>
+                                We use the RamAir cleaning system to remove potentially dangerous dust 
+                                and debris from your homes HVAC system and dryer vents. This method can effectively 
+                                remove allergens, construction debris, and more from deep down in your 
+                                vents, all done without leaving behind a mess or kicking up dirt into the air.
+                            </p>
                         </div>
                     </div>
                     <div className={styles.navBox}>
@@ -111,7 +111,7 @@ const Frequent: FC<props> = () => {
                     <div className={[styles.wrapper, "image-wrapper"].join(' ')}>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.webp"
+                                src="/carp.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"
@@ -120,7 +120,7 @@ const Frequent: FC<props> = () => {
                         </div>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.webp"
+                                src="/upholstery.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"
@@ -129,7 +129,7 @@ const Frequent: FC<props> = () => {
                         </div>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.webp"
+                                src="/brtiles.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"
@@ -138,7 +138,7 @@ const Frequent: FC<props> = () => {
                         </div>
                         <div className={styles.slide}>
                             <img 
-                                src="/carpet-home.webp"
+                                src="/duct.webp"
                                 height="auto"
                                 width="auto"
                                 alt="carpet-that-is-clean"

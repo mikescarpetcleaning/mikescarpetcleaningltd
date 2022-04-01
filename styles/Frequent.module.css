@@ -1,3 +1,6 @@
+.wrapper {
+    height: 100%;
+}
 .frequent {
     padding: 64px 0 64px;
     background: var(--gray);

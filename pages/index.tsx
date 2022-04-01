@@ -18,13 +18,12 @@ const Home: NextPage = () => {
         mobileImage="/parentals-mobile.webp"
         heading1="Family Owned"
         heading2="And Operated"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-        culpa qui officia deserunt mollit anim id est laborum." 
+        body="Mike and Mary founded Excel Carpet Cleaning back in 1991.
+        A passion for perfection and a dedication to their craft has given way 
+        to a lifetime of quality service and satisfied customers. 30 years ago we
+        set our minds on one simple goal. Provide the best clean that the industry 
+        has to offer. Fast forward to now and we have cleaned millions of square 
+        feet of carpet for thousands of customers. We look forward to serving you soon!" 
       />
       <Reviews />
       <Frequent />
@@ -33,13 +32,12 @@ const Home: NextPage = () => {
         mobileImage="/baby-mobile.webp"
         heading1="Powerful Clean,"
         heading2="No Harmful Chemicals"
-        body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in 
-        culpa qui officia deserunt mollit anim id est laborum."  />
+        body="All of our cleaning products are not only extremely effective, but also 
+        safe for you, your family, and your pets! Years of research and testing have 
+        lead to the ultimate arsenal of cleaning agents. We are spot cleaning masters 
+        and we have a treatment for every spot and stain that you may come across. Our cleaning 
+        products are safe for you and the environment and our extraction method leaves behind 
+        no residue. You can rest easy knowing that your home is both clean and safe!"  />
     </>
 
   )

@@ -20,9 +20,9 @@ const Why: NextPage = () => {
                         </h3>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore et 
-                        dolore magna aliqua. 
+                        We train all technicians using the IICRC standards.
+                        Our team is made of up hard-working, dedicated individuals 
+                        who always keep up with the latest techniques and technologies.
                     </p>
                 </div>
                 <div className={styles.card}>
@@ -35,9 +35,9 @@ const Why: NextPage = () => {
                         </h3>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore et 
-                        dolore magna aliqua. 
+                        30 years in business and counting. Our methods are proven time and 
+                        time again to be highly effective and efficient. No one gets carpets 
+                        cleaner than us.
                     </p>
                 </div>
                 <div className={styles.card}>
@@ -50,9 +50,9 @@ const Why: NextPage = () => {
                         </h3>
                     </div>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing 
-                        elit, sed do eiusmod tempor incididunt ut labore et 
-                        dolore magna aliqua. 
+                        We stand for fairness in business above all else. We have built a 
+                        reputation of honesty and integrity and always provide top quality service 
+                        at a fair price.
                     </p>
                 </div>
             </div>
