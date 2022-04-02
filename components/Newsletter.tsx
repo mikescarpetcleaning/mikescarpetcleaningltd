@@ -51,6 +51,9 @@ const Newsletter: FC = () => {
             setSubmitted(true);
         }
     }
+    useEffect(() => {
+        document.querySelector("form[name='newsletter']")?.addEventListener("submit", handleSubmit);
+    }, [])
     return (
         <section className={styles.newsletter}>
             <div className={styles.flag}>
@@ -65,7 +68,7 @@ const Newsletter: FC = () => {
                 </p>
             </div>
             {!submitted ? 
-            <form className={styles.form} onSubmit={handleSubmit} name="newsletter" data-netlify="true">
+            <form className={styles.form} method="POST" name="newsletter" data-netlify="true">
                 <input type="hidden" name="newsletter" value="newsletter" />
                 <div className={styles.emailBox}>
                     <label htmlFor="email-newsletter">Email Address</label>
