@@ -34,15 +34,12 @@ const Newsletter: FC = () => {
             ...formData,
             [e.target.name]: e.target.value
         })
-        console.log(formData)
     }
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        console.log(formData)
         if (!validZip.test(formData.zip)) {alert("this is not a valid zip code")}
         else {
             let submitData = new FormData(e.target);
-            console.log(submitData)
             fetch('/', {
                 method: 'POST',
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },

@@ -25,7 +25,6 @@ export default function ContactForm() {
     const handleSubmit = (e) => {
         e.preventDefault();
         let formData = new FormData(contactForm.current);
-        console.log(formData, contactForm.current)
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },

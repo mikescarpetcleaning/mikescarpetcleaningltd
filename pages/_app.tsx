@@ -14,7 +14,6 @@ function MyApp({ Component, pageProps }: AppProps) {
     }, {threshold: 0})
     const sections = document.querySelectorAll("#__next > *");
     sections.forEach(section => section.classList.add('hidden'))
-    console.log(sections)
     sections.forEach(section => observer.observe(section))
   })
   return (

@@ -20,7 +20,6 @@ export class Modal {
     this.mount?.appendChild(this.contentContainer);
     this.mount?.addEventListener("click", (e) => {
       if (!this.contentContainer.contains(e.target as Node)) {
-        console.log(e.target)
         this.closeModal();
       }
     });
