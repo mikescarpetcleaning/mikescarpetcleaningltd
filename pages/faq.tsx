@@ -67,7 +67,7 @@ const Faq: NextPage = () => {
     return (
         <>
             <Head>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
                 <title>Frequently Asked Carpet Cleaning Questions</title>

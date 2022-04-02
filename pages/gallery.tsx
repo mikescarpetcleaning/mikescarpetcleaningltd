@@ -12,7 +12,7 @@ const Gallery: NextPage<any> = () => {
     return (
         <>
             <Head>
-                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
                 <title>Carpet Cleaning Pictures | Before and After plus More!</title>
