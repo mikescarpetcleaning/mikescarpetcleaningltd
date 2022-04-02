@@ -96,6 +96,9 @@
     width: fit-content;
     margin: auto;
 }
+.submitted :first-child {
+    flex-shrink: 0;
+}
 .submitDetails {
     margin-left: 24px;
 }

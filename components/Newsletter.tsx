@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { FC, useRef, useState } from 'react';
 import Image from 'next/image';
 
@@ -33,12 +35,21 @@ const Newsletter: FC = () => {
             [e.target.name]: e.target.value
         })
     }
-    const onSubmit = (e: any) => {
+    const handleSubmit = (e: any) => {
         e.preventDefault();
-        if (!validZip.test(formData.zip)) alert("this is not valid")
-        console.log(formData);
-        setFormData({ ...initForm });
-        setSubmitted(true);
+        if (!validZip.test(formData.zip)) {alert("this is not valid")}
+        else {
+            let formData = new FormData(e.target.current);
+
+            fetch('/', {
+                method: 'POST',
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: new URLSearchParams(formData).toString()
+              }).then(() => console.log('Form successfully submitted')).catch((error) =>
+                alert(error))
+            setFormData({ ...initForm });
+            setSubmitted(true);
+        }
     }
     return (
         <section className={styles.newsletter}>
@@ -54,7 +65,8 @@ const Newsletter: FC = () => {
                 </p>
             </div>
             {!submitted ? 
-            <form className={styles.form} onSubmit={onSubmit}>
+            <form className={styles.form} onSubmit={handleSubmit} data-netlify="true">
+                <input type="hidden" name="newsletter" value="newsletter" />
                 <div className={styles.emailBox}>
                     <label htmlFor="email-newsletter">Email Address</label>
                     <input 

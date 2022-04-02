@@ -31,6 +31,12 @@ a {
   font-family: 'Montserrat';
 }
 
+#__next > * {
+  transition: all 1s;
+}
+.hidden {
+  opacity: 0 !important;
+}
 .max-w-limiter {
   max-width: 1536px;
   margin-right: auto;
