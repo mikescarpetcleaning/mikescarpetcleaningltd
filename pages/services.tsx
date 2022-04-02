@@ -128,7 +128,7 @@ const airDuctList = {
         The patented RamAir ClearView Duct Cleaning System is the most effective system to date, as well as being the first system ever created that allows the homeowner to actually see all the dust and debris as it is being removed from the duct system.`,
         pricing: `
         <div class="pricing-box">
-        <p><span class="bold">Air Duct Cleaning Special:</span> $299.00 (12 floor vents and 2 air return)</p>
+        <p><span class="bold">Air Duct Cleaning Special:</span> $299.00 (12 floor vents and 2 air returns)</p>
        
         <p><span class="bold">Additional Vents:</span> $20.00 per vent*</p>
 
