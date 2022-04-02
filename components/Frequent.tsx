@@ -40,7 +40,7 @@ const Frequent: FC<props> = () => {
                                 HydraMaster CDS units. Our 4 step cleaning process is 
                                 proven to be the most effective method of cleaning the 
                                 market has to offer. Our machines are so powerful that 
-                                you can expect a dry time between 2 and 4 hours under typcial 
+                                you can expect a dry time between 4 and 6 hours under typcial 
                                 circumstances.
                             </p>
                         </div>
