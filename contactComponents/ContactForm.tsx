@@ -21,13 +21,11 @@ export default function ContactForm() {
             [target.name]: target.value
         })
     }
-    useEffect(() => {
-        document.querySelector("form[name='contact']")?.addEventListener("submit", handleSubmit);
-    }, [])
 
     const handleSubmit = (e) => {
         e.preventDefault();
         let formData = new FormData(contactForm.current);
+        console.log(formData, contactForm.current)
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -48,7 +46,7 @@ export default function ContactForm() {
                 <p>Serving You Since 1991</p>
             </div>
             {!submitted ? 
-            <form name="contact" method="POST" data-netlify="true" ref={contactForm} >
+            <form name="contact" onSubmit={handleSubmit} method="POST" data-netlify="true" ref={contactForm} >
                 <input type="hidden" name="contact" value="contact" />
                 <label style={{ display: 'none' }} htmlFor="name">name</label>
                 <input 
