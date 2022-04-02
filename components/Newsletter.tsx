@@ -37,7 +37,7 @@ const Newsletter: FC = () => {
     }
     const handleSubmit = (e: any) => {
         e.preventDefault();
-        if (!validZip.test(formData.zip)) {alert("this is not valid")}
+        if (!validZip.test(formData.zip)) {alert("this is not a valid zip code")}
         else {
             let formData = new FormData(e.target.current);
 
@@ -65,7 +65,7 @@ const Newsletter: FC = () => {
                 </p>
             </div>
             {!submitted ? 
-            <form className={styles.form} onSubmit={handleSubmit} data-netlify="true">
+            <form className={styles.form} onSubmit={handleSubmit} name="newsletter" data-netlify="true">
                 <input type="hidden" name="newsletter" value="newsletter" />
                 <div className={styles.emailBox}>
                     <label htmlFor="email-newsletter">Email Address</label>

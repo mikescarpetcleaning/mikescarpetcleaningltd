@@ -49,7 +49,7 @@ export default function ContactForm() {
             </div>
             {!submitted ? 
             <form name="contact" method="POST" data-netlify="true" ref={contactForm} >
-                <input type="hidden" name="form-name" value="contact" />
+                <input type="hidden" name="contact" value="contact" />
                 <label style={{ display: 'none' }} htmlFor="name">name</label>
                 <input 
                     onChange={handleChange}
