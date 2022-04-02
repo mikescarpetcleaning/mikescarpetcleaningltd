@@ -1,6 +1,6 @@
 // @ts-nocheck
 
-import { FC, useRef, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 
 import styles from "../styles/Newsletter.module.css";
