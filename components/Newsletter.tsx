@@ -34,26 +34,26 @@ const Newsletter: FC = () => {
             ...formData,
             [e.target.name]: e.target.value
         })
+        console.log(formData)
     }
     const handleSubmit = (e: any) => {
         e.preventDefault();
+        console.log(formData)
         if (!validZip.test(formData.zip)) {alert("this is not a valid zip code")}
         else {
-            let formData = new FormData(e.target.current);
-
+            let submitData = new FormData(e.target);
+            console.log(submitData)
             fetch('/', {
                 method: 'POST',
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
-                body: new URLSearchParams(formData).toString()
+                body: new URLSearchParams(submitData).toString()
               }).then(() => console.log('Form successfully submitted')).catch((error) =>
                 alert(error))
             setFormData({ ...initForm });
             setSubmitted(true);
         }
     }
-    useEffect(() => {
-        document.querySelector("form[name='newsletter']")?.addEventListener("submit", handleSubmit);
-    }, [])
+
     return (
         <section className={styles.newsletter}>
             <div className={styles.flag}>
@@ -68,7 +68,7 @@ const Newsletter: FC = () => {
                 </p>
             </div>
             {!submitted ? 
-            <form className={styles.form} method="POST" name="newsletter" data-netlify="true">
+            <form name="newsletter" onSubmit={handleSubmit} className={styles.form} method="POST" data-netlify="true">
                 <input type="hidden" name="newsletter" value="newsletter" />
                 <div className={styles.emailBox}>
                     <label htmlFor="email-newsletter">Email Address</label>
