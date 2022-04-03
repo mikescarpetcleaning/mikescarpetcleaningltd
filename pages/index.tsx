@@ -37,6 +37,7 @@ const Home: NextPage = () => {
       <Family 
         image="/mom-and-dad.webp" 
         mobileImage="/parentals-mobile.webp"
+        alt="Mike and Mary Jarman"
         heading1="Family Owned"
         heading2="And Operated"
         body="Mike and Mary founded Excel Carpet Cleaning back in 1991.
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
       <Family 
         image="/baby.webp"
         mobileImage="/baby-mobile.webp"
+        alt="baby and dog playing on carpet"
         heading1="Powerful Clean,"
         heading2="No Harmful Chemicals"
         body="All of our cleaning products are not only extremely effective, but also 

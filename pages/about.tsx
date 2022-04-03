@@ -79,6 +79,7 @@ const About: NextPage = () => {
             <Family 
                 image="/coats.webp"
                 mobileImage="/staff-mobile.webp"
+                alt="Excel owner and son"
                 heading1="About"
                 heading2="Our Staff"
                 body="Our carpet cleaning technicians are IICRC trained and use the very best

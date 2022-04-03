@@ -57,70 +57,70 @@ const Gallery: NextPage<any> = () => {
                 </div>
                 <div style={{ display: 'flex', height: '100%' }}className="slider-wrapper">
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/1.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 1" src="/1.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/2.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 2" src="/2.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/3.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 3" src="/3.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/4.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 4" src="/4.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/5.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 5" src="/5.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/6.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 6" src="/6.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/7.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 7" src="/7.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/8.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 8" src="/8.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/9.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 9" src="/9.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/10.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 10" src="/10.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/11.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 11" src="/11.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/12.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 12" src="/12.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/13.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 13" src="/13.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/14.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 14" src="/14.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/15.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 15" src="/15.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/16.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 16" src="/16.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/17.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 17" src="/17.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/18.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 18" src="/18.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/19.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 19" src="/19.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/20.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 20" src="/20.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/21.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 21" src="/21.webp" />
                     </div>
                     <div style={{ minWidth: '100%', height: '100%'}}className="slider-slide">
-                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} src="/22.webp" />
+                        <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 22" src="/22.webp" />
                     </div>
                 </div>
             </div>

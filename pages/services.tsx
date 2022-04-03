@@ -20,6 +20,7 @@ const carpetList = {
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>
         </div>`,
         imgSrc: "/carpets-service.webp",
+        alt: "Freshly cleaned carpets",
         cta: `<a style="width:100%;height:100%" href="commercial" class="subitem-cta">See Our Commercial Rates</a>`
     },
     {
@@ -40,7 +41,8 @@ const carpetList = {
         <p class="disclaimer">*2 area minimum</p>
         <p class="disclaimer">*Must include purchase of carpet cleaning</p>
         </div>`,
-        imgSrc: "/pet.webp"
+        imgSrc: "/pet.webp",
+        alt: "Dog licking a cat"
     },
     {
         subHeading: "ScotchGard Carpet Protectant",
@@ -61,7 +63,8 @@ const carpetList = {
         <p class="disclaimer">*2 area minimum</p>
         <p class="disclaimer">*Must include purchase of carpet cleaning</p>
         </div>`,
-        imgSrc: "/scotch.webp"
+        imgSrc: "/scotch.webp",
+        alt: "Man spilling his coffee"
     }],
     ctaText: "Book Carpet Cleaning"
 }
@@ -81,7 +84,8 @@ const upholsteryList = {
        
         <p><span class="bold">Sectional:</span> $20.00 per linear foot</p>
         </div>`,
-        imgSrc: "/upholstery.webp"
+        imgSrc: "/upholstery.webp",
+        alt: "Nice arm chair in yellow"
     }],
     ctaText: "Book Upholstery Cleaning"
 }
@@ -100,7 +104,8 @@ const hardSurfaceList = {
         <p class="disclaimer">*100 sq ft. minimum</p>
         <p class="disclaimer">*Sealant must include purchase of tile cleaning</p>
         </div>`,
-        imgSrc: "/brtiles.webp"
+        imgSrc: "/brtiles.webp",
+        alt: "Modern tiled bathroom"
     },
     {
         subHeading: "Hardwood Cleaning",
@@ -114,7 +119,8 @@ const hardSurfaceList = {
         <p class="disclaimer">*100 sq ft. minimum</p>
         <p class="disclaimer">*Preservation finish must include purchase of hardwood cleaning</p>
         </div>`,
-        imgSrc: "/wood.webp"
+        imgSrc: "/wood.webp",
+        alt: "Very clean hardwood floors"
     }],
     ctaText: "Book Hard Surface Cleaning"
 }
@@ -137,6 +143,7 @@ const airDuctList = {
         <p class="disclaimer">*Ceiling vents are an additional $10 per vent</p>
         </div>`,
         imgSrc: "/duct.webp",
+        alt: "RamAir airduct cleaning system",
         cta: `<a style="width:100%;height:100%" href="https://www.youtube.com/watch?v=aYjLtgu4Zo4" class="subitem-cta">RamAir Demonstration Video</a>`
     }],
     ctaText: "Book Air Duct Cleaning"

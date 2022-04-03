@@ -28,7 +28,7 @@ const ServiceSubItem: FC<any> = ({ itemDetails }: any) => {
                 </div>
             </div>
             <div className={styles.imgContainer}>
-                <Image src={itemDetails.imgSrc} layout="fill" objectFit="cover" />
+                <Image src={itemDetails.imgSrc} alt={itemDetails.alt} layout="fill" objectFit="cover" />
             </div>
         </div>
     )

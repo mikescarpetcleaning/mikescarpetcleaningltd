@@ -10,7 +10,8 @@ interface itemDetails {
     process: string,
     pricing: HTMLElement,
     cta: HTMLElement,
-    imgSrc: string
+    imgSrc: string,
+    alt: string
 }
 type props = {
     heading: string,
