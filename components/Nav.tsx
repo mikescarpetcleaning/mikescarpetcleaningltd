@@ -7,17 +7,20 @@ import styles from "../styles/Nav.module.css";
 
 const Nav: FC<any> = () => {
     const menu = useRef<any>(null);
+    const burger = useRef<any>(null);
     const toggleMenu = (isSchedule: boolean) => {
         if (menu.current.style.left === "0px") {
+            burger.current.classList.remove("burger-close");
             menu.current.style.left = "-100%"
         } else if (!isSchedule) {
+            burger.current.classList.add("burger-close");
             menu.current.style.left = "0px"
         }
         
     }
     return (
         <nav className={styles.nav}>
-            <div onClick={() => toggleMenu(false)} className={styles.burger}>
+            <div ref={burger} onClick={() => toggleMenu(false)} className={styles.burger}>
                 &nbsp;
             </div>
             <Link href="/">

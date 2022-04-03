@@ -308,11 +308,34 @@ button {
   justify-content: center;
   cursor: pointer;
 }
+.openNav {
+  left: 0% !important;
+}
+
+.burger {
+  display: none;
+}
 
 @media screen and (max-width: 1280px) {
   .contact-form {
     width: 100vw;
     height: 100vh;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .burger-close {
+    background: linear-gradient(45deg, 
+    transparent 0%, 
+    transparent calc(50% - 2px), 
+    black calc(50% - 2px), 
+    black calc(50% + 2px), 
+    transparent calc(50% + 2px)), 
+    linear-gradient(-45deg, 
+    transparent 0%, 
+    transparent calc(50% - 2px), 
+    black calc(50% - 2px), 
+    black calc(50% + 2px), 
+    transparent calc(50% + 2px)) !important;
   }
 }
 @media screen and (max-width: 1024px) {

@@ -94,8 +94,14 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .menuLinks li {
+    .menuLinks a {
+        width: 100%;
+        margin: 0 !important;
+        display: block;
         padding: 12px;
+    }
+    .menuLinks li {
+        padding: 0;
         width: 100%;
         border-top: 1px solid rgba(0, 0, 0, 0.4);
     }
@@ -158,7 +164,7 @@
         justify-content: flex-start;
     }
     .menuLinks li {
-        padding: 12px;
+        padding: 0;
         width: 100%;
         border-top: 1px solid rgba(0, 0, 0, 0.4);
     }
