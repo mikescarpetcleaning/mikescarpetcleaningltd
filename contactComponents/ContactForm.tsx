@@ -46,7 +46,6 @@ export default function ContactForm() {
             </div>
             {!submitted ? 
             <form name="contact" onSubmit={handleSubmit} method="POST" data-netlify="true">
-                <input type="hidden" name="contact" value="contact" />
                 <label style={{ display: 'none' }} htmlFor="name">name</label>
                 <input 
                     onChange={handleChange}
