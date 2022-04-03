@@ -1,2 +1,2 @@
 # redirect sub domain to main
-https://excelcarpetcleaning.netlify.com/* https://www.excelcarpetcleaningwa.com/:splat 301!
+https://excelcarpetcleaning.netlify.app/* https://www.excelcarpetcleaningwa.com/:splat 301!
