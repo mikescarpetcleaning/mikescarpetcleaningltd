@@ -16,7 +16,8 @@ const carpetList = {
         <p>Minimum Charge: $199</p>
         <p>Price per foot is lower as size increases. The given discount is determined upon inspection.</p>
         </div>`,
-        imgSrc: "/commercial.webp"
+        imgSrc: "/commercial.webp",
+        alt: "Carpeted commercial office space"
     }],
     ctaText: "Book Carpet Cleaning"
 }
@@ -32,7 +33,8 @@ const tileList = {
         <p>Minimum Charge: $199</p>
         <p>Price per foot is lower as size increases. The given discount is determined upon inspection.</p>
         </div>`,
-        imgSrc: "/commercial-tile.webp"
+        imgSrc: "/commercial-tile.webp",
+        alt: "tile cleaning before and after picture"
     }],
     ctaText: "Book Hard Surface Cleaning"
 }
