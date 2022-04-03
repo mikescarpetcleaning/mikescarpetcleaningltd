@@ -28,7 +28,7 @@ const faqs = [
     },
     {
         question: "How long does it take to dry?",
-        answer: "The carpets are slightly damp after cleaning, and can be walked on with clean non-marking shoes (not with bare feet) in about 30 minutes. Normal soiled carpets usually dry between 3-4 hours after cleaning."
+        answer: "The carpets are slightly damp after cleaning, and can be walked on with clean non-marking shoes (not with bare feet) in about 30 minutes. Normal soiled carpets usually dry between 4-6 hours after cleaning."
     },
     {
         question: "How much furniture do you move?",
