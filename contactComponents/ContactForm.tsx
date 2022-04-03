@@ -24,7 +24,7 @@ export default function ContactForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        let formData = new FormData(contactForm.current);
+        let formData = new FormData(e.target);
         fetch('/', {
             method: 'POST',
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -45,7 +45,7 @@ export default function ContactForm() {
                 <p>Serving You Since 1991</p>
             </div>
             {!submitted ? 
-            <form name="contact" onSubmit={handleSubmit} method="POST" data-netlify="true" ref={contactForm} >
+            <form name="contact" onSubmit={handleSubmit} method="POST" data-netlify="true">
                 <input type="hidden" name="contact" value="contact" />
                 <label style={{ display: 'none' }} htmlFor="name">name</label>
                 <input 
