@@ -136,7 +136,8 @@ const airDuctList = {
        
         <p class="disclaimer">*Ceiling vents are an additional $10 per vent</p>
         </div>`,
-        imgSrc: "/duct.webp"
+        imgSrc: "/duct.webp",
+        cta: `<a style="width:100%;height:100%" href="https://www.youtube.com/watch?v=aYjLtgu4Zo4" class="subitem-cta">RamAir Demonstration Video</a>`
     }],
     ctaText: "Book Air Duct Cleaning"
 }
