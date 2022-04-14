@@ -25,11 +25,12 @@ const tileList = {
     id: "hard-surface",
     heading: "Hard Surfaces",
     itemDetails: [{
-        subHeading: "Tile / Cement Cleaning and Sealant",
+        subHeading: "Tile and Grout Cleaning",
         process: "The same high-powered and high perform cleaning methods can be used in a commercial setting. Our presprays and extraction tools can get dirt and stains out more effectively than any other method.",
         pricing: `
         <div class="pricing-box">
-        <p class="bold">$0.50 to $1 per sq. ft.</p>
+        <p><span class="bold">Cleaning:</span> $0.50 to $1 per sq. ft.</p>
+        <p><span class="bold">Sealant:</span> $0.50 per sq. ft.</p>
         <p>Price per foot is lower as size increases. The given discount is determined upon inspection.</p>
         <p class='disclaimer'>*Minimum charge of $199 applies to all commercial appointments</p>
         </div>`,
