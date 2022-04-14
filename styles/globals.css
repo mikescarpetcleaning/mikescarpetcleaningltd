@@ -316,6 +316,15 @@ button {
   display: none;
 }
 
+.disclaimer {
+  margin-bottom: 0;
+  font-style: italic;
+  font-size: 14px;
+}
+span.smaller {
+  font-size: 22px;
+}
+
 @media screen and (max-width: 1280px) {
   .contact-form {
     width: 100vw;
@@ -354,6 +363,9 @@ button {
   .menu-item {
     font-size: 16px;
   }
+  span.smaller {
+    font-size: 16px;
+}
 }
 @media screen and (max-width: 768px) {
   .contact-form h2 {

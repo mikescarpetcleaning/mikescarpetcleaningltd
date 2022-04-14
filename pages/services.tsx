@@ -95,7 +95,7 @@ const hardSurfaceList = {
     id: "hard-surfaces",
     heading: "Hard Surfaces",
     itemDetails: [{
-        subHeading: "Tile Cleaning (floors only)",
+        subHeading: "Tile and Grout Cleaning <span class='smaller'>(floors only)</span>",
         process: "We start by spraying down the area with a high-powered, non-toxic cleaning agent. After some dwell time we use a spinning 1000 PSI jet to remove the dirt and water. Dries in minutes and leaves tile and grout looking brand new.",
         pricing: `
         <div class="pricing-box">

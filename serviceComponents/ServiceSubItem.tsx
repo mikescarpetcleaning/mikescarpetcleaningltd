@@ -16,7 +16,7 @@ const ServiceSubItem: FC<any> = ({ itemDetails }: any) => {
     return (
         <div className={styles.subItem}>
             <div className={styles.left}>
-                <h3>{itemDetails.subHeading}</h3>
+                <h3 dangerouslySetInnerHTML={{__html: itemDetails.subHeading}}></h3>
                 <div className={styles.row}>
                     <h4>process:</h4>
                     <p>{itemDetails.process}</p>
