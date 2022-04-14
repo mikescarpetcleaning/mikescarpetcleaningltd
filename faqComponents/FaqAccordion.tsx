@@ -33,9 +33,9 @@ const FaqAccordion: FC<any> = ({ faqs }: any) => {
                     <h1>Frequently Asked Questions</h1>
                 </div>
                 <ul ref={accordion} className={styles.accordion}>
-                    {faqs && faqs.map((faq: any) => {
+                    {faqs && faqs.map((faq: any, index: number) => {
                         return (
-                            <li onClick={open} className={styles.item}>
+                            <li key={index} onClick={open} className={styles.item}>
                                 <h2 className="question">
                                     {faq.question}
                                 </h2>

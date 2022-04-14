@@ -18,6 +18,7 @@ const carpetList = {
         <p>Minimum Charge: $149 (Up to 2 Rooms/Areas)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos and large bonus rooms equal two areas. Max 14x14 ft per room/area</p>
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>
+        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
         imgSrc: "/carpets-service.webp",
         alt: "Freshly cleaned carpets",
@@ -83,6 +84,7 @@ const upholsteryList = {
         <p><span class="bold">Chair:</span> $69.00</p>
        
         <p><span class="bold">Sectional:</span> $20.00 per linear foot</p>
+        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
         imgSrc: "/upholstery.webp",
         alt: "Nice arm chair in yellow"
@@ -103,6 +105,7 @@ const hardSurfaceList = {
        
         <p class="disclaimer">*100 sq ft. minimum</p>
         <p class="disclaimer">*Sealant must include purchase of tile cleaning</p>
+        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
         imgSrc: "/brtiles.webp",
         alt: "Modern tiled bathroom"
@@ -118,6 +121,7 @@ const hardSurfaceList = {
        
         <p class="disclaimer">*100 sq ft. minimum</p>
         <p class="disclaimer">*Preservation finish must include purchase of hardwood cleaning</p>
+        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
         imgSrc: "/wood.webp",
         alt: "Very clean hardwood floors"
@@ -141,6 +145,7 @@ const airDuctList = {
         <p><span class="bold">Dryer Vents:</span> $99.00 per vent*</p>
        
         <p class="disclaimer">*Ceiling vents are an additional $10 per vent</p>
+        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
         imgSrc: "/duct.webp",
         alt: "RamAir airduct cleaning system",
