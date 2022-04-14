@@ -13,8 +13,8 @@ const carpetList = {
         pricing: `
         <div class="pricing-box">
         <p class="bold">24 to 30 cents per sq. ft.</p>
-        <p>Minimum Charge: $199</p>
         <p>Price per foot is lower as size increases. The given discount is determined upon inspection.</p>
+        <p class='disclaimer'>*Minimum charge of $199 applies to all commercial appointments</p>
         </div>`,
         imgSrc: "/commercial.webp",
         alt: "Carpeted commercial office space"
@@ -30,8 +30,8 @@ const tileList = {
         pricing: `
         <div class="pricing-box">
         <p class="bold">$0.50 to $1 per sq. ft.</p>
-        <p>Minimum Charge: $199</p>
         <p>Price per foot is lower as size increases. The given discount is determined upon inspection.</p>
+        <p class='disclaimer'>*Minimum charge of $199 applies to all commercial appointments</p>
         </div>`,
         imgSrc: "/commercial-tile.webp",
         alt: "tile cleaning before and after picture"
