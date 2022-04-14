@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import ServiceEstimate from '../serviceComponents/ServiceEstimate';
 import ServiceItem from '../serviceComponents/ServiceItem';
 
 import styles from "../styles/Commercial.module.css"
@@ -82,6 +83,7 @@ const Commercial: NextPage = () => {
                     <p>Real estate agents and landlords please refer to our standard residential rates.</p>
                 </div>
             </header>
+            <ServiceEstimate />
             <ServiceItem itemDetails={carpetList} />
             <ServiceItem itemDetails={tileList} />
         </main>

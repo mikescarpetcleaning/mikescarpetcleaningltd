@@ -6,6 +6,11 @@
     justify-content: center;
     border-bottom: 1px solid #555;
 }
+.nav h3 {
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+}
 .menu {
     display: flex;
     align-items: center;
