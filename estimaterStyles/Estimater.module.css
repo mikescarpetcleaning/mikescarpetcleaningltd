@@ -1,0 +1,125 @@
+.estimater {
+    padding: 64px 32px;
+}
+.estimater form {
+    max-width: 900px;
+    width: fit-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+.estimater form h2 {
+    width: 100%;
+    font-size: 32px;
+    text-align: left;
+}
+.estimater form h3 {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-right: 12px;
+}
+.formRow {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 12px;
+}
+.formRow label {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 18px;
+}
+.allBox {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    margin-left: 6px;
+    margin-right: -12px;
+}
+.allBox label {
+    font-weight: 400;
+    font-size: 14px;
+}
+.allBox input {
+
+}
+.estimater form input {
+    width: 50px;
+    height: 40px;
+    background: transparent;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.estimater form button {
+    width: 40px;
+    height: 40px;
+    background: var(--yellow);
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+.estimater form button:disabled {
+    opacity: 0.5;
+}
+.switcher {
+    display: flex;
+}
+.formItem {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+}
+.estimater input[type='checkbox'] {
+    margin: 0;
+}
+.price {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 32px;
+    font-weight: 700;
+}
+@media screen and (max-width: 1024px) {
+    .estimater {
+        padding: 32px;
+    }
+    .formItem {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 12px 0;
+    }
+    .allBox {
+        display: none;
+    }
+    .formRow {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .formRow label {
+        margin: 0;
+    }
+    .estimater form {
+        max-width: 500px;
+        width: 100%;
+    }
+}
