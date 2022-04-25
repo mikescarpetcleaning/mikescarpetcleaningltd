@@ -11,6 +11,9 @@
     flex-direction: column;
     margin-bottom: 12px;
 }
+.formGroup {
+    display: flex;
+}
 .estimater form h2 {
     width: 100%;
     font-size: 32px;
@@ -19,13 +22,15 @@
 .estimater form h3 {
     font-size: 18px;
     margin-top: 24px;
-    margin-right: 12px;
+    padding-right: 24px;
+    margin-right: auto;
 }
 .formRow {
     display: flex;
     align-items: center;
     border-bottom: 1px solid black;
     padding-bottom: 12px;
+    width: 100%;
 }
 .formRow label {
     margin-bottom: 8px;
@@ -33,6 +38,7 @@
     font-size: 18px;
 }
 .allBox {
+    display: none !important;
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -96,6 +102,13 @@
     font-weight: 700;
 }
 @media screen and (max-width: 1024px) {
+    .formGroup {
+        display: block;
+        max-height: 0;
+        width: 100%;
+        overflow: hidden;
+        transition: all 0.5s;
+    }
     .estimater {
         padding: 32px;
     }
@@ -114,6 +127,30 @@
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+    }
+    .estimater form h3 {
+        padding: 24px 0 12px;
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    .estimater form h3::after {
+        content: '';
+        background: white;
+        width: 30px;
+        height: 30px;
+        background-image: url(/down.webp);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transition: all 0.3s;
+        border-radius: 50%;
+        padding: 8px;
     }
     .formRow label {
         margin: 0;

@@ -37,6 +37,9 @@ a {
 .hidden {
   opacity: 0 !important;
 }
+form h3.open::after {
+  transform: rotate(180deg);
+}
 .max-w-limiter {
   max-width: 1536px;
   margin-right: auto;
