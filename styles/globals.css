@@ -40,6 +40,9 @@ a {
 form h3.open::after {
   transform: rotate(180deg);
 }
+form h2.open::after {
+  transform: rotate(180deg);
+}
 .max-w-limiter {
   max-width: 1536px;
   margin-right: auto;

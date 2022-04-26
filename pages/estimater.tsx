@@ -99,12 +99,23 @@ const Estimater: NextPage = () => {
     }
     const toggleDropdown = ({ target }: any) => {
         const group = target.nextElementSibling;
-        if (group.style.maxHeight) {
-            group.style.maxHeight = '';
-            target.classList.remove('open')
+        console.log(target.tagName)
+        if (target.tagName === "H2") {
+            if (group.style.maxHeight) {
+                group.style.maxHeight = '';
+                target.classList.remove('open')
+            } else {
+                group.style.maxHeight = 'none';
+                target.classList.add('open')
+            }
         } else {
-            group.style.maxHeight = group.scrollHeight + 'px';
-            target.classList.add('open')
+            if (group.style.maxHeight) {
+                group.style.maxHeight = '';
+                target.classList.remove('open')
+            } else {
+                group.style.maxHeight = group.scrollHeight + 'px';
+                target.classList.add('open')
+            }
         }
     }
     useEffect(() => {
@@ -129,45 +140,62 @@ const Estimater: NextPage = () => {
         if (
             (estimate.rooms >= estimate.petRooms && estimate.rooms >= estimate.scotchRooms) &&
             (estimate.halls >= estimate.petHalls && estimate.halls >= estimate.scotchHalls) &&
-            (estimate.stairs >= estimate.petStairs && estimate.stairs >= estimate.scotchStairs)
+            (estimate.stairs >= estimate.petStairs && estimate.stairs >= estimate.scotchStairs) &&
+            (estimate.tile >= estimate.tileSealant) &&
+            (estimate.hardwoods >= estimate.hardwoodSealant)
             ) {
-            console.log("before:", estimate.rooms, estimate.petRooms)
             const rateArray = Object.entries(rates);
-            const total = rateArray.reduce((acc: number, rate: [string, number]): number => {
-                let minimum = 0;
-                let special = 0;
-                let current = estimate[rate[0] as keyof Estimate];
-                if (current < 0) current = 0;
-    
-                if (rate[0] === 'areas') {
-                    if (current > 0 && current < 5) {
-                        minimum = 149;
-                        current = current - 2 > 0 ? current - 2 : 0;
+            let ducts = 0;
+            let total = rateArray.reduce((acc: number, rate: [string, number]): number => {
+                if (rate[0] !== 'groundDucts' && rate[0] !== 'ceilingDucts' && rate[0] !== 'dryerVents' && rate[0] !== 'returns') {
+                    let minimum = 0;
+                    let special = 0;
+                    let current = estimate[rate[0] as keyof Estimate];
+                    if (current < 0) current = 0;
+        
+                    if (rate[0] === 'areas') {
+                        if (current > 0 && current < 5) {
+                            minimum = 149;
+                            current = current - 2 > 0 ? current - 2 : 0;
+                        }
+                        if (current >= 5) {
+                            special = 269;
+                            minimum = 0
+                            current -= 5
+                        }
                     }
-                    if (current >= 5) {
-                        special = 269;
-                        minimum = 0
-                        current -= 5
+        
+                    if (rate[0] === 'pet') {
+                        if (current > 0 && current < 2) {
+                            minimum = 40;
+                            current = 0;
+                        }
                     }
+        
+                    if (rate[0] === 'scotch') {
+                        if (current > 0 && current < 2) {
+                            minimum = 30;
+                            current = 0;
+                        }
+                    }
+
+                    return acc += current * rate[1] + minimum + special;
+                } else {
+                    return acc
                 }
-    
-                if (rate[0] === 'pet') {
-                    if (current > 0 && current < 2) {
-                        minimum = 40;
-                        current = 0;
-                    }
-                }
-    
-                if (rate[0] === 'scotch') {
-                    if (current > 0 && current < 2) {
-                        minimum = 30;
-                        current = 0;
-                    }
-                }
-                return acc += current * rate[1] + minimum + special;
             }, 0)
-            console.log("after:", estimate.rooms, estimate.petRooms)
-            setPrice(total)
+            ducts = estimate.groundDucts * rates.groundDucts + 
+                estimate.ceilingDucts * rates.ceilingDucts + 
+                estimate.returns * rates.returns + 
+                estimate.dryerVents * rates.dryerVents;
+            console.log(ducts)
+            if (ducts <= 300 && ducts > 0) ducts = 299
+            total += ducts
+            if (total < 149 && total > 0) {
+                setPrice(149)
+            } else {
+                setPrice(total)
+            }
         } else if (estimate.rooms < estimate.petRooms) {
             setEstimate({...estimate, 'petRooms': estimate.rooms})
         } else if (estimate.rooms < estimate.scotchRooms) {
@@ -180,6 +208,11 @@ const Estimater: NextPage = () => {
             setEstimate({...estimate, 'petStairs': estimate.stairs})
         } else if (estimate.stairs < estimate.scotchStairs) {
             setEstimate({...estimate, 'scotchStairs': estimate.stairs})
+        } else if (estimate.tile < estimate.tileSealant) {
+            setEstimate({...estimate, 'tileSealant': estimate.tile})
+        } else if (estimate.hardwoods < estimate.hardwoodSealant) {
+            console.log(estimate)
+            setEstimate({...estimate, 'hardwoodSealant': estimate.hardwoods})
         } 
     }, [estimate])
 
@@ -192,167 +225,379 @@ const Estimater: NextPage = () => {
     return (
         <section className={styles.estimater}>
             <form>
-                <h2>Carpets</h2>
-                <div className={styles.formRow}>
-                    <h3 onClick={toggleDropdown}>ROOMS</h3>
-                    <div className={styles.formGroup}>
-                        <div className={styles.formItem}>
-                            <label htmlFor="rooms">Clean</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate}>-</button>
-                                <input 
-                                    id="rooms" 
-                                    name="rooms"
-                                    type="text"
-                                    value={estimate.rooms}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate}>+</button>
+                <h2 onClick={toggleDropdown}>Carpets</h2>
+                <div className={styles.formSection}>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>ROOMS</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <label htmlFor="rooms">Clean</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="rooms" 
+                                        name="rooms"
+                                        type="text"
+                                        value={estimate.rooms}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
+                                </div>
                             </div>
-                        </div>
-                        <div className={styles.formItem}>
-                            <label htmlFor="petRooms">Pet Treat</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button>
-                                <input 
-                                    id="petRooms" 
-                                    name="petRooms"
-                                    type="text"
-                                    value={estimate.petRooms}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button>
-                                <div className={styles.allBox}>
-                                    <label htmlFor="allPet">all?</label>
-                                    <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                            <div className={styles.formItem}>
+                                <label htmlFor="petRooms">Pet Treat</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button>
+                                    <input 
+                                        id="petRooms" 
+                                        name="petRooms"
+                                        type="text"
+                                        value={estimate.petRooms}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button>
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allPet">all?</label>
+                                        <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.formItem}>
+                                <label htmlFor="scotchRooms">ScotchGard</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate} disabled={allScotch ? true : false}>-</button>
+                                    <input 
+                                        id="scotchRooms" 
+                                        name="scotchRooms"
+                                        type="text"
+                                        value={estimate.scotchRooms}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate} disabled={allScotch ? true : false}>+</button>
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allScotch">all?</label>
+                                        <input type="checkbox" id="allScotch" onChange={() => setAllScotch(!allScotch)} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.formItem}>
-                            <label htmlFor="scotchRooms">ScotchGard</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate} disabled={allScotch ? true : false}>-</button>
-                                <input 
-                                    id="scotchRooms" 
-                                    name="scotchRooms"
-                                    type="text"
-                                    value={estimate.scotchRooms}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate} disabled={allScotch ? true : false}>+</button>
-                                <div className={styles.allBox}>
-                                    <label htmlFor="allScotch">all?</label>
-                                    <input type="checkbox" id="allScotch" onChange={() => setAllScotch(!allScotch)} />
+                    </div>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>STAIRCASES</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <label htmlFor="halls">Clean</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="halls" 
+                                        name="halls"
+                                        type="text"
+                                        value={estimate.halls}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
+                                </div>
+                            </div>
+                            <div className={styles.formItem}>
+                                <label htmlFor="petHalls">Pet Treat</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button>
+                                    <input 
+                                        id="petHalls" 
+                                        name="petHalls"
+                                        type="text"
+                                        value={estimate.petHalls}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button>
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allPet">all?</label>
+                                        <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.formItem}>
+                                <label htmlFor="scotchHalls">ScotchGard</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate} disabled={allScotch ? true : false}>-</button>
+                                    <input 
+                                        id="scotchHalls" 
+                                        name="scotchHalls"
+                                        type="text"
+                                        value={estimate.scotchHalls}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate} disabled={allScotch ? true : false}>+</button>
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allScotch">all?</label>
+                                        <input type="checkbox" id="allScotch" onChange={() => setAllScotch(!allScotch)} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>HALLWAYS</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <label htmlFor="stairs">Clean</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="stairs" 
+                                        name="stairs"
+                                        type="text"
+                                        value={estimate.stairs}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
+                                </div>
+                            </div>
+                            <div className={styles.formItem}>
+                                <label htmlFor="petStairs">Pet Treat</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button>
+                                    <input 
+                                        id="petStairs" 
+                                        name="petStairs"
+                                        type="text"
+                                        value={estimate.petStairs}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button>
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allPet">all?</label>
+                                        <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className={styles.formItem}>
+                                <label htmlFor="scotchStairs">ScotchGard</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate} disabled={allScotch ? true : false}>-</button>
+                                    <input 
+                                        id="scotchStairs" 
+                                        name="scotchStairs"
+                                        type="text"
+                                        value={estimate.scotchStairs}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate} disabled={allScotch ? true : false}>+</button>
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allScotch">all?</label>
+                                        <input type="checkbox" id="allScotch" onChange={() => setAllScotch(!allScotch)} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className={styles.formRow}>
-                    <h3 onClick={toggleDropdown}>STAIRCASES</h3>
-                    <div className={styles.formGroup}>
-                        <div className={styles.formItem}>
-                            <label htmlFor="halls">Clean</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate}>-</button>
-                                <input 
-                                    id="halls" 
-                                    name="halls"
-                                    type="text"
-                                    value={estimate.halls}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate}>+</button>
-                            </div>
-                        </div>
-                        <div className={styles.formItem}>
-                            <label htmlFor="petHalls">Pet Treat</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button>
-                                <input 
-                                    id="petHalls" 
-                                    name="petHalls"
-                                    type="text"
-                                    value={estimate.petHalls}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button>
-                                <div className={styles.allBox}>
-                                    <label htmlFor="allPet">all?</label>
-                                    <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                <h2 onClick={toggleDropdown}>Upholstery</h2>
+                <div className={styles.formSection}>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>ARM CHAIRS</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="chairs" 
+                                        name="chairs"
+                                        type="text"
+                                        value={estimate.chairs}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.formItem}>
-                            <label htmlFor="scotchHalls">ScotchGard</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate} disabled={allScotch ? true : false}>-</button>
-                                <input 
-                                    id="scotchHalls" 
-                                    name="scotchHalls"
-                                    type="text"
-                                    value={estimate.scotchHalls}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate} disabled={allScotch ? true : false}>+</button>
-                                <div className={styles.allBox}>
-                                    <label htmlFor="allScotch">all?</label>
-                                    <input type="checkbox" id="allScotch" onChange={() => setAllScotch(!allScotch)} />
+                    </div>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>COUCHES / SECTIONAL SOFAS</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <label htmlFor="rooms">Width<br/>(linear feet)</label>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="linearFeet" 
+                                        name="linearFeet"
+                                        type="text"
+                                        value={estimate.linearFeet}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>SEAT CUSHIONS</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="seatCushions" 
+                                        name="seatCushions"
+                                        type="text"
+                                        value={estimate.seatCushions}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className={styles.formRow}>
-                    <h3 onClick={toggleDropdown}>HALLWAYS</h3>
-                    <div className={styles.formGroup}>
-                        <div className={styles.formItem}>
-                            <label htmlFor="stairs">Clean</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate}>-</button>
-                                <input 
-                                    id="stairs" 
-                                    name="stairs"
-                                    type="text"
-                                    value={estimate.stairs}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate}>+</button>
+                <h2 onClick={toggleDropdown}>Hard Surfaces</h2>
+                <div className={styles.formSection}>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>TILE &amp; GROUT</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <label htmlFor="tile">Clean<br/>(sq. ft.)</label>
+                                <div className={styles.switcher}>
+                                    {/* <button type="button" onClick={decreaseEstimate}>-</button> */}
+                                    <input 
+                                        id="tile" 
+                                        name="tile"
+                                        type="text"
+                                        value={estimate.tile}
+                                        onChange={updateEstimate} 
+                                    />
+                                    {/* <button type="button" onClick={incrementEstimate}>+</button> */}
+                                </div>
                             </div>
-                        </div>
-                        <div className={styles.formItem}>
-                            <label htmlFor="petStairs">Pet Treat</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button>
-                                <input 
-                                    id="petStairs" 
-                                    name="petStairs"
-                                    type="text"
-                                    value={estimate.petStairs}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button>
-                                <div className={styles.allBox}>
-                                    <label htmlFor="allPet">all?</label>
-                                    <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                            <div className={styles.formItem}>
+                                <label htmlFor="tileSealant">Seal<br/>(sq. ft.)</label>
+                                <div className={styles.switcher}>
+                                    {/* <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button> */}
+                                    <input 
+                                        id="tileSealant" 
+                                        name="tileSealant"
+                                        type="text"
+                                        value={estimate.tileSealant}
+                                        onChange={updateEstimate} 
+                                    />
+                                    {/* <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button> */}
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allPet">all?</label>
+                                        <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.formItem}>
-                            <label htmlFor="scotchStairs">ScotchGard</label>
-                            <div className={styles.switcher}>
-                                <button type="button" onClick={decreaseEstimate} disabled={allScotch ? true : false}>-</button>
-                                <input 
-                                    id="scotchStairs" 
-                                    name="scotchStairs"
-                                    type="text"
-                                    value={estimate.scotchStairs}
-                                    onChange={updateEstimate} 
-                                />
-                                <button type="button" onClick={incrementEstimate} disabled={allScotch ? true : false}>+</button>
-                                <div className={styles.allBox}>
-                                    <label htmlFor="allScotch">all?</label>
-                                    <input type="checkbox" id="allScotch" onChange={() => setAllScotch(!allScotch)} />
+                    </div>
+                    <div className={styles.formRow}>
+                        <h3 onClick={toggleDropdown}>HARDWOOD FLOORS</h3>
+                        <div className={styles.formGroup}>
+                            <div className={styles.formItem}>
+                                <label htmlFor="hardwoods">Clean<br/>(sq. ft.)</label>
+                                <div className={styles.switcher}>
+                                    {/* <button type="button" onClick={decreaseEstimate}>-</button> */}
+                                    <input 
+                                        id="hardwoods" 
+                                        name="hardwoods"
+                                        type="text"
+                                        value={estimate.hardwoods}
+                                        onChange={updateEstimate} 
+                                    />
+                                    {/* <button type="button" onClick={incrementEstimate}>+</button> */}
+                                </div>
+                            </div>
+                            <div className={styles.formItem}>
+                                <label htmlFor="hardwoodSealant">Preserve<br/>(sq. ft.)</label>
+                                <div className={styles.switcher}>
+                                    {/* <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button> */}
+                                    <input 
+                                        id="hardwoodSealant" 
+                                        name="hardwoodSealant"
+                                        type="text"
+                                        value={estimate.hardwoodSealant}
+                                        onChange={updateEstimate} 
+                                    />
+                                    {/* <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button> */}
+                                    <div className={styles.allBox}>
+                                        <label htmlFor="allPet">all?</label>
+                                        <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h2 onClick={toggleDropdown}>Air Ducts</h2>
+                <div className={styles.formSection}>
+                    <div className={styles.formRowAir}>
+                        <h4 onClick={toggleDropdown}>FLOOR DUCTS</h4>
+                        <div className={styles.formGroupAir}>
+                            <div className={styles.formItem}>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="groundDucts" 
+                                        name="groundDucts"
+                                        type="text"
+                                        value={estimate.groundDucts}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.formRowAir}>
+                        <h4 onClick={toggleDropdown}>CEILING DUCTS</h4>
+                        <div className={styles.formGroupAir}>
+                            <div className={styles.formItem}>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="ceilingDucts" 
+                                        name="ceilingDucts"
+                                        type="text"
+                                        value={estimate.ceilingDucts}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.formRowAir}>
+                        <h4 onClick={toggleDropdown}>AIR RETURNS</h4>
+                        <div className={styles.formGroupAir}>
+                            <div className={styles.formItem}>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="returns" 
+                                        name="returns"
+                                        type="text"
+                                        value={estimate.returns}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.formRowAir}>
+                        <h4 onClick={toggleDropdown}>DRYER VENTS</h4>
+                        <div className={styles.formGroupAir}>
+                            <div className={styles.formItem}>
+                                <div className={styles.switcher}>
+                                    <button type="button" onClick={decreaseEstimate}>-</button>
+                                    <input 
+                                        id="dryerVents" 
+                                        name="dryerVents"
+                                        type="text"
+                                        value={estimate.dryerVents}
+                                        onChange={updateEstimate} 
+                                    />
+                                    <button type="button" onClick={incrementEstimate}>+</button>
                                 </div>
                             </div>
                         </div>
@@ -360,6 +605,7 @@ const Estimater: NextPage = () => {
                 </div>
             </form>
             <div className={styles.price}>TOTAL: ${price}</div>
+            <style>{`.contactFlag{display:none;}`}</style>
         </section>
     )
 }
