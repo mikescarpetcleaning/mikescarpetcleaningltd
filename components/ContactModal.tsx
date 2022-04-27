@@ -40,6 +40,8 @@ const ContactModal: FC = () => {
                         <input type="hidden" name="form-name" value="modal-form" />
                         <label htmlFor="email-modal">Email Address</label>
                         <input id="email-modal" name="email" type="email" required/>
+                        <label htmlFor="phone-modal">Phone Number</label>
+                        <input id="phone-modal" name="phone" type="text" />
                         <label htmlFor="name-modal">Name</label>
                         <input id="name-modal" name="name" type="text" />
                         <label htmlFor="message-modal">Message</label>
