@@ -36,8 +36,8 @@ const ContactModal: FC = () => {
                     <div className="close-btn">&#10005;</div>
                     <h2>HAVE A QUESTION?</h2>
                     <p style={{fontSize: '20px', lineHeight:'1', margin:'12px auto'}}>We have answers.</p>
-                    <form name="modal-form" method="POST" data-netlify="true">
-                        <input type="hidden" name="modal-form" value="modal-form" />
+                    <form name="modal-form" action="/thanks" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="modal-form" />
                         <label htmlFor="email-modal">Email Address</label>
                         <input id="email-modal" name="email" type="email" required/>
                         <label htmlFor="name-modal">Name</label>

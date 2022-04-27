@@ -99,7 +99,6 @@ const Estimater: NextPage = () => {
     }
     const toggleDropdown = ({ target }: any) => {
         const group = target.nextElementSibling;
-        console.log(target.tagName)
         if (target.tagName === "H2") {
             if (group.style.maxHeight) {
                 group.style.maxHeight = '';
@@ -188,7 +187,6 @@ const Estimater: NextPage = () => {
                 estimate.ceilingDucts * rates.ceilingDucts + 
                 estimate.returns * rates.returns + 
                 estimate.dryerVents * rates.dryerVents;
-            console.log(ducts)
             if (ducts <= 300 && ducts > 0) ducts = 299
             total += ducts
             if (total < 149 && total > 0) {
@@ -211,7 +209,6 @@ const Estimater: NextPage = () => {
         } else if (estimate.tile < estimate.tileSealant) {
             setEstimate({...estimate, 'tileSealant': estimate.tile})
         } else if (estimate.hardwoods < estimate.hardwoodSealant) {
-            console.log(estimate)
             setEstimate({...estimate, 'hardwoodSealant': estimate.hardwoods})
         } 
     }, [estimate])
