@@ -229,6 +229,7 @@ const Estimater: NextPage = () => {
             <div className={styles.disclaimer}>
                 <h1>ESTIMATER</h1>
                 <p>Specials and minimums are automatically calculated</p>
+                <p>Minimum charge of $149 applies to all appointments</p>
                 <p>For detailed pricing information please see our <Link href="/services"><a className={styles.link}>services page</a></Link></p>
             </div>
             <form>
