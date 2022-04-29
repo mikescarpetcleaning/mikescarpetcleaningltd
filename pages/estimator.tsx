@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import styles from "../estimaterStyles/Estimater.module.css";
+import styles from "../estimatorStyles/Estimator.module.css";
 
 type Estimate = {
     areas: number,
@@ -27,7 +27,7 @@ type Estimate = {
     dryerVent: boolean
 }
 
-const Estimater: NextPage = () => {
+const Estimator: NextPage = () => {
     const defaultEstimate: Estimate = {
         areas: 0,
         pet: 0,
@@ -225,9 +225,9 @@ const Estimater: NextPage = () => {
         if (allScotch && estimate.rooms !== estimate.scotchRooms) setEstimate({...estimate, 'scotchRooms': estimate.rooms})
     }, [allScotch, estimate])
     return (
-        <section className={styles.estimater}>
+        <section className={styles.estimator}>
             <div className={styles.disclaimer}>
-                <h1>ESTIMATER</h1>
+                <h1>ESTIMATOR</h1>
                 <p>Specials and minimums are automatically calculated</p>
                 <p>Minimum charge of $149 applies to all appointments</p>
                 <p>For detailed pricing information please see our <Link href="/services"><a className={styles.link}>services page</a></Link></p>
@@ -664,4 +664,4 @@ const Estimater: NextPage = () => {
     )
 }
 
-export default Estimater;
+export default Estimator;
