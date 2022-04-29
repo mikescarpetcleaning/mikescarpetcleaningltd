@@ -39,6 +39,9 @@ const Nav: FC<any> = () => {
                     <Link href="/services">Services / Pricing</Link>
                 </li>
                 <li onClick={() => toggleMenu(false)}>
+                    <Link href="/estimater">Estimater</Link>
+                </li>
+                <li onClick={() => toggleMenu(false)}>
                     <Link href="/about">About Us</Link>
                 </li>
                 <li onClick={() => toggleMenu(false)}>

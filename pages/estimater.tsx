@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import styles from "../estimaterStyles/Estimater.module.css";
 
@@ -22,10 +23,8 @@ type Estimate = {
     tileSealant: number,
     hardwoods: number,
     hardwoodSealant: number,
-    groundDucts: number,
-    ceilingDucts: number,
-    returns: number,
-    dryerVents: number
+    ventSpecial: boolean,
+    dryerVent: boolean
 }
 
 const Estimater: NextPage = () => {
@@ -49,10 +48,8 @@ const Estimater: NextPage = () => {
         tileSealant: 0,
         hardwoods: 0,
         hardwoodSealant: 0,
-        groundDucts: 0,
-        ceilingDucts: 0,
-        returns: 0,
-        dryerVents: 0
+        ventSpecial: false,
+        dryerVent: false
     }
     const rates = {
         areas: 40,
@@ -65,16 +62,21 @@ const Estimater: NextPage = () => {
         tileSealant: 0.5,
         hardwoods: 0.75,
         hardwoodSealant: 0.5,
-        groundDucts: 15,
-        ceilingDucts: 25,
-        returns: 75,
-        dryerVents: 99
+        ventSpecial: 299,
+        dryerVent: 99
     }
     const [estimate, setEstimate] = useState(defaultEstimate)
     const [price, setPrice] = useState(0);
     const [allPet, setAllPet] = useState(false);
     const [allScotch, setAllScotch] = useState(false);
 
+    const checkChecked = ({ target }: any) => {
+        console.log(target.checked)
+        setEstimate({
+            ...estimate,
+            [target.name]: target.checked
+        })
+    }
     const updateEstimate = ({ target }: any) => {
         setEstimate({
             ...estimate,
@@ -118,6 +120,7 @@ const Estimater: NextPage = () => {
         }
     }
     useEffect(() => {
+        console.log(estimate.ventSpecial)
         if ((estimate.rooms + estimate.halls + estimate.stairs) !== estimate.areas) {
             setEstimate({
                 ...estimate,
@@ -146,7 +149,7 @@ const Estimater: NextPage = () => {
             const rateArray = Object.entries(rates);
             let ducts = 0;
             let total = rateArray.reduce((acc: number, rate: [string, number]): number => {
-                if (rate[0] !== 'groundDucts' && rate[0] !== 'ceilingDucts' && rate[0] !== 'dryerVents' && rate[0] !== 'returns') {
+                if (rate[0] !== 'ventSpecial' && rate[0] !== 'dryerVent') {
                     let minimum = 0;
                     let special = 0;
                     let current = estimate[rate[0] as keyof Estimate];
@@ -155,12 +158,12 @@ const Estimater: NextPage = () => {
                     if (rate[0] === 'areas') {
                         if (current > 0 && current < 5) {
                             minimum = 149;
-                            current = current - 2 > 0 ? current - 2 : 0;
+                            current  = current as number - 2 > 0 ? current as number - 2 : 0;
                         }
                         if (current >= 5) {
                             special = 269;
                             minimum = 0
-                            current -= 5
+                            current = current as number - 5
                         }
                     }
         
@@ -177,17 +180,19 @@ const Estimater: NextPage = () => {
                             current = 0;
                         }
                     }
+                    if (rate[0] === 'tile' || rate[0] === 'hardwoods') {
+                        if (current > 0 && current < 60) {
+                            current = 60;
+                        }
+                    }
 
-                    return acc += current * rate[1] + minimum + special;
+                    return acc += current as number * rate[1] + minimum + special;
                 } else {
                     return acc
                 }
             }, 0)
-            ducts = estimate.groundDucts * rates.groundDucts + 
-                estimate.ceilingDucts * rates.ceilingDucts + 
-                estimate.returns * rates.returns + 
-                estimate.dryerVents * rates.dryerVents;
-            if (ducts <= 300 && ducts > 0) ducts = 299
+            ducts = estimate.ventSpecial ? rates.ventSpecial : 0;
+            ducts += estimate.dryerVent ? rates.dryerVent : 0;
             total += ducts
             if (total < 149 && total > 0) {
                 setPrice(149)
@@ -392,9 +397,9 @@ const Estimater: NextPage = () => {
                 </div>
                 <h2 onClick={toggleDropdown}>Upholstery</h2>
                 <div className={styles.formSection}>
-                    <div className={styles.formRow}>
-                        <h3 onClick={toggleDropdown}>ARM CHAIRS</h3>
-                        <div className={styles.formGroup}>
+                    <div className={styles.formRowAir}>
+                        <h4 onClick={toggleDropdown}>RECLINER CHAIRS</h4>
+                        <div className={styles.formGroupAir}>
                             <div className={styles.formItem}>
                                 <div className={styles.switcher}>
                                     <button type="button" onClick={decreaseEstimate}>-</button>
@@ -411,10 +416,10 @@ const Estimater: NextPage = () => {
                         </div>
                     </div>
                     <div className={styles.formRow}>
-                        <h3 onClick={toggleDropdown}>COUCHES / SECTIONAL SOFAS</h3>
+                        <h3 onClick={toggleDropdown}>COUCHES, LOVESEATS, &amp; SECTIONAL SOFAS</h3>
                         <div className={styles.formGroup}>
                             <div className={styles.formItem}>
-                                <label htmlFor="rooms">Width<br/>(linear feet)</label>
+                                <label htmlFor="rooms">Linear feet</label>
                                 <div className={styles.switcher}>
                                     <button type="button" onClick={decreaseEstimate}>-</button>
                                     <input 
@@ -429,7 +434,7 @@ const Estimater: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className={styles.formRow}>
+                    {/* <div className={styles.formRow}>
                         <h3 onClick={toggleDropdown}>SEAT CUSHIONS</h3>
                         <div className={styles.formGroup}>
                             <div className={styles.formItem}>
@@ -446,7 +451,7 @@ const Estimater: NextPage = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
                 <h2 onClick={toggleDropdown}>Hard Surfaces</h2>
                 <div className={styles.formSection}>
@@ -511,7 +516,7 @@ const Estimater: NextPage = () => {
                                     <input 
                                         id="hardwoodSealant" 
                                         name="hardwoodSealant"
-                                        type="text"
+                                        type="number"
                                         value={estimate.hardwoodSealant}
                                         onChange={updateEstimate} 
                                     />
@@ -528,24 +533,22 @@ const Estimater: NextPage = () => {
                 <h2 onClick={toggleDropdown}>Air Ducts</h2>
                 <div className={styles.formSection}>
                     <div className={styles.formRowAir}>
-                        <h4 onClick={toggleDropdown}>FLOOR DUCTS</h4>
+                        <h4 onClick={toggleDropdown}>AIR DUCT CLEANING SPECIAL</h4>
                         <div className={styles.formGroupAir}>
                             <div className={styles.formItem}>
                                 <div className={styles.switcher}>
-                                    <button type="button" onClick={decreaseEstimate}>-</button>
                                     <input 
-                                        id="groundDucts" 
-                                        name="groundDucts"
-                                        type="text"
-                                        value={estimate.groundDucts}
-                                        onChange={updateEstimate} 
+                                        id="ventSpecial" 
+                                        name="ventSpecial"
+                                        type="checkbox"
+                                        checked={estimate.ventSpecial}
+                                        onChange={checkChecked} 
                                     />
-                                    <button type="button" onClick={incrementEstimate}>+</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className={styles.formRowAir}>
+                    {/* <div className={styles.formRowAir}>
                         <h4 onClick={toggleDropdown}>CEILING DUCTS</h4>
                         <div className={styles.formGroupAir}>
                             <div className={styles.formItem}>
@@ -562,8 +565,8 @@ const Estimater: NextPage = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.formRowAir}>
+                    </div> */}
+                    {/* <div className={styles.formRowAir}>
                         <h4 onClick={toggleDropdown}>AIR RETURNS</h4>
                         <div className={styles.formGroupAir}>
                             <div className={styles.formItem}>
@@ -580,29 +583,45 @@ const Estimater: NextPage = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div className={styles.formRowAir}>
-                        <h4 onClick={toggleDropdown}>DRYER VENTS</h4>
+                        <h4 onClick={toggleDropdown}>DRYER VENT</h4>
                         <div className={styles.formGroupAir}>
                             <div className={styles.formItem}>
                                 <div className={styles.switcher}>
-                                    <button type="button" onClick={decreaseEstimate}>-</button>
                                     <input 
-                                        id="dryerVents" 
-                                        name="dryerVents"
-                                        type="text"
-                                        value={estimate.dryerVents}
-                                        onChange={updateEstimate} 
+                                        id="dryerVent" 
+                                        name="dryerVent"
+                                        type="checkbox"
+                                        checked={estimate.dryerVent}
+                                        onChange={checkChecked} 
                                     />
-                                    <button type="button" onClick={incrementEstimate}>+</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
-            <div className={styles.price}>TOTAL: ${price}</div>
-            <style>{`.contactFlag{display:none;}`}</style>
+            <div className={styles.price}>
+                <div className={styles.quote}>
+                    <p>TOTAL: ${price}</p>
+                    <button onClick={() => setEstimate(defaultEstimate)}>CLEAR</button>
+                </div>
+                <Link href="/scheduling">
+                    <a style={price > 0 ?{filter: 'grayscale(0)'} : {filter: 'grayscale(1)', pointerEvents: 'none'}} className="btn">
+                        Book Appointment
+                    </a>
+                </Link>
+            </div>
+            <style>{`
+                .contactFlag{display:none;}
+                nav{position:relative!important;padding-bottom:8px!important;}
+                nav ul{top:66px!important}
+                @media screen and (min-width: 1200px){nav{grid-template-columns:110px 1fr 110px!important}}
+                nav .btn{display:none}
+                footer{display:none}
+                #__next section:last-of-type{display:none}
+                #__next{margin-bottom:120px}`}</style>
         </section>
     )
 }
