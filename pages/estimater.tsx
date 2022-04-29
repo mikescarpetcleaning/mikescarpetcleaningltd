@@ -226,6 +226,11 @@ const Estimater: NextPage = () => {
     }, [allScotch, estimate])
     return (
         <section className={styles.estimater}>
+            <div className={styles.disclaimer}>
+                <h1>ESTIMATER</h1>
+                <p>Specials and minimums are automatically calculated</p>
+                <p>For detailed pricing information please see our <Link href="/services"><a className={styles.link}>services page</a></Link></p>
+            </div>
             <form>
                 <h2 onClick={toggleDropdown}>Carpets</h2>
                 <div className={styles.formSection}>

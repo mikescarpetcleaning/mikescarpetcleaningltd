@@ -1,5 +1,21 @@
 .estimater {
-    padding: 64px 32px;
+    padding: 32px 32px 64px;
+}
+.disclaimer {
+    width: fit-content;
+    margin: 0 auto 12px;
+    text-align: center;
+}
+.disclaimer h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-bottom: 12px;
+}
+.disclaimer p {
+    margin: 8px auto;
+}
+.link {
+    text-decoration: underline;
 }
 .estimater form {
     max-width: 900px;
@@ -169,6 +185,12 @@
 @media screen and (max-width: 1024px) {
     .price a {
         width: 100%;
+    }
+    .disclaimer h1 {
+        font-size: 32px;
+    }
+    .disclaimer {
+        max-width: 280px;
     }
     .formRow label {
         text-align: left;
