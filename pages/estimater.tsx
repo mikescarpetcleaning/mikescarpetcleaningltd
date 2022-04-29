@@ -182,7 +182,7 @@ const Estimater: NextPage = () => {
                     }
                     if (rate[0] === 'tile' || rate[0] === 'hardwoods') {
                         if (current > 0 && current < 60) {
-                            current = 60;
+                            current = 100;
                         }
                     }
 
@@ -232,7 +232,7 @@ const Estimater: NextPage = () => {
                 <p>For detailed pricing information please see our <Link href="/services"><a className={styles.link}>services page</a></Link></p>
             </div>
             <form>
-                <h2 onClick={toggleDropdown}>Carpets</h2>
+                <h2 onClick={toggleDropdown}>Carpet Cleaning</h2>
                 <div className={styles.formSection}>
                     <div className={styles.formRow}>
                         <h3 onClick={toggleDropdown}>ROOMS</h3>
@@ -400,7 +400,7 @@ const Estimater: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <h2 onClick={toggleDropdown}>Upholstery</h2>
+                <h2 onClick={toggleDropdown}>Upholstery Cleaning</h2>
                 <div className={styles.formSection}>
                     <div className={styles.formRowAir}>
                         <h4 onClick={toggleDropdown}>RECLINER CHAIRS</h4>
@@ -458,7 +458,7 @@ const Estimater: NextPage = () => {
                         </div>
                     </div> */}
                 </div>
-                <h2 onClick={toggleDropdown}>Hard Surfaces</h2>
+                <h2 onClick={toggleDropdown}>Hard Surface Cleaning</h2>
                 <div className={styles.formSection}>
                     <div className={styles.formRow}>
                         <h3 onClick={toggleDropdown}>TILE &amp; GROUT</h3>
@@ -470,8 +470,16 @@ const Estimater: NextPage = () => {
                                     <input 
                                         id="tile" 
                                         name="tile"
-                                        type="text"
-                                        value={estimate.tile}
+                                        type="number"
+                                        onClick={(e) => {
+                                            if (window.innerWidth < 1024) {
+                                                const target = e.target as HTMLElement;
+                                                const position = window.scrollY + target.getBoundingClientRect().top - 50
+                                                console.log(position)
+                                                window.scrollTo(0, position)
+                                            }
+                                        }}
+                                        value={estimate.tile.toString()}
                                         onChange={updateEstimate} 
                                     />
                                     {/* <button type="button" onClick={incrementEstimate}>+</button> */}
@@ -484,8 +492,16 @@ const Estimater: NextPage = () => {
                                     <input 
                                         id="tileSealant" 
                                         name="tileSealant"
-                                        type="text"
-                                        value={estimate.tileSealant}
+                                        type="number"
+                                        onClick={(e) => {
+                                            if (window.innerWidth < 1024) {
+                                                const target = e.target as HTMLElement;
+                                                const position = window.scrollY + target.getBoundingClientRect().top - 50
+                                                console.log(position)
+                                                window.scrollTo(0, position)
+                                            }
+                                        }}
+                                        value={estimate.tileSealant.toString()}
                                         onChange={updateEstimate} 
                                     />
                                     {/* <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button> */}
@@ -507,22 +523,38 @@ const Estimater: NextPage = () => {
                                     <input 
                                         id="hardwoods" 
                                         name="hardwoods"
-                                        type="text"
-                                        value={estimate.hardwoods}
+                                        type="number"
+                                        onClick={(e) => {
+                                            if (window.innerWidth < 1024) {
+                                                const target = e.target as HTMLElement;
+                                                const position = window.scrollY + target.getBoundingClientRect().top - 50
+                                                console.log(position)
+                                                window.scrollTo(0, position)
+                                            }
+                                        }}
+                                        value={estimate.hardwoods.toString()}
                                         onChange={updateEstimate} 
                                     />
                                     {/* <button type="button" onClick={incrementEstimate}>+</button> */}
                                 </div>
                             </div>
                             <div className={styles.formItem}>
-                                <label htmlFor="hardwoodSealant">Preserve<br/>(sq. ft.)</label>
+                                <label htmlFor="hardwoodSealant">Seal<br/>(sq. ft.)</label>
                                 <div className={styles.switcher}>
                                     {/* <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button> */}
                                     <input 
                                         id="hardwoodSealant" 
                                         name="hardwoodSealant"
                                         type="number"
-                                        value={estimate.hardwoodSealant}
+                                        onClick={(e) => {
+                                            if (window.innerWidth < 1024) {
+                                                const target = e.target as HTMLElement;
+                                                const position = window.scrollY + target.getBoundingClientRect().top - 50
+                                                console.log(position)
+                                                window.scrollTo(0, position)
+                                            }
+                                        }}
+                                        value={estimate.hardwoodSealant.toString()}
                                         onChange={updateEstimate} 
                                     />
                                     {/* <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button> */}
@@ -535,7 +567,7 @@ const Estimater: NextPage = () => {
                         </div>
                     </div>
                 </div>
-                <h2 onClick={toggleDropdown}>Air Ducts</h2>
+                <h2 onClick={toggleDropdown}>Air Duct Cleaning</h2>
                 <div className={styles.formSection}>
                     <div className={styles.formRowAir}>
                         <h4 onClick={toggleDropdown}>AIR DUCT CLEANING SPECIAL</h4>
@@ -613,7 +645,7 @@ const Estimater: NextPage = () => {
                     <button onClick={() => setEstimate(defaultEstimate)}>CLEAR</button>
                 </div>
                 <Link href="/scheduling">
-                    <a style={price > 0 ?{filter: 'grayscale(0)'} : {filter: 'grayscale(1)', pointerEvents: 'none'}} className="btn">
+                    <a className="btn">
                         Book Appointment
                     </a>
                 </Link>
@@ -626,7 +658,7 @@ const Estimater: NextPage = () => {
                 nav .btn{display:none}
                 footer{display:none}
                 #__next section:last-of-type{display:none}
-                #__next{margin-bottom:120px}`}</style>
+                #__next{margin-bottom:300px}`}</style>
         </section>
     )
 }

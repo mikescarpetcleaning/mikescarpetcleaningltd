@@ -182,6 +182,16 @@
     margin-left: 24px;
     border-radius: 88vw;
 }
+.formItem input::-webkit-outer-spin-button,
+.formItem input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.formItem input[type=number] {
+  -moz-appearance: textfield;
+}
 @media screen and (max-width: 1024px) {
     .price a {
         width: 100%;
