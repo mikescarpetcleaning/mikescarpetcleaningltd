@@ -10,8 +10,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "acuityscheduling": "^0.1.9",
     "next": "12.1.0",
     "next-sitemap": "^2.5.17",
+    "node-fetch": "^2.6.7",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },

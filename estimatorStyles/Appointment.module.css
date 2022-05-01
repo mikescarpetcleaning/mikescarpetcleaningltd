@@ -1,0 +1,10 @@
+.weekGrid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+.weekCell {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

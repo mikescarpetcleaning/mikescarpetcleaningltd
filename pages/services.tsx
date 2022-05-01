@@ -16,7 +16,7 @@ const carpetList = {
         <p class="bold">Any 5 Rooms/Areas only $269</p>
         <p>Additional Rooms/Areas: $40 (Each)</p>
         <p>Minimum Charge: $149 (Up to 2 Rooms/Areas)</p>
-        <p>An area is defined as a room, staircase or hallway. Living room and dining room combos and large bonus rooms equal two areas. Max 14x14 ft per room/area</p>
+        <p>An area is defined as a room, staircase or hallway. Living room and dining room combos and large bonus rooms are equal to two areas. Some L-shaped hallways can be considered 2 areas. Max 15x15 ft or 225 sq ft per room/area.</p>
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>
         <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,

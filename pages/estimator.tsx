@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import Appointment from '../estimatorComponents/Appointment';
 import styles from "../estimatorStyles/Estimator.module.css";
 
 type Estimate = {
@@ -120,7 +121,6 @@ const Estimator: NextPage = () => {
         }
     }
     useEffect(() => {
-        console.log(estimate.ventSpecial)
         if ((estimate.rooms + estimate.halls + estimate.stairs) !== estimate.areas) {
             setEstimate({
                 ...estimate,
@@ -226,6 +226,7 @@ const Estimator: NextPage = () => {
     }, [allScotch, estimate])
     return (
         <section className={styles.estimator}>
+            {/* <Appointment /> */}
             <div className={styles.disclaimer}>
                 <h1>ESTIMATOR</h1>
                 <p>Specials and minimums are automatically calculated</p>

@@ -43,3 +43,6 @@ sitemap-0.xml
 
 # robots.txt
 robots.txt
+
+# Local Netlify folder
+.netlify
