@@ -9,19 +9,13 @@ const Hero: FC<any> = () => {
         <header className={styles.header}>
             <div className={styles.flag}>
                 <h1>
-                    PROFESSIONAL CARPET CLEANING SERVICES
+                    Top Quality Carpet Cleaning Services
                 </h1>
             </div>
             <div className={styles.blackFlag}>
                 <h2>
-                    TOP QUALITY CLEANING AT A FAIR PRICE
+                    We Are Carpet, Tile and Grout, Upholstery, and Hardwood Floor Cleaning Experts!
                 </h2>
-            </div>
-            <div className={styles.iicrc}>
-                <div className={styles.iicrcImageContainer}>
-                    <Image src={iicrc} layout="fill" objectFit="contain" objectPosition="left" alt="IICRC Logo" />
-                </div>
-                <h3>IICRC Trained Technicians!</h3>
             </div>
         </header>
     )

@@ -4,11 +4,16 @@
     justify-content: flex-start;
     height: 240px;
     width: 100%;
-    background-image: url("/truck.webp");
-    background-size: cover;
+    background-image: url("/handshake-fade.webp");
+    background-size: 100%;
+    background-position: center;
 }
 .flag {
-    background-image: url("/yellow-left-wide.webp");
+    background-image: linear-gradient(to right,
+        var(--yellow-80) 0%,
+        var(--yellow-80) 80%,
+        transparent
+    );
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100px;

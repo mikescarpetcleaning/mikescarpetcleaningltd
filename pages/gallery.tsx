@@ -11,7 +11,7 @@ const Gallery: NextPage<any> = () => {
     }, [])
     return (
         <>
-            <Head>
+            {/* <Head>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
@@ -123,7 +123,7 @@ const Gallery: NextPage<any> = () => {
                         <img style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="gallery image 22" src="/22.webp" />
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     )
 }

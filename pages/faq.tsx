@@ -88,7 +88,6 @@ const Faq: NextPage = () => {
                 <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"/>
             </Head>
             <FaqAccordion faqs={faqs} />
-            <Spills />
         </>
     )
 }

@@ -33,16 +33,20 @@
     box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
     margin: 30px 25px 0px 25px;
     position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
 .imgContainer {
     position: relative;
     height: 100px;
     width: 100px;
     margin: 50px auto 30px;
+    filter: brightness(0);
 }
 .flag {
     width: 100%;
-    background-image: url("/flag-small-right-yellow.webp");
+    background: var(--yellow-80);
+    clip-path: polygon(0 0, 95% 0, 90% 100%, 0% 100%);
     background-size: 100% 100%;
 }
 .flag h3 {

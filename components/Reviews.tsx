@@ -36,7 +36,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Highly Recommended!</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
@@ -53,7 +53,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Amazing Job</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
@@ -70,7 +70,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Awesome Customer Service</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
@@ -87,7 +87,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Great Experience</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
@@ -131,7 +131,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Highly Recommended!</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
@@ -150,7 +150,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Amazing Job</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
@@ -167,7 +167,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Awesome Customer Service</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 
@@ -186,7 +186,7 @@ const Reviews: NextPage = () => {
                             <div className={styles.card}>
                                 <h3>Great Experience</h3>
                                 <img 
-                                    src="/yellow-stars.webp"
+                                    src="/green-stars.webp"
                                     width="200"
                                     alt="five-stars"
                                     loading="eager" 

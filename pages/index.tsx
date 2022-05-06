@@ -35,20 +35,17 @@ const Home: NextPage = () => {
       <Hero />
       <Why />
       <Family 
-        image="/mom-and-dad.webp" 
-        mobileImage="/parentals-mobile.webp"
+        image="/skyscrape.webp" 
+        mobileImage="/skyscrape.webp"
         alt="Mike and Mary Jarman"
-        heading1="Family Owned"
-        heading2="And Operated"
-        body="Mike and Mary founded Excel Carpet Cleaning back in 1991.
-        A passion for perfection and a dedication to their craft has given way 
-        to a lifetime of quality service and satisfied customers. 30 years ago we
-        set our minds on one simple goal. Provide the best clean that the industry 
-        has to offer. Fast forward to now and we have cleaned millions of square 
-        feet of carpet for thousands of customers. We look forward to serving you soon!" 
+        heading1="Commercial Carpet"
+        heading2="Cleaning Specialists"
+        body="We offer professional building cleaning of commercial carpet, upholstery, 
+        tile and hardwood cleaning for small to large size office space and buildings. 
+        We understand impressing your clients and a clean healthy working environment 
+        for your employees is key to the success of your business." 
       />
       <Reviews />
-      <Frequent />
       <Family 
         image="/baby.webp"
         mobileImage="/baby-mobile.webp"

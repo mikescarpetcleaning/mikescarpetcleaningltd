@@ -1,22 +1,27 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from 'react';
 
 import styles from "../styles/Why.module.css";
 
 const Why: NextPage = () => {
+    const [hovered, setHovered] = useState(-1);
     return (
         <section className={styles.why}>
-            <h2>Why choose us?</h2>
-            <p>Our goal in business is to provide our customers the best quality service at a fair price.</p>
+            <h2>Our Services</h2>
+            <p>Here are a few of the things that we do best</p>
             <div className={styles.cards}>
-                <div className={styles.card}>
+                <a 
+                    onMouseEnter={() => setHovered(0)} 
+                    onMouseLeave={() => setHovered(-1)} 
+                    className={hovered == 0 ? styles.card + ' hoverCard' : styles.card}>
                     <div className={styles.imgContainer}>
-                        <Image src="/iicrc-black.webp" layout="fill" objectFit="contain" alt="IICRC Logo" />
+                        <Image src="/carpet-man-icon.png" layout="fill" objectFit="contain" alt="IICRC Logo" />
                     </div>
                     <div className={styles.flag}>
                         <h3>
-                            Highly<br/>Qualified
+                            Carpet<br/>Cleaning
                         </h3>
                     </div>
                     <p>
@@ -24,14 +29,18 @@ const Why: NextPage = () => {
                         Our team is made of up hard-working, dedicated individuals 
                         who always keep up with the latest techniques and technologies.
                     </p>
-                </div>
-                <div className={styles.card}>
+                    <p className="learnMorePopup">See All Carpet Services</p>
+                </a>
+                <a 
+                    onMouseEnter={() => setHovered(1)} 
+                    onMouseLeave={() => setHovered(-1)} 
+                    className={hovered == 1 ? styles.card + ' hoverCard' : styles.card}>
                     <div className={styles.imgContainer}>
-                        <Image src="/experience.webp" layout="fill" objectFit="contain" alt="experienced technicians"/>
+                        <Image src="/couch-icon.png" layout="fill" objectFit="contain" alt="experienced technicians"/>
                     </div>
                     <div className={styles.flag}>
                         <h3>
-                            Highly<br/>Experienced
+                            Upholstery<br/>Cleaning
                         </h3>
                     </div>
                     <p>
@@ -39,14 +48,18 @@ const Why: NextPage = () => {
                         time again to be highly effective and efficient. No one gets carpets 
                         cleaner than us.
                     </p>
-                </div>
-                <div className={styles.card}>
+                    <p className="learnMorePopup">See All Upholstery Services</p>
+                </a>
+                <a 
+                    onMouseEnter={() => setHovered(2)} 
+                    onMouseLeave={() => setHovered(-1)} 
+                    className={hovered == 2 ? styles.card + ' hoverCard' : styles.card}>
                     <div className={styles.imgContainer}>
-                        <Image src="/hands.webp" layout="fill" objectFit="contain" alt="hands and gear icon"/>
+                        <Image src="/tile-icon.png" layout="fill" objectFit="contain" alt="hands and gear icon"/>
                     </div>
                     <div className={styles.flag}>
                         <h3>
-                            Highly<br/>Valued
+                            Hard Surface<br/>Cleaning
                         </h3>
                     </div>
                     <p>
@@ -54,7 +67,8 @@ const Why: NextPage = () => {
                         reputation of honesty and integrity and always provide top quality service 
                         at a fair price.
                     </p>
-                </div>
+                    <p className="learnMorePopup">See All Hard Surface Services</p>
+                </a>
             </div>
             <Link href="/scheduling">
                 <a className="why btn">

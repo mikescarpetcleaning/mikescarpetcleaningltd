@@ -69,16 +69,16 @@
         height: 28px;
         width: 40px;
         background: linear-gradient(to bottom, 
-            black 0, 
-            black 4px, 
+        var(--yellow) 0, 
+        var(--yellow) 4px, 
             transparent 4px, 
             transparent 12px,
-            black 12px, 
-            black 16px, 
+            var(--yellow) 12px, 
+            var(--yellow) 16px, 
             transparent 16px, 
             transparent 24px,
-            black 24px, 
-            black 28px
+            var(--yellow) 24px, 
+            var(--yellow) 28px
         )
     }
     .menuLinks {
@@ -116,6 +116,7 @@
         margin-left: auto;
         display: block;
         position: relative;
+        filter: invert(69%) sepia(17%) saturate(1226%) hue-rotate(52deg) brightness(95%) contrast(85%);
     }
     .nav {
         grid-template-columns: 60px 1fr 1fr;
@@ -138,16 +139,16 @@
         height: 28px;
         width: 40px;
         background: linear-gradient(to bottom, 
-            black 0, 
-            black 4px, 
+        var(--yellow) 0, 
+        var(--yellow) 4px, 
             transparent 4px, 
             transparent 12px,
-            black 12px, 
-            black 16px, 
+            var(--yellow) 12px, 
+            var(--yellow) 16px, 
             transparent 16px, 
             transparent 24px,
-            black 24px, 
-            black 28px
+            var(--yellow) 24px, 
+            var(--yellow) 28px
         )
     }
     .menuLinks {

@@ -1,9 +1,14 @@
 .faqAccordion {
     padding: 64px 0;
-    background-image: url("/phone-man.webp");
+    background-image: linear-gradient(to left,
+    rgba(255,255,255,0.5) 0%,
+    rgba(255,255,255,0.5) 20%,
+    white 40%,
+    white
+), url("/phone-guy.webp");
     background-attachment: fixed;
     background-size: auto 100%;
-    background-position: right;
+    background-position: 150% 0;
     background-repeat: no-repeat;
 }
 .left {
@@ -15,7 +20,11 @@
     display: flex;
     align-items: center;
     justify-self: center;
-    background-image: url("/flag-left-yellow.webp"), url("/flag-left-yellow.webp");
+    background-image: linear-gradient(to right,
+        var(--yellow-80) 0%,
+        var(--yellow-80) 80%,
+        transparent
+    );
     background-size: 75% 100%;
     background-repeat: no-repeat;
     height: fit-content;
@@ -62,11 +71,13 @@
 }
 @media screen and (max-width: 820px) {
     .flag {
-        background-size: 200% 100%;
+        background: var(--yellow);
         padding: 0 5%;
     }
     .faqAccordion {
         padding: 0 0 300px 0;
+        background-image: url("/phone-guy.webp");
+        background-position: right;
     }
     .accordion {
         margin: 0;

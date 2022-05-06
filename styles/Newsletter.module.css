@@ -1,12 +1,17 @@
 .newsletter {
     min-height: 500px;
     width: 100%;
-    background-image: url("/city.webp");
+    background-image: url("/house.webp");
     background-size: cover;
+    background-position: center;
     padding: 72px 0 64px;
 }
 .flag {
-    background-image: url("/yellow-left-wide.webp");
+    background-image: linear-gradient(to right,
+        var(--yellow-80) 0%,
+        var(--yellow-80) 80%,
+        transparent
+    );
     background-repeat: no-repeat;
     background-size: 75% 100%;
     width: 100%;
@@ -17,7 +22,7 @@
     margin-bottom: 16px;
 }
 .whiteFlag {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 75%, transparent 75%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 75%);
     width: 100%;
     height: fit-content;
     display: flex;
@@ -75,6 +80,7 @@
     align-items: center;
     justify-content: center;
     padding: 0;
+    border: 3px solid white;
 }
 .form label {
     position: absolute;

@@ -48,9 +48,6 @@ const Nav: FC<any> = () => {
                     <Link href="/faq">FAQ</Link>
                 </li>
                 <li onClick={() => toggleMenu(false)}>
-                    <Link href="/gallery">Gallery</Link>
-                </li>
-                <li onClick={() => toggleMenu(false)}>
                     <Link href="/contact">Contact</Link>
                 </li>
             </ul>
