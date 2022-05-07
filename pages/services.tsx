@@ -128,31 +128,6 @@ const hardSurfaceList = {
     }],
     ctaText: "Book Hard Surface Cleaning"
 }
-const airDuctList = {
-    id: "air-ducts",
-    heading: "Air Ducts",
-    itemDetails: [{
-        subHeading: "Vent, Return, and Dryer Vent Cleaning",
-        process: `RamAir is a revolutionary duct cleaning process that allows for state-of-the-art forced air cleaning with no mess or debris, and it won’t harm duct surfaces! 
-
-        The patented RamAir ClearView Duct Cleaning System is the most effective system to date, as well as being the first system ever created that allows the homeowner to actually see all the dust and debris as it is being removed from the duct system.`,
-        pricing: `
-        <div class="pricing-box">
-        <p><span class="bold">Air Duct Cleaning Special:</span> $299.00 (12 floor vents and 2 air returns)</p>
-       
-        <p><span class="bold">Additional Vents:</span> $20.00 per vent*</p>
-
-        <p><span class="bold">Dryer Vents:</span> $99.00 per vent*</p>
-       
-        <p class="disclaimer">*Ceiling vents are an additional $10 per vent</p>
-        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
-        </div>`,
-        imgSrc: "/duct.webp",
-        alt: "RamAir airduct cleaning system",
-        cta: `<a style="width:100%;height:100%" href="https://www.youtube.com/watch?v=aYjLtgu4Zo4" class="subitem-cta">RamAir Demonstration Video</a>`
-    }],
-    ctaText: "Book Air Duct Cleaning"
-}
 const Services: NextPage<any> = (props: any) => {
     return (
         <>
@@ -160,7 +135,7 @@ const Services: NextPage<any> = (props: any) => {
             <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <title>Pricing For Carpet, Tile, and Upholstery Cleaning | Excel</title>
-            <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f28d64858759f2fc1e07652/e776c5a2-1be6-459f-8947-7534111b93d0/favicon.ico?format=100w"/>
+            <link rel="shortcut icon" type="image/x-icon" href="/logo.webp"/>
             <link rel="canonical" href="https://www.excelcarpetcleaningwa.com/services"/>
             <meta property="og:site_name" content="Excel Carpet Cleaning Services"/>
             <meta property="og:title" content="Pricing For Carpet, Tile, and Upholstery Cleaning | Excel"/>
@@ -181,7 +156,6 @@ const Services: NextPage<any> = (props: any) => {
             <ServiceItem itemDetails={carpetList} />
             <ServiceItem itemDetails={upholsteryList} />
             <ServiceItem itemDetails={hardSurfaceList} />
-            <ServiceItem itemDetails={airDuctList} />
             <Connect />
         </>
     )

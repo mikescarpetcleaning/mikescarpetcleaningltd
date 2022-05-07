@@ -10,7 +10,7 @@ const Connect: FC = () => {
                 <h2>Connect With Us</h2>
             </div>
             <div className={styles.left}>
-                <p>At Excel Carpet Cleaning, the safety of our
+                <p>At Mike&apos;s Carpet Cleaning LTD, the safety of our
                     customers and employees is always on our minds. As
                     everyone is feeling the impact of the coronavirus
                     (COVID-19), I want to share with you the steps we&apos;re
@@ -18,7 +18,7 @@ const Connect: FC = () => {
                     <br/><br/>
                     At this time, we are open for business and available to
                     continue providing the five star service you expect
-                    from Excel Carpet Cleaning.
+                    from Mike&apos;s Carpet Cleaning LTD.
                     <br/><br/>
                     All of us here feel deeply for those who have been
                     impacted by this outbreak. We value your business and

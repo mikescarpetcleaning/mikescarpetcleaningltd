@@ -26,7 +26,11 @@
     width: 50%;
 }
 .flag {
-    background-image: url("/grey-flag.webp");
+    background-image: linear-gradient(to left,
+        var(--yellow-80) 0%,
+        var(--yellow-80) 80%,
+        transparent
+    );
     width: 100%;
     padding: 12px 0;
     background-size: 85% 100%;
@@ -41,6 +45,7 @@
 }
 .flag h2 {
     max-width: 650px;
+    color: black;
 }
 .row {
     font-size: 18px;

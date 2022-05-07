@@ -71,9 +71,9 @@ const Faq: NextPage = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
                 <title>Frequently Asked Carpet Cleaning Questions</title>
-                <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f28d64858759f2fc1e07652/e776c5a2-1be6-459f-8947-7534111b93d0/favicon.ico?format=100w"/>
+                <link rel="shortcut icon" type="image/x-icon" href="/logo.webp"/>
                 <link rel="canonical" href="https://www.excelcarpetcleaningwa.com/faq"/>
-                <meta property="og:site_name" content="Excel Carpet Cleaning Services"/>
+                <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD"/>
                 <meta property="og:title" content="Frequently Asked Carpet Cleaning Questions"/>
                 <meta property="og:url" content="https://www.excelcarpetcleaningwa.com/faq"/>
                 <meta property="og:type" content="website"/>

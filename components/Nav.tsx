@@ -25,12 +25,12 @@ const Nav: FC<any> = () => {
             </div>
             <Link href="/">
                 <a onClick={() => toggleMenu(true)} className={styles.imageContainer}>
-                    <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" alt="excel carpet cleaning logo" />
+                    <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo" />
                 </a>
             </Link>
             <Link href="tel:4253940404">
                 <a onClick={() => toggleMenu(true)} className={styles.phoneCall}>
-                    <Image src="/phone-icon.webp" layout="fill" objectFit="contain" objectPosition="left" alt="excel carpet cleaning logo" />
+                    <Image src="/phone-icon.webp" layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo" />
                 </a>
             </Link>
             
@@ -38,9 +38,9 @@ const Nav: FC<any> = () => {
                 <li onClick={() => toggleMenu(false)}>
                     <Link href="/services">Services / Pricing</Link>
                 </li>
-                <li onClick={() => toggleMenu(false)}>
+                {/* <li onClick={() => toggleMenu(false)}>
                     <Link href="/estimator">Estimator</Link>
-                </li>
+                </li> */}
                 <li onClick={() => toggleMenu(false)}>
                     <Link href="/about">About Us</Link>
                 </li>

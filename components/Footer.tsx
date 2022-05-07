@@ -10,12 +10,12 @@ const Footer: FC = () => {
             <div className={styles.footerLayout}>
                 <div className={styles.left}>
                     <p>
-                        Excel Carpet Cleaning Services LLC.<br/>
-                        Serving you since 1991.<br/><br/>
-                        excelcarpetcleaning@gmail.com<br/>
-                        (425) 394-0404<br/>
+                        Mike&apos;s Carpet Cleaning LTD<br/>
+                        Serving you since 2018.<br/><br/>
+                        mikescarpetcleaningltd@gmail.com<br/>
+                        (360) 485-0028<br/>
                     </p>
-                    <Link href="https://www.facebook.com/excelcarpetcleaningincorporated/">
+                    <Link href="https://www.facebook.com/Mikes-Carpet-Cleaning-Ltd-111268126937343">
                         <Image src="/facebook-white.webp" layout="fixed" height="40px" width="40px" alt="facebook logo" />
                     </Link>
                 </div>

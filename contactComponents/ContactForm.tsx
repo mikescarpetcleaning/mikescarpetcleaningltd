@@ -12,9 +12,9 @@ export default function ContactForm() {
                 <h1>CONTACT US</h1>
                 <h2>ONE OF OUR EXPERTS WOULD BE GLAD TO ASSIST YOU</h2>
                 <h3>GIVE US A CALL TODAY!</h3>
-                <a href="tel:425-394-0404" >(425) 349-0404</a>
-                <p>Excel Carpet Cleaning,</p>
-                <p>Serving You Since 1991</p>
+                <a href="tel:3604850028" >(360) 485-0028</a>
+                <p>Mike&apos;s Carpet Cleaning LTD,</p>
+                <p>Serving You Since 2018</p>
             </div>
             <form name="contact-page-form" action="/thanks" method="POST" data-netlify="true">
                 <input type="hidden" name="form-name" value="contact-page-form" />

@@ -9,7 +9,7 @@ const Scheduling: NextPage = () => {
             <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <title>Schedule Carpet Cleaning Online | Excel</title>
-            <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f28d64858759f2fc1e07652/e776c5a2-1be6-459f-8947-7534111b93d0/favicon.ico?format=100w"/>
+            <link rel="shortcut icon" type="image/x-icon" href="/logo.webp"/>
             <link rel="canonical" href="https://www.excelcarpetcleaningwa.com/scheduling"/>
             <meta property="og:site_name" content="Excel Carpet Cleaning Services"/>
             <meta property="og:title" content="Schedule Carpet Cleaning Online | Excel"/>
@@ -27,12 +27,11 @@ const Scheduling: NextPage = () => {
         </Head>
             <style>{`.contactFlag{display:none;}`}</style>
             <iframe 
-                src="https://app.squarespacescheduling.com/schedule.php?owner=20895810" 
+                src="https://app.acuityscheduling.com/schedule.php?owner=15583479" 
                 title="Schedule Appointment" 
                 width="100%" 
-                height="1000px" 
-                frameBorder="0">
-            </iframe>
+                height="800" 
+                frameBorder="0"></iframe>
             
             <Script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></Script>
         </>

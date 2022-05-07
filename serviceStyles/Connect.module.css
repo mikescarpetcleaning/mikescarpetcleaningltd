@@ -6,7 +6,8 @@
     background-position: right;
 }
 .flag {
-    background-image: url("/yellow-left-wide.webp");
+    background: var(--yellow-80);
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 100% 100%, 0 100%);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 60%;
@@ -42,7 +43,8 @@
         background: none;
     }
     .flag {
-        background-image: url("/yellow-left-wide.webp"), url("/yellow-left-wide.webp");
+        background: var(--yellow);
+        clip-path: none;
         width: 100%;
         background-size: 200%;
         padding-left: 5%;
