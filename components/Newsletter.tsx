@@ -58,7 +58,7 @@ const Newsletter: FC = () => {
             </div>
             <div className={styles.whiteFlag}>
                 <p>
-                    Simply enter your email and zip code and we'll occasionally send you emails to keep you in the loop with all of our latest specials!
+                    Simply enter your email and zip code and we&apos;ll occasionally send you emails to keep you in the loop with all of our latest specials!
                 </p>
             </div>
             {!submitted ? 
