@@ -54,14 +54,11 @@ const Newsletter: FC = () => {
     return (
         <section className={styles.newsletter}>
             <div className={styles.flag}>
-                <h2>Stay Up To Date</h2>
+                <h2>Wanna Stay In Touch?</h2>
             </div>
             <div className={styles.whiteFlag}>
                 <p>
-                    Get cleaning tips, alerts and coupons to save big! 
-                    Simply enter your information below to receive 
-                    occasional emails with promotional offers for future 
-                    cleanings.
+                    Simply enter your email and zip code and we'll occasionally send you emails to keep you in the loop with all of our latest specials!
                 </p>
             </div>
             {!submitted ? 

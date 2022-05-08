@@ -26,10 +26,9 @@ const Reviews: NextPage = () => {
   return (
     <section className={styles.reviews}>
       <div className="max-w-limiter">
-        <h2>What Our Customers Are Saying</h2>
+        <h2>Customer Testimonials</h2>
         <p>
-          We&apos;ve given years of fair, honest, and reliable service and
-          accumulated a long list of success stories
+          We&apos;ve built a long list of satisfied customers. Here are a couple stories they wanted to share!
         </p>
         <div className={styles.slider}>
           <div className={[styles.wrapper, "reviews-wrapper"].join(" ")}>

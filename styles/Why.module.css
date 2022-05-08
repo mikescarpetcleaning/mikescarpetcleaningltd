@@ -28,13 +28,18 @@
 .card {
     width: 350px;
     height: 500px;
-    border-radius: 20px;
-    background: white;
-    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.25);
-    margin: 30px 25px 0px 25px;
+    background: transparent;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.25);
+    margin: 0px 25px 0px 25px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}
+.card:nth-child(2) {
+    margin-top: 25px;
+}
+.card:nth-child(3) {
+    margin-top: 50px;
 }
 .imgContainer {
     position: relative;

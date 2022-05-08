@@ -22,7 +22,7 @@ const carpetList = {
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>
         <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
-      imgSrc: "/carpets-service.webp",
+      imgSrc: "/carpet-with-bean-bag.webp",
       alt: "Freshly cleaned carpets",
       cta: `<a style="width:100%;height:100%" href="commercial" class="subitem-cta">See Our Commercial Rates</a>`,
     },
@@ -38,7 +38,7 @@ const carpetList = {
         <p class="disclaimer">*2 area minimum</p>
         <p class="disclaimer">*Must include purchase of carpet cleaning</p>
         </div>`,
-      imgSrc: "/pet.webp",
+      imgSrc: "/pets-in-grass.webp",
       alt: "Dog licking a cat",
     },
     {
@@ -60,7 +60,7 @@ const carpetList = {
         <p class="disclaimer">*2 area minimum</p>
         <p class="disclaimer">*Must include purchase of carpet cleaning</p>
         </div>`,
-      imgSrc: "/scotch.webp",
+      imgSrc: "/paint-brush.webp",
       alt: "Man spilling his coffee",
     },
   ],
@@ -85,7 +85,7 @@ const upholsteryList = {
         <p><span class="bold">Sectional:</span> $20.00 per linear foot</p>
         <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
-      imgSrc: "/upholstery.webp",
+      imgSrc: "/couch.webp",
       alt: "Nice arm chair in yellow",
     },
   ],
@@ -110,7 +110,7 @@ const hardSurfaceList = {
         <p class="disclaimer">*Sealant must include purchase of tile cleaning</p>
         <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
-      imgSrc: "/brtiles.webp",
+      imgSrc: "/tile-floor.webp",
       alt: "Modern tiled bathroom",
     },
     {
@@ -127,7 +127,7 @@ const hardSurfaceList = {
         <p class="disclaimer">*Preservation finish must include purchase of hardwood cleaning</p>
         <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
         </div>`,
-      imgSrc: "/wood.webp",
+      imgSrc: "/hardwood-floor.webp",
       alt: "Very clean hardwood floors",
     },
   ],
@@ -191,7 +191,6 @@ const Services: NextPage<any> = (props: any) => {
       <ServiceItem itemDetails={carpetList} />
       <ServiceItem itemDetails={upholsteryList} />
       <ServiceItem itemDetails={hardSurfaceList} />
-      <Connect />
     </>
   );
 };
