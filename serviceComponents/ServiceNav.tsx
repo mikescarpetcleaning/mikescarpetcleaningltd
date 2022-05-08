@@ -22,11 +22,6 @@ const ServiceNav: FC = () => {
                         Hard Surfaces
                     </Link>
                 </li>
-                <li className={styles.menuItem}>
-                    <Link href="#air-ducts">
-                        Air-Ducts
-                    </Link>
-                </li>
             </ul>
         </nav>
     )

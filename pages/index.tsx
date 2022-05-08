@@ -66,8 +66,8 @@ const Home: NextPage = () => {
       />
       <Reviews />
       <Family
-        image="/baby.webp"
-        mobileImage="/baby-mobile.webp"
+        image="/thumbup.webp"
+        mobileImage="/thumbsup.webp"
         alt="baby and dog playing on carpet"
         heading1="Powerful Clean,"
         heading2="No Harmful Chemicals"
