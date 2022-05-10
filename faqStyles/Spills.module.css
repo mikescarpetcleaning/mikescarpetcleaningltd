@@ -5,7 +5,11 @@
     display: flex;
 }
 .flag {
-    background-image: url("/right-flag.webp");
+    background-image: linear-gradient(to left,
+        var(--yellow-80) 0%,
+        var(--yellow-80) 80%,
+        transparent
+    );
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 60%;

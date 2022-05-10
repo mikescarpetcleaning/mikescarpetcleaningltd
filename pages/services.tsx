@@ -12,15 +12,14 @@ const carpetList = {
     {
       subHeading: "Truckmounted Steam Cleaning",
       process:
-        "We use a 4 step method to treat and remove all the dirt and stains from your carpet. Prespray, dwell, agitation, and extraction. This tried and true cleaning system is the number one recommended carpet cleaning method by top carpet manufacturers.",
+        "Our Truck Mounted Steam Cleaning includes Eco-Green detergent pre-spray, edging, spot and stain removal at no additional charge, as well as a steam neutralizing rinse and extraction.",
       pricing: `
         <div class="pricing-box">
-        <p class="bold">Any 5 Rooms/Areas only $269</p>
-        <p>Additional Rooms/Areas: $40 (Each)</p>
-        <p>Minimum Charge: $149 (Up to 2 Rooms/Areas)</p>
+        <p class="bold">Any 2 Rooms/Areas only $145</p>
+        <p>Additional Rooms/Areas: $45 (Each)</p>
         <p>An area is defined as a room, staircase or hallway. Living room and dining room combos and large bonus rooms are equal to two areas. Some L-shaped hallways can be considered 2 areas. Max 15x15 ft or 225 sq ft per room/area.</p>
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>
-        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
+        <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,
       imgSrc: "/carpet-with-bean-bag.webp",
       alt: "Freshly cleaned carpets",
@@ -39,29 +38,19 @@ const carpetList = {
         <p class="disclaimer">*Must include purchase of carpet cleaning</p>
         </div>`,
       imgSrc: "/pets-in-grass.webp",
-      alt: "Dog licking a cat",
+      alt: "Dog and cat cuddling next to each other",
     },
     {
       subHeading: "ScotchGard Carpet Protectant",
-      process: `Scotchgard will be applied
-        after cleaning, on all traffic
-        areas that have been cleaned.
-        
-        Over 1 billion pounds of carpet
-        are thrown away every year.
-        Protect your investment and
-        keep your carpets looking
-        fresh longer by having them
-        cleaned regularly and treated
-        with Scotchgard protectant.`,
+      process: `Protectant is applied after the carpets are cleaned, still damp and groomed with a Grandee Groomer. Carpet protectant restores the stain guard effect to your carpets, repels spills for easier cleanup, does not change the look or feel of your carpet, and is ideal for high-traffic areas. Highly recommended!`,
       pricing: `
         <div class="pricing-box">
-        <p class="bold">$15.00 Per Area*</p>
+        <p class="bold">$20.00 Per Area*</p>
         <p class="disclaimer">*2 area minimum</p>
         <p class="disclaimer">*Must include purchase of carpet cleaning</p>
         </div>`,
       imgSrc: "/paint-brush.webp",
-      alt: "Man spilling his coffee",
+      alt: "Paint brush running across wall",
     },
   ],
   ctaText: "Book Carpet Cleaning",
@@ -72,18 +61,26 @@ const upholsteryList = {
   itemDetails: [
     {
       subHeading: "Upholstery Cleaning",
-      process:
-        "We can give your couch the same amazing truckmounted steam cleaning as well. We also offer low moisture cleaning options for more sensitive materials.",
+      process: "A clean that can keep your furniture looking new for years to come! We take great care in properly cleaning upholstered furniture. Upholstered furniture without tags describing the materials used may not be cleaned due to possible damage to the fabric.",
       pricing: `
         <div class="pricing-box">
-        <p><span class="bold">Sofa/Couch:</span> $20.00 per linear foot</p>
+        <p><span class="bold">Sofa/Couch:</span> starting at $20.00 per linear foot</p>
        
-        <p><span class="bold">Loveseat:</span> $20.00 per linear foot</p>
+        <p><span class="bold">Loveseat:</span> starting at $20.00 per linear foot</p>
        
-        <p><span class="bold">Chair:</span> $69.00</p>
-       
-        <p><span class="bold">Sectional:</span> $20.00 per linear foot</p>
-        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
+        <p><span class="bold">Sectional:</span> starting at $20.00 per linear foot</p>
+
+        <p><span class="bold">Mattress:</span> starting at $99.00</p>
+
+        <p><span class="bold">Chair:</span> starting at $69.00</p>
+
+        <p><span class="bold">Ottoman:</span> starting at $32.00</p>
+
+        <p><span class="bold">Cushions:</span> starting at $7.00 each</p>
+        
+        <p class="disclaimer">*Different fabrics may require different processes and amounts of labor, price may be adjusted accordingly at the technicians discretion.</p>
+        <p class="disclaimer">*We do not clean foam mattresses.</p>
+        <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,
       imgSrc: "/couch.webp",
       alt: "Nice arm chair in yellow",
@@ -98,34 +95,32 @@ const hardSurfaceList = {
     {
       subHeading:
         "Tile and Grout Cleaning <span class='smaller'>(floors only)</span>",
-      process:
-        "We start by spraying down the area with a high-powered, non-toxic cleaning agent. After some dwell time we use a spinning 1000 PSI jet to remove the dirt and water. Dries in minutes and leaves tile and grout looking brand new.",
+      process: "We use a high pressure water spinner to give your tile an unmatched clean. The powerful detergent, high powered jets, and incredible vacuum can make even the oldest tile look brand new.",
       pricing: `
         <div class="pricing-box">
-        <p><span class="bold">Cleaning:</span> $0.75 per sq. ft.*</p>
+        <p><span class="bold">Cleaning:</span> $1/sqft. for first 500 square feet, $0.75/sqft. after 500 square feet</p>
        
-        <p><span class="bold">Sealant:</span> $0.50 per sq. ft.*</p>
+        <p><span class="bold">Sealant:</span> $0.50 per square foot*</p>
        
-        <p class="disclaimer">*100 sq ft. minimum</p>
+        <p class="disclaimer">*125 sq ft. minimum</p>
         <p class="disclaimer">*Sealant must include purchase of tile cleaning</p>
-        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
+        <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,
       imgSrc: "/tile-floor.webp",
       alt: "Modern tiled bathroom",
     },
     {
-      subHeading: "Hardwood Cleaning",
-      process:
-        "We use an all-in-one cleaning unit combined with a delicate balance of wood cleaning products. Our process will never harm or swell your wood floors and is the most effective wood cleaning system on the market.",
+      subHeading: "Hardwood Floor Cleaning",
+      process:"Hardwood floor cleaning applies only to solid wood floors with Swedish finish. Cleaning includes detergent pre treatment, agitation, rinse & extraction of detergent & application of a luster enhancer.",
       pricing: `
         <div class="pricing-box">
-        <p><span class="bold">Hardwood Floor Cleaning:</span> $0.75 per sq. ft.*</p>
+        <p><span class="bold">Cleaning:</span> $1/sqft. for first 500 square feet, $0.75/sqft. after 500 square feet</p>
        
-        <p><span class="bold">Preservation Finish:</span> $0.50 per sq. ft.*</p>
+        <p><span class="bold">Preservation Finish:</span> INCLUDED WITH CLEANING!</p>
        
-        <p class="disclaimer">*100 sq ft. minimum</p>
+        <p class="disclaimer">*125 sq ft. minimum</p>
         <p class="disclaimer">*Preservation finish must include purchase of hardwood cleaning</p>
-        <p class="disclaimer">*Minimum charge of $149 applies to all apointments</p>
+        <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,
       imgSrc: "/hardwood-floor.webp",
       alt: "Very clean hardwood floors",

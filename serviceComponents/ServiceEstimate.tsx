@@ -4,7 +4,7 @@ import styles from "../serviceStyles/ServiceNav.module.css";
 
 const ServiceEstimate: FC = () => {
     return (
-        <nav className={styles.nav}>
+        <nav className={styles.commercialNav}>
             <h3>COMMERCIAL ESTIMATES ARE ALWAYS FREE!</h3>
         </nav>
     )

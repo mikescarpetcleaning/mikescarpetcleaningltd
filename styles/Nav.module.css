@@ -26,6 +26,7 @@
     align-items: center;
     list-style: none;
     padding: 0;
+    margin-left: 24px;
 }
 .menuLinks li:not(:last-child) {
     margin-right: 25px;

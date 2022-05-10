@@ -9,18 +9,15 @@
     background-position: center;
 }
 .flag {
-    background-image: linear-gradient(to right,
-        var(--yellow-80) 0%,
-        var(--yellow-80) 80%,
-        transparent
-    );
+    background-image: linear-gradient(163deg, var(--dark) 0%, var(--dark) 52%, transparent 51% );
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    height: 100px;
-    width: 60%;
+    height: 100%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 .flag h1 {
     font-size: 48px;
@@ -29,12 +26,15 @@
     line-height: 20px;
     letter-spacing: 0em;
     text-align: center;
+    color: white;
+    margin-right: 47%;
+    margin-bottom: 72px;
     text-transform: uppercase;
 }
 
 @media screen and (max-width: 768px) {
     .hero {
-        background-position: 50%;
+        background: var(--dark);
         height: 100px;
     }
     .flag {
@@ -46,5 +46,6 @@
     .flag h1 {
         font-size: 36px;
         line-height: 36px;
+        margin: 0;
     }
 }

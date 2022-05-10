@@ -3,12 +3,12 @@
     background-image: linear-gradient(to left,
     rgba(255,255,255,0.5) 0%,
     rgba(255,255,255,0.5) 20%,
-    white 40%,
+    white 80%,
     white
 ), url("/phone-guy.webp");
     background-attachment: fixed;
     background-size: auto 100%;
-    background-position: 150% 0;
+    background-position: 600px 0;
     background-repeat: no-repeat;
 }
 .left {
@@ -60,6 +60,21 @@
     border-bottom: 1px solid black;
     cursor: pointer;
 }
+@media screen and (min-width: 1535px) {
+    .faqAccordion {
+        padding: 64px 0;
+        background-image: linear-gradient(to left,
+        rgba(255,255,255,0.5) 0%,
+        rgba(255,255,255,0.5) 20%,
+        white 40%,
+        white
+    ), url("/phone-guy.webp");
+        background-attachment: fixed;
+        background-size: auto 100%;
+        background-position: 100% 0;
+        background-repeat: no-repeat;
+    }
+}
 @media screen and (max-width: 1024px) {
     .flag {
         background-size: 85% 100%;
@@ -75,9 +90,7 @@
         padding: 0 5%;
     }
     .faqAccordion {
-        padding: 0 0 300px 0;
-        background-image: url("/phone-guy.webp");
-        background-position: right;
+        padding: 0;
     }
     .accordion {
         margin: 0;

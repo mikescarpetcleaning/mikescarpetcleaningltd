@@ -26,17 +26,12 @@
     width: 50%;
 }
 .flag {
-    background-image: linear-gradient(to left,
-        var(--yellow-80) 0%,
-        var(--yellow-80) 80%,
-        transparent
-    );
-    width: 100%;
-    padding: 12px 0;
+    width: fit-content;
+    padding: 12px 24px;
     background-size: 85% 100%;
     background-repeat: no-repeat;
     background-position: 100%;
-    margin: 24px 0 24px auto;
+    margin: 24px auto 24px auto;
     color: white;
     text-transform: uppercase;
     display: flex;
@@ -45,7 +40,7 @@
 }
 .flag h2 {
     max-width: 650px;
-    color: black;
+    color: var(--dark);
 }
 .row {
     font-size: 18px;
