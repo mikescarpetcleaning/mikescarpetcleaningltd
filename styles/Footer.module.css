@@ -1,6 +1,10 @@
 .footer {
     background: var(--dark);
 }
+.socials > *:not(:first-child) {
+    margin-left: 24px !important;
+    display: inline-block !important;
+}
 .footerLayout {
     min-height: 340px;
     padding: 64px 10%;

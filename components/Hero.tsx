@@ -14,7 +14,7 @@ const Hero: FC<any> = () => {
             </div>
             <div className={styles.blackFlag}>
                 <h2>
-                    We Are Carpet, Tile and Grout, Upholstery, and Hardwood Floor Cleaning Experts!
+                    Carpet, Tile and Grout, Upholstery, and Hardwood Experts!
                 </h2>
             </div>
         </header>

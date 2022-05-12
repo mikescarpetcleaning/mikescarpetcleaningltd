@@ -118,14 +118,16 @@
 @media screen and (max-width: 600px) {
     .header {
         background-position: 90% 50%;
+        height: calc(100vh - 172px);
+        min-height: 500px;
     }
     .flag {
         width: 100%;
         padding-right: 5%;
     }
     .flag h1 {
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 34px;
+        line-height: 34px;
     }
     .blackFlag {
         width: 100%;

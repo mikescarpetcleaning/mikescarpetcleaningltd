@@ -15,9 +15,14 @@ const Footer: FC = () => {
                         mikescarpetcleaningltd@gmail.com<br/>
                         (360) 485-0028<br/>
                     </p>
-                    <Link href="https://www.facebook.com/Mikes-Carpet-Cleaning-Ltd-111268126937343">
-                        <Image src="/facebook-white.webp" layout="fixed" height="40px" width="40px" alt="facebook logo" />
-                    </Link>
+                    <div className={styles.socials}>
+                        <Link href="https://www.facebook.com/Mikes-Carpet-Cleaning-Ltd-111268126937343">
+                            <Image src="/facebook-white.webp" layout="fixed" height="40px" width="40px" alt="facebook logo" />
+                        </Link>
+                        <Link href="https://www.yelp.com/biz/mikes-carpet-cleaning-snohomish?osq=Mike%27s+Carpet+Cleaning+Ltd">
+                            <Image src="/yelp.png" layout="fixed" height="40px" width="40px" alt="facebook logo" />
+                        </Link>
+                    </div>
                 </div>
                 <div className={styles.right}>
                     <ul className={styles.menuLinks}>

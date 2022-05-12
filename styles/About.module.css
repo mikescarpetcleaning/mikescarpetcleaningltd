@@ -78,7 +78,7 @@
     margin: 0 0 48px;
     width: 700px;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25);
-    background: #F8F8F8CC;
+    background: #ffffff;
     padding: 36px;
     font-size: 20px;
     font-style: normal;
@@ -129,7 +129,7 @@
         width: 100%;
         border-radius: 0;
         border-bottom: 1px solid black;
-        background: #FFFFFFB3;
+        background: #FFFFFF;
         box-shadow: none;
         margin: 0;
     }

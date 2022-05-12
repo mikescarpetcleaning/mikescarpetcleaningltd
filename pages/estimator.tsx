@@ -53,10 +53,10 @@ const Estimator: NextPage = () => {
         dryerVent: false
     }
     const rates = {
-        areas: 40,
-        pet: 20,
-        scotch: 15,
-        linearFeet: 19,
+        areas: 45,
+        pet: 25,
+        scotch: 20,
+        linearFeet: 20,
         chairs: 69,
         seatCushions: 5,
         tile: 0.75,

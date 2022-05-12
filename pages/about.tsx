@@ -116,7 +116,7 @@ const About: NextPage = () => {
         />
         <div
           style={{
-            height: "15px",
+            height: "1px",
             width: "100%",
             background: "var(--dark)",
             boxShadow: "10px 0 20px 10px var(--dark",
