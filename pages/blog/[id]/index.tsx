@@ -9,7 +9,7 @@ const router = useRouter();
 
 const title = router.query.id;
 const post = posts.find(p => {
-  const encodedTitle = p.title.replaceAll(' ', '-')
+  const encodedTitle = p.title.replaceAll(" ", "-")
   return encodedTitle == title
 })
 
@@ -39,8 +39,8 @@ const post = posts.find(p => {
             />
             <link rel="manifest" href="/site.webmanifest" />
             <link rel="canonical" href="https://www.excelcarpetcleaningwa.com" />
-            <meta property="og:site_name" content="Mike's Carpet Cleaning LTD" />
-            <meta property="og:title" content="Mike's Carpet Cleaning LTD" />
+            <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD" />
+            <meta property="og:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta
             property="og:url"
             content="https://www.excelcarpetcleaningwa.com"
@@ -48,9 +48,9 @@ const post = posts.find(p => {
             <meta property="og:type" content="website" />
             <meta property="og:image:width" content="1500" />
             <meta property="og:image:height" content="195" />
-            <meta itemProp="name" content="Mike's Carpet Cleaning LTD" />
+            <meta itemProp="name" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta itemProp="url" content="https://www.excelcarpetcleaningwa.com" />
-            <meta name="twitter:title" content="Mike's Carpet Cleaning LTD" />
+            <meta name="twitter:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta name="twitter:image" content="/logo.webp" />
             <meta
             name="twitter:url"
