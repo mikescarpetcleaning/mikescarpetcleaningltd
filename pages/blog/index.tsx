@@ -57,7 +57,7 @@ const Home: NextPage = () => {
             <h1>Mike's Carpet Cleaning Blog</h1>
         </section>
         <main>
-            {posts.map(post => <Link href={`/blog/${post.title.replaceAll(' ', '-')}`}>{post.title}</Link>)}
+            {posts.map((post, index) => <Link key={index} href={`/blog/${post.title.replaceAll(' ', '-')}`}>{post.title}</Link>)}
         </main>
     </>
   );
