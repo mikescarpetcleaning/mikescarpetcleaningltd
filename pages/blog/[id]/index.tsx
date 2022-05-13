@@ -62,12 +62,12 @@ const post = posts.find(p => {
             content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"
             />
         </Head>
-        <section>
+        {post && <><section>
             <h1>{post.title}</h1>
         </section>
         <main dangerouslySetInnerHTML={{__html: post.content}}>
 
-        </main>
+        </main></>}
     </>
   );
 };
