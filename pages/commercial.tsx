@@ -52,18 +52,18 @@ const Commercial: NextPage = () => {
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="canonical" href="https://www.excelcarpetcleaningwa.com/commercial"/>
+        <link rel="canonical" href="https://mikescarpetcleaningltd.com/commercial"/>
         <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD"/>
         <meta property="og:title" content="Commercial Carpet and Tile Cleaning Services"/>
-        <meta property="og:url" content="https://www.excelcarpetcleaningwa.com/commercial"/>
+        <meta property="og:url" content="https://mikescarpetcleaningltd.com/commercial"/>
         <meta property="og:type" content="website"/>
         <meta property="og:image:width" content="1500"/>
         <meta property="og:image:height" content="195"/>
         <meta itemProp="name" content="Mike&apos;s Carpet Cleaning LTD"/>
-        <meta itemProp="url" content="https://www.excelcarpetcleaningwa.com/commercial"/>
+        <meta itemProp="url" content="https://mikescarpetcleaningltd.com/commercial"/>
         <meta name="twitter:title" content="Commercial Carpet and Tile Cleaning Services"/>
         <meta name="twitter:image" content="http://static1.squarespace.com/static/5f28d64858759f2fc1e07652/t/5f7b37e6562dae19d4df5584/1601910762830/Banner+bold.png?format=1500w"/>
-        <meta name="twitter:url" content="https://www.excelcarpetcleaningwa.com/commercial"/>
+        <meta name="twitter:url" content="https://mikescarpetcleaningltd.com/commercial"/>
         <meta name="twitter:card" content="summary"/>
         <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"/>
       </Head>
@@ -75,7 +75,7 @@ const Commercial: NextPage = () => {
                         We do contract work for many commercial clients. 
                         If you are interested in setting up recurring cleaning please email
                         or call with the details of the account.<br/>
-                        <a href="mailto:excelcarpetcleaning@gmail.com">mikescarpetcleaningltd@gmail.com</a><span>&nbsp;|&nbsp;</span>
+                        <a href="mailto:mikescarpetcleaning@gmail.com">mikescarpetcleaningltd@gmail.com</a><span>&nbsp;|&nbsp;</span>
                         <a href="tel:4253940404">(360) 485-0028</a>
                         <br/>
                         We can price a job the same day 

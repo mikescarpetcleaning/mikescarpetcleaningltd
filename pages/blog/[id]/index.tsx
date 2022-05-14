@@ -38,23 +38,23 @@ const post = posts.find(p => {
             href="/favicon-16x16.png"
             />
             <link rel="manifest" href="/site.webmanifest" />
-            <link rel="canonical" href="https://www.excelcarpetcleaningwa.com" />
+            <link rel="canonical" href="https://mikescarpetcleaningltd.com" />
             <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta property="og:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta
             property="og:url"
-            content="https://www.excelcarpetcleaningwa.com"
+            content="https://mikescarpetcleaningltd.com"
             />
             <meta property="og:type" content="website" />
             <meta property="og:image:width" content="1500" />
             <meta property="og:image:height" content="195" />
             <meta itemProp="name" content="Mike&apos;s Carpet Cleaning LTD" />
-            <meta itemProp="url" content="https://www.excelcarpetcleaningwa.com" />
+            <meta itemProp="url" content="https://mikescarpetcleaningltd.com" />
             <meta name="twitter:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta name="twitter:image" content="/logo.webp" />
             <meta
             name="twitter:url"
-            content="https://www.excelcarpetcleaningwa.com"
+            content="https://mikescarpetcleaningltd.com"
             />
             <meta name="twitter:card" content="summary" />
             <meta

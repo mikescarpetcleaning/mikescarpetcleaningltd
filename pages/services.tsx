@@ -134,40 +134,40 @@ const Services: NextPage<any> = (props: any) => {
       <Head>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Pricing For Carpet, Tile, and Upholstery Cleaning | Excel</title>
+        <title>Pricing For Carpet, Tile, and Upholstery Cleaning | Mikes Carpet Cleaning LTD</title>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link
           rel="canonical"
-          href="https://www.excelcarpetcleaningwa.com/services"
+          href="https://mikescarpetcleaningltd.com/services"
         />
         <meta
           property="og:site_name"
-          content="Excel Carpet Cleaning Services"
+          content="Mikes Carpet Cleaning LTD"
         />
         <meta
           property="og:title"
-          content="Pricing For Carpet, Tile, and Upholstery Cleaning | Excel"
+          content="Pricing For Carpet, Tile, and Upholstery Cleaning | Mikes Carpet Cleaning LTD"
         />
         <meta
           property="og:url"
-          content="https://www.excelcarpetcleaningwa.com/services"
+          content="https://mikescarpetcleaningltd.com/services"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image:width" content="1500" />
         <meta property="og:image:height" content="195" />
         <meta
           itemProp="name"
-          content="Pricing For Carpet, Tile, and Upholstery Cleaning | Excel"
+          content="Pricing For Carpet, Tile, and Upholstery Cleaning | Mikes Carpet Cleaning LTD"
         />
         <meta
           itemProp="url"
-          content="https://www.excelcarpetcleaningwa.com/services"
+          content="https://mikescarpetcleaningltd.com/services"
         />
         <meta
           name="twitter:title"
-          content="Pricing For Carpet, Tile, and Upholstery Cleaning | Excel"
+          content="Pricing For Carpet, Tile, and Upholstery Cleaning | Mikes Carpet Cleaning LTD"
         />
         <meta
           name="twitter:image"
@@ -175,7 +175,7 @@ const Services: NextPage<any> = (props: any) => {
         />
         <meta
           name="twitter:url"
-          content="https://www.excelcarpetcleaningwa.com/services"
+          content="https://mikescarpetcleaningltd.com/services"
         />
         <meta name="twitter:card" content="summary" />
         <meta

@@ -17,13 +17,13 @@ const About: NextPage = () => {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link
           rel="canonical"
-          href="https://www.excelcarpetcleaningwa.com/about"
+          href="https://mikescarpetcleaningltd.com/about"
         />
         <meta property="og:site_name" content="Mike's Carpet Cleaning LTD" />
         <meta property="og:title" content="About Mike's Carpet Cleaning LTD" />
         <meta
           property="og:url"
-          content="https://www.excelcarpetcleaningwa.com/about"
+          content="https://mikescarpetcleaningltd.com/about"
         />
         <meta property="og:type" content="website" />
         <meta property="og:image:width" content="1500" />
@@ -31,7 +31,7 @@ const About: NextPage = () => {
         <meta itemProp="name" content="Mike's Carpet Cleaning LTD" />
         <meta
           itemProp="url"
-          content="https://www.excelcarpetcleaningwa.com/about"
+          content="https://mikescarpetcleaningltd.com/about"
         />
         <meta name="twitter:title" content="About Mike's Carpet Cleaning LTD" />
         <meta
@@ -40,7 +40,7 @@ const About: NextPage = () => {
         />
         <meta
           name="twitter:url"
-          content="https://www.excelcarpetcleaningwa.com/about"
+          content="https://mikescarpetcleaningltd.com/about"
         />
         <meta name="twitter:card" content="summary" />
         <meta
@@ -103,7 +103,7 @@ const About: NextPage = () => {
         <Family
           image="/rainier.webp"
           mobileImage="/rainier.webp"
-          alt="Excel owner and son"
+          alt="Mount rainier"
           heading1="About"
           heading2="Our Staff"
           body="Hi! We're Mike and Brenda, Local Owner Operators of Mike's Carpet Cleaning Ltd.

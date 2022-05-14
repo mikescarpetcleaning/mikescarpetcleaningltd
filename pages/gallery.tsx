@@ -17,18 +17,18 @@ const Gallery: NextPage<any> = () => {
 
                 <title>Carpet Cleaning Pictures | Before and After plus More!</title>
                 <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f28d64858759f2fc1e07652/e776c5a2-1be6-459f-8947-7534111b93d0/favicon.ico?format=100w"/>
-                <link rel="canonical" href="https://www.excelcarpetcleaningwa.com/gallery"/>
-                <meta property="og:site_name" content="Excel Carpet Cleaning Services"/>
+                <link rel="canonical" href="https://mikescarpetcleaningltd.com/gallery"/>
+                <meta property="og:site_name" content="Mikes carpet cleaning LTD"/>
                 <meta property="og:title" content="Carpet Cleaning Pictures | Before and After plus More!"/>
-                <meta property="og:url" content="https://www.excelcarpetcleaningwa.com/gallery"/>
+                <meta property="og:url" content="https://mikescarpetcleaningltd.com/gallery"/>
                 <meta property="og:type" content="website"/>
                 <meta property="og:image:width" content="1500"/>
                 <meta property="og:image:height" content="195"/>
                 <meta itemProp="name" content="Carpet Cleaning Pictures | Before and After plus More!"/>
-                <meta itemProp="url" content="https://www.excelcarpetcleaningwa.com/gallery"/>
+                <meta itemProp="url" content="https://mikescarpetcleaningltd.com/gallery"/>
                 <meta name="twitter:title" content="Carpet Cleaning Pictures | Before and After plus More!"/>
                 <meta name="twitter:image" content="http://static1.squarespace.com/static/5f28d64858759f2fc1e07652/t/5f7b37e6562dae19d4df5584/1601910762830/Banner+bold.png?format=1500w"/>
-                <meta name="twitter:url" content="https://www.excelcarpetcleaningwa.com/gallery"/>
+                <meta name="twitter:url" content="https://mikescarpetcleaningltd.com/gallery"/>
                 <meta name="twitter:card" content="summary"/>
                 <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"/>
             </Head>

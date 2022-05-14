@@ -3,6 +3,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { posts } from "../../blogPosts/posts";
 
+import styles from "../../blogStyles/Blog.module.css";
+
 const Home: NextPage = () => {
   return (
     <>
@@ -29,23 +31,23 @@ const Home: NextPage = () => {
             href="/favicon-16x16.png"
             />
             <link rel="manifest" href="/site.webmanifest" />
-            <link rel="canonical" href="https://www.excelcarpetcleaningwa.com" />
+            <link rel="canonical" href="https://mikescarpetcleaningltd.com" />
             <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta property="og:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta
             property="og:url"
-            content="https://www.excelcarpetcleaningwa.com"
+            content="https://mikescarpetcleaningltd.com"
             />
             <meta property="og:type" content="website" />
             <meta property="og:image:width" content="1500" />
             <meta property="og:image:height" content="195" />
             <meta itemProp="name" content="Mike&apos;s Carpet Cleaning LTD" />
-            <meta itemProp="url" content="https://www.excelcarpetcleaningwa.com" />
+            <meta itemProp="url" content="https://mikescarpetcleaningltd.com" />
             <meta name="twitter:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta name="twitter:image" content="/logo.webp" />
             <meta
             name="twitter:url"
-            content="https://www.excelcarpetcleaningwa.com"
+            content="https://mikescarpetcleaningltd.com"
             />
             <meta name="twitter:card" content="summary" />
             <meta
@@ -53,11 +55,27 @@ const Home: NextPage = () => {
             content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"
             />
         </Head>
-        <section>
+        <section className={styles.header}>
             <h1>Mike&apos;s Carpet Cleaning Blog</h1>
         </section>
-        <main>
-            {posts && posts.map((post, index) => <Link key={index} href={`/blog/${post.title.replaceAll(" ", "-")}`}>{post.title}</Link>)}
+        <main className={styles.feed}>
+          <div className={styles.maxWidth}>
+            <h2>Featured Articles</h2>
+            <div className={styles.feedGrid}>
+              {posts && posts.map((post, index) => <Link key={index} href={`/blog/${post.title.replaceAll(" ", "-")}`}>
+                  <div className={styles.post}>
+                    <div 
+                      className={styles.featuredImage} 
+                      dangerouslySetInnerHTML={post.featured_image ? 
+                        { __html: post.featured_image } : 
+                        { __html: '<img alt="no image found" />'}}></div>
+                    <a>{post.title}</a>
+                    {post.excerpt && <p>{post.excerpt}</p>}
+                  </div>
+                </Link>
+                )}
+            </div>
+          </div>
         </main>
     </>
   );

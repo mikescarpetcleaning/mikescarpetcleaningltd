@@ -1,6 +1,8 @@
 export const posts: any[] = [
   {
     title: "5 Reasons Why You Should Clean Your Carpets TODAY",
+    featured_image: `<img src="/post-1-dirty.webp" alt="dirty carpets with a clean stripe" width="auto" height="auto" />`,
+    excerpt: "Maintaining carpet is the responsibility of homeowners that is most often neglected. Here are three reasons why you should get your carpets cleaned ASAP.",
     content: `
         <img src="/post-1-dirty.webp" alt="dirty carpets with a clean stripe" width="auto" height="auto" />
         <p>Maintaining carpet is the responsibility of homeowners that is most often neglected. 

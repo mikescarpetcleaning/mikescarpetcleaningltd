@@ -1,4 +1,4 @@
-const siteUrl = "https://www.excelcarpetcleaningwa.com";
+const siteUrl = "https://www.mikescarpetcleaningltd.com";
 
 module.exports = {
     siteUrl,
