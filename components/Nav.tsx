@@ -28,7 +28,7 @@ const Nav: FC<any> = () => {
                     <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo" />
                 </a>
             </Link>
-            <Link href="tel:4253940404">
+            <Link href="tel:3604850028">
                 <a onClick={() => toggleMenu(true)} className={styles.phoneCall}>
                     <Image src="/phone-icon.webp" layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo" />
                 </a>

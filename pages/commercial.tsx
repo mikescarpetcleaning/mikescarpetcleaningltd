@@ -65,7 +65,7 @@ const Commercial: NextPage = () => {
         <meta name="twitter:image" content="http://static1.squarespace.com/static/5f28d64858759f2fc1e07652/t/5f7b37e6562dae19d4df5584/1601910762830/Banner+bold.png?format=1500w"/>
         <meta name="twitter:url" content="https://mikescarpetcleaningltd.com/commercial"/>
         <meta name="twitter:card" content="summary"/>
-        <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"/>
+        <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"/>
       </Head>
         <main>
             <header className={styles.header}>
@@ -76,7 +76,7 @@ const Commercial: NextPage = () => {
                         If you are interested in setting up recurring cleaning please email
                         or call with the details of the account.<br/>
                         <a href="mailto:mikescarpetcleaning@gmail.com">mikescarpetcleaningltd@gmail.com</a><span>&nbsp;|&nbsp;</span>
-                        <a href="tel:4253940404">(360) 485-0028</a>
+                        <a href="tel:3604850028">(360) 485-0028</a>
                         <br/>
                         We can price a job the same day 
                         of service or we can bid in advance. Pricing varies depending on job size, 

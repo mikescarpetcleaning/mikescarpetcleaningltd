@@ -180,7 +180,7 @@ const Services: NextPage<any> = (props: any) => {
         <meta name="twitter:card" content="summary" />
         <meta
           name="description"
-          content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"
+          content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
         />
       </Head>
       <ServiceHero />

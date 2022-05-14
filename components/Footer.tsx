@@ -38,9 +38,9 @@ const Footer: FC = () => {
                         <li>
                             <Link href="/faq">FAQ</Link>
                         </li>
-                        <li>
+                        {/* <li>
                             <Link href="/gallery">Gallery</Link>
-                        </li>
+                        </li> */}
                         <li>
                             <Link href="/contact">Contact</Link>
                         </li>

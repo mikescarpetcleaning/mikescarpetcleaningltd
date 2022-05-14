@@ -25,7 +25,7 @@ const Privacy: NextPage = () => {
         <meta name="twitter:image" content="http://static1.squarespace.com/static/5f28d64858759f2fc1e07652/t/5f7b37e6562dae19d4df5584/1601910762830/Banner+bold.png?format=1500w"/>
         <meta name="twitter:url" content="https://mikescarpetcleaningltd.com/privacy"/>
         <meta name="twitter:card" content="summary"/>
-        <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Washington plateau area from Maple Valley to Sammamish and beyond!"/>
+        <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"/>
       </Head>
         <aside className="pp">
             <h1>Privacy Policy</h1>
@@ -42,7 +42,7 @@ const Privacy: NextPage = () => {
             <p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
             </li>
             <li>
-            <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Mike&apos;s Carpet Cleaning LTD, 26828 Maple Valley HWY Suite 194, Maple Valley, WA 98038.</p>
+            <p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Mike&apos;s Carpet Cleaning LTD.</p>
             </li>
             <li>
             </li>
