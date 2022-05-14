@@ -31,10 +31,10 @@ const Spills: FC = () => {
             </div>
             <div className={styles.left}>
                 <div ref={spotImages} className={styles.imageContainer}>
-                    <Image src="/candle-wax.webp" alt="lit candle" layout="fill" objectFit="cover" />
-                    <Image src="/coffee-1.webp" alt="coffee spill" layout="fill" objectFit="cover" />
-                    <Image src="/coffee-2.webp" alt="coffee spill" layout="fill" objectFit="cover" />
-                    <Image src="/wine.webp" alt="wine splashing out of cup" layout="fill" objectFit="cover" />
+                    <Image src="/candle-wax.webp" alt="lit candle" layout="fill" objectFit="cover" placeholder="blur" />
+                    <Image src="/coffee-1.webp" alt="coffee spill" layout="fill" objectFit="cover" placeholder="blur" />
+                    <Image src="/coffee-2.webp" alt="coffee spill" layout="fill" objectFit="cover" placeholder="blur" />
+                    <Image src="/wine.webp" alt="wine splashing out of cup" layout="fill" objectFit="cover" placeholder="blur" />
                 </div>
                 <ul ref={spotMenu}>
                     <li className="menu-item active-spot" onClick={() => open(0)}>Candle Wax</li>

@@ -101,7 +101,7 @@ const Newsletter: FC = () => {
             </form>
             :
             <div className={styles.submitted}>
-                <Image src="/submit.webp" layout="fixed" height="75px" width="75px" loading="lazy" alt="submission recieved checkmark" />
+                <Image src="/submit.webp" layout="fixed" height="75px" width="75px" loading="lazy" alt="submission recieved checkmark" placeholder="blur" />
                 <div className={styles.submitDetails}>
                     <h3>Thank you for your submission!</h3>
                     <p>Our Team will be in contact with you soon.</p>   
