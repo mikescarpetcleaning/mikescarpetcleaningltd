@@ -30,7 +30,7 @@ const carpetList = {
       process: `​Over time, pet urine on your carpeting gets absorbed and sink to the 
       bottom where the liquid will evaporate until all that is left is the pungent 
       odor. This odor will be hard to remove with just simple at home cleaning. 
-      We have commercial grade cleaning products that can eleminate pet orders and stains`,
+      We have commercial grade cleaning products that can eliminate pet orders and stains`,
       pricing: `
         <div class="pricing-box">
         <p class="bold">$25.00 Per Area*</p>
