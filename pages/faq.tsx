@@ -25,14 +25,11 @@ const faqs = [
         · Mountlake Terrace<br/>
         · Duvall<br/>
         · Kirkland<br/>
-        · Clinton<br/>
-        · Redmond<br/>
-        · Langley<br/>
-        · Seattle`
+        · Redmond<br/>`
     },
     {
-        question: "How long to carpets take to dry?",
-        answer: "The carpets are slightly damp after cleaning, and can be walked on with clean non-marking shoes (not with bare feet) in about 30 minutes. Normal soiled carpets usually dry between 3-4 hours after cleaning. Keeping room temperature at or above 65 degree's, cracking windows slightly open to allow moisture to escape outside and running fans to move the moisture in the air will shorten the time needed to dry."
+        question: "How long do carpets take to dry?",
+        answer: "The carpets are slightly damp after cleaning, and can be walked on with clean non-marking shoes (not with bare feet) in about 30 minutes. Normal soiled carpets usually dry between 4-6 hours after cleaning. Keeping room temperature at or above 65 degree's, cracking windows slightly open to allow moisture to escape outside and running fans to move the moisture in the air will shorten the time needed to dry."
     },
     {
         question: "Should I vacuum before cleaning?",

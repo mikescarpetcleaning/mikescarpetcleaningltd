@@ -15,7 +15,7 @@ const Family: FC<props> = ({ image, mobileImage, alt, heading1, heading2, body }
     return (
         <section style={{ backgroundImage: `url(${image})` }}className={styles.family}>
             <div className={styles.mobileImage}>
-                <Image src={mobileImage} alt={alt} layout="fill" objectFit="cover" placeholder="blur" />
+                <Image src={mobileImage} alt={alt} layout="fill" objectFit="cover"   />
             </div>
             <div className={styles.flag}>
                 <h2>{heading1}<br/>{heading2}</h2>

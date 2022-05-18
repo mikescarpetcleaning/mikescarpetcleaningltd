@@ -24,7 +24,7 @@ const Why: NextPage = () => {
                 layout="fill"
                 objectFit="contain"
                 alt="IICRC Logo"
-                placeholder="blur"
+                 
                 />
             </div>
             <div className={styles.flag}>
@@ -54,7 +54,7 @@ const Why: NextPage = () => {
                 layout="fill"
                 objectFit="contain"
                 alt="experienced technicians"
-                placeholder="blur"
+                 
                 />
             </div>
             <div className={styles.flag}>
@@ -84,7 +84,7 @@ const Why: NextPage = () => {
                 layout="fill"
                 objectFit="contain"
                 alt="hands and gear icon"
-                placeholder="blur"
+                 
                 />
             </div>
             <div className={styles.flag}>

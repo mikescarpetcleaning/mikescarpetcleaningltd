@@ -7,6 +7,7 @@ import Why from "../components/Why";
 import Frequent from "../components/Frequent";
 import { useEffect } from "react";
 import { Modal } from "../components/Modal";
+import Easy from "../components/Easy";
 
 const Home: NextPage = () => {
   return (
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <Hero />
+      <Easy />
       <Why />
       <Family
         image="/skyscrape.webp"

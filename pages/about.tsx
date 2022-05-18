@@ -61,7 +61,7 @@ const About: NextPage = () => {
             layout="fill"
             objectFit="cover"
             alt="vans lined up"
-            placeholder="blur"
+             
           />
         </div>
         <section className={styles.business}>

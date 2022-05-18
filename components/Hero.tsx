@@ -9,12 +9,12 @@ const Hero: FC<any> = () => {
         <header className={styles.header}>
             <div className={styles.flag}>
                 <h1>
-                    Top Quality Carpet Cleaning Services
+                    Mike’s Carpet Cleaning Ltd
                 </h1>
             </div>
             <div className={styles.blackFlag}>
                 <h2>
-                    Carpet, Tile and Grout, Upholstery, and Hardwood Experts!
+                    Your Reliable Carpet, Upholstery, Tile &amp; Hardwood Cleaning Experts
                 </h2>
             </div>
         </header>

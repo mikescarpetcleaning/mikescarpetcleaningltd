@@ -17,7 +17,7 @@ const carpetList = {
         <div class="pricing-box">
         <p class="bold">Any 2 Rooms/Areas only $145</p>
         <p>Additional Rooms/Areas: $45 (Each)</p>
-        <p>An area is defined as a room, staircase or hallway. Living room and dining room combos and large bonus rooms are equal to two areas. Some L-shaped hallways can be considered 2 areas. Max 15x15 ft or 225 sq ft per room/area.</p>
+        <p>An area is defined as a room, staircase or hallway up to 200 sq ft.. Living room and dining room combos are equal to 2 areas. Some Master bedrooms, bonus & living rooms can be oversized and count as 2 or more areas based on size.</p>
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>
         <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,
@@ -99,10 +99,8 @@ const hardSurfaceList = {
       pricing: `
         <div class="pricing-box">
         <p><span class="bold">Cleaning:</span> $1/sqft. for first 500 square feet, $0.75/sqft. after 500 square feet</p>
-       
-        <p><span class="bold">Sealant:</span> $0.50 per square foot*</p>
-       
-        <p class="disclaimer">*125 sq ft. minimum</p>
+              
+        <p class="disclaimer">*145 sq ft. minimum</p>
         <p class="disclaimer">*Sealant must include purchase of tile cleaning</p>
         <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,
@@ -116,9 +114,9 @@ const hardSurfaceList = {
         <div class="pricing-box">
         <p><span class="bold">Cleaning:</span> $1/sqft. for first 500 square feet, $0.75/sqft. after 500 square feet</p>
        
-        <p><span class="bold">Preservation Finish:</span> INCLUDED WITH CLEANING!</p>
+        <p><span class="bold">Preservation Finish:</span> $0.50/sqft.</p>
        
-        <p class="disclaimer">*125 sq ft. minimum</p>
+        <p class="disclaimer">*145 sq ft. minimum</p>
         <p class="disclaimer">*Preservation finish must include purchase of hardwood cleaning</p>
         <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,

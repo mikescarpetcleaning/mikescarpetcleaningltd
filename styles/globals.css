@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&display=swap');
+
 :root {
   --yellow: #80bb56;
   --yellow-80: #80bb56da;
   --dark: #1c173b;
+  --dark-80: rgba(28, 23, 59, 0.8);
   --gray: #F8F8F8;
+  --bask: 'Baskerville';
 }
 html,
 body {
@@ -31,6 +35,7 @@ a {
 * {
   box-sizing: border-box;
   font-family: 'Karla';
+  /* font-family: var(--bask); */
 }
 
 #__next > * {
@@ -56,6 +61,7 @@ form h2.open::after {
   height: 60px;
   border-radius: 99vw;
   background: var(--yellow);
+  border: 3px solid var(--dark);
   padding: 0;
   line-height: 1;
   display: flex;
