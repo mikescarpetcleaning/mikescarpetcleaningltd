@@ -103,7 +103,7 @@ const Why: NextPage = () => {
             </a>
         </Link>
       </div>
-      <Link href="/scheduling">
+      <Link href="/schedule-carpet-cleaning">
         <a className="why btn">Book Appointment</a>
       </Link>
     </section>

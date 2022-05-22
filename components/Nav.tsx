@@ -1,13 +1,15 @@
-import { FC, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import Image from 'next/image';
 import logo from "/public/logo.webp";
 import Link from 'next/link';
 
 import styles from "../styles/Nav.module.css";
+import PreHero from './PreHero';
 
 const Nav: FC<any> = () => {
     const menu = useRef<any>(null);
     const burger = useRef<any>(null);
+    const nav = useRef<any>(null);
     const toggleMenu = (isSchedule: boolean) => {
         if (menu.current.style.left === "0px") {
             burger.current.classList.remove("burger-close");
@@ -18,8 +20,17 @@ const Nav: FC<any> = () => {
         }
         
     }
+    useEffect(() => {
+        const scrollHandler = () => {
+            if (window.pageYOffset <= 0) nav.current.classList.add('docked');
+            else nav.current.classList.remove('docked')
+        }
+        document.addEventListener('scroll', scrollHandler);
+
+        return () => document.removeEventListener('scroll', scrollHandler);
+    }, [])
     return (
-        <nav className={styles.nav}>
+        <nav ref={nav} className={styles.nav + " docked"}>
             <div ref={burger} onClick={() => toggleMenu(false)} className={styles.burger}>
                 &nbsp;
             </div>
@@ -54,7 +65,7 @@ const Nav: FC<any> = () => {
                     <Link href="/blog">Blog</Link>
                 </li>
             </ul>
-            <Link href="/scheduling">
+            <Link href="/schedule-carpet-cleaning">
                 <a onClick={() => toggleMenu(true)} className="btn">
                     Book Appointment
                 </a>

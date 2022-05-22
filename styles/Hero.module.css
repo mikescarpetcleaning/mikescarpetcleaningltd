@@ -14,20 +14,21 @@
     width: fit-content;
     height: fit-content;
     background-image: linear-gradient(to right, 
-    var(--yellow) 0%,
-    var(--yellow) 80%,
+    var(--dark) 0%,
+    var(--dark) 80%,
     transparent);
     background-size: 100% 100%;
     padding-left: 5%;
+    padding-right: 10%;
 }
 .flag h1 {
     max-width: 650px;
     font-size: 64px;
     font-style: italic;
     font-family: var(--bask);
-    color: var(--dark);
+    color: var(--yellow);
     text-shadow: 5px 5px 5px rgba(0,0,0,0.25);
-    font-weight: 600;
+    font-weight: 500;
     line-height: 64px;
     letter-spacing: 0em;
     text-align: left;
@@ -41,21 +42,22 @@
     width: fit-content;
     height: fit-content;
     padding-left: 5%;
+    padding-right: 10%;
     background-image: linear-gradient(to right, 
-    var(--dark) 0%,
-    var(--dark) 80%,
+    var(--yellow) 0%,
+    var(--yellow) 80%,
     transparent);
     background-size: 100% 100%;
 }
 .blackFlag h2 {
     max-width: 600px;
     margin: 12px 0;
-    color: var(--yellow);
+    color: var(--dark);
     text-shadow: 5px 5px 5px rgba(0,0,0,0.25);
     font-size: 42px;
     font-family: var(--bask);
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 42px;
     letter-spacing: 0em;
     text-align: left;
@@ -89,6 +91,14 @@
     margin: 12px 0;
 }
 
+@media screen and (min-width: 1200px) {
+    .flag {
+        display: none;
+    }
+    .blackFlag {
+        display: none;
+    }
+}
 @media screen and (max-width: 1024px) {
     .flag h1 {
         font-size: 48px;

@@ -100,7 +100,7 @@ const Frequent: FC<props> = () => {
                         </div>
                     </div>
                 </div>
-                <Link href="/scheduling">
+                <Link href="/schedule-carpet-cleaning">
                     <a className={[styles.btn, "btn"].join(' ')}>
                         Book Appointment
                     </a>

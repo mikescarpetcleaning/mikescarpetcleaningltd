@@ -1,0 +1,47 @@
+.preHero {
+    padding: 16px 36px 16px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.imgContainer {
+    width: 600px;
+    height: 150px;
+    position: relative;
+}
+.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.iconRow {
+    display: flex;
+}
+.iconContainer {
+    position: relative;
+    filter: brightness(0.5);
+    margin: 0 6px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.bookBox {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.bookBox p {
+    font-weight: 700;
+}
+@media screen and (max-width: 1200px) {
+    .preHero {
+        display: none;
+    }
+}

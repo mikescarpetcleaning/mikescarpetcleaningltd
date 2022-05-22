@@ -39,7 +39,7 @@ a {
 }
 
 #__next > * {
-  transition: all 1s;
+  transition: opacity 1s;
 }
 .hidden {
   opacity: 0 !important;
@@ -55,8 +55,8 @@ form h2.open::after {
   margin-right: auto;
   margin-left: auto;
 }
-
 .btn {
+  overflow: hidden;
   width: 320px;
   height: 60px;
   border-radius: 99vw;

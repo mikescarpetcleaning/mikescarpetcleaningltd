@@ -646,7 +646,7 @@ const Estimator: NextPage = () => {
                     <p>TOTAL: ${price}</p>
                     <button onClick={() => setEstimate(defaultEstimate)}>CLEAR</button>
                 </div>
-                <Link href="/scheduling">
+                <Link href="/schedule-carpet-cleaning">
                     <a className="btn">
                         Book Appointment
                     </a>

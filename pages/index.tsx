@@ -8,6 +8,7 @@ import Frequent from "../components/Frequent";
 import { useEffect } from "react";
 import { Modal } from "../components/Modal";
 import Easy from "../components/Easy";
+import PreHero from "../components/PreHero";
 
 const Home: NextPage = () => {
   return (
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
           content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
         />
       </Head>
+      <PreHero />
       <Hero />
       <Easy />
       <Why />
@@ -78,6 +80,30 @@ const Home: NextPage = () => {
         problems such as synthetic stains, rust, ink and fingernail polish and are extracted 
         from your carpets.'
       />
+      <style>{`.announce{ display: none }`}</style>
+      <style>{`
+      @media screen and (min-width: 1200px) {
+        .docked {
+          background: var(--yellow) !important;
+          height: 54px !important;
+          padding: 0 !important;
+          box-shadow: 0 0 0 rgba(0,0,0,0) !important;
+        }
+        .docked > :nth-child(2) {
+          width: 0;
+          height: 0;
+        }
+        .docked > :nth-child(4) {
+          margin-left: 210px;
+          justify-content: center;
+        }
+        .docked > :nth-child(5) {
+          width: 0;
+          height: 0;
+          opacity: 0;
+        }
+      }
+      `}</style>
     </>
   );
 };

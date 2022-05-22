@@ -44,7 +44,7 @@ const ServiceNav: FC = () => {
                     </Link>
                 </li>
             </ul>
-            <Link href="/scheduling">
+            <Link href="/schedule-carpet-cleaning">
                 <a onClick={() => {}} className={styles.schedule + " btn"}>
                     Book Appointment
                 </a>

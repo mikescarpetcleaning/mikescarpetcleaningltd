@@ -26,7 +26,7 @@ const ServiceItem: FC<any> = ({itemDetails}: any) => {
                 <h2>{itemDetails.heading}</h2>
             </div>
             {itemDetails.itemDetails.map((item: props, index: number) => <ServiceSubItem key={index} itemDetails={item} />)}
-            <Link href="/scheduling">
+            <Link href="/schedule-carpet-cleaning">
                 <a className="btn bigBtn">
                     {itemDetails.ctaText}
                 </a>
