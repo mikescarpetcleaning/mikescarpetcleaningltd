@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import Vollara from "../components/Vollara";
 import Connect from "../serviceComponents/Connect";
 import ServiceHero from "../serviceComponents/ServiceHero";
 import ServiceItem from "../serviceComponents/ServiceItem";
@@ -186,6 +187,7 @@ const Services: NextPage<any> = (props: any) => {
       <ServiceItem itemDetails={carpetList} />
       <ServiceItem itemDetails={upholsteryList} />
       <ServiceItem itemDetails={hardSurfaceList} />
+      <Vollara />
     </>
   );
 };
