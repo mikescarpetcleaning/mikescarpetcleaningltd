@@ -55,6 +55,9 @@ form h2.open::after {
   margin-right: auto;
   margin-left: auto;
 }
+.underline {
+  text-decoration: underline;
+}
 .btn {
   overflow: hidden;
   width: 320px;

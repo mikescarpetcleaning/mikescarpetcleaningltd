@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import { Modal } from "../components/Modal";
 import Easy from "../components/Easy";
 import PreHero from "../components/PreHero";
+import Vollara from "../components/Vollara";
 
 const Home: NextPage = () => {
   return (
@@ -55,6 +56,7 @@ const Home: NextPage = () => {
       <PreHero />
       <Hero />
       <Easy />
+      <Vollara />
       <Why />
       <Family
         image="/skyscrape.webp"
