@@ -31,45 +31,47 @@ const Nav: FC<any> = () => {
     }, [])
     return (
         <nav ref={nav} className={styles.nav + " docked"}>
-            <div ref={burger} onClick={() => toggleMenu(false)} className={styles.burger}>
-                &nbsp;
+            <div className={styles.navInner}>
+                <div ref={burger} onClick={() => toggleMenu(false)} className={styles.burger}>
+                    &nbsp;
+                </div>
+                <Link href="/">
+                    <a onClick={() => toggleMenu(true)} className={styles.imageContainer}>
+                        <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo"   />
+                    </a>
+                </Link>
+                <Link href="tel:3604850028">
+                    <a onClick={() => toggleMenu(true)} className={styles.phoneCall}>
+                        <Image src="/phone-icon.webp" layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo"   />
+                    </a>
+                </Link>
+                
+                <ul ref={menu} className={styles.menuLinks}>
+                    <li onClick={() => toggleMenu(false)}>
+                        <Link href="/services">Services / Pricing</Link>
+                    </li>
+                    {/* <li onClick={() => toggleMenu(false)}>
+                        <Link href="/estimator">Estimator</Link>
+                    </li> */}
+                    <li onClick={() => toggleMenu(false)}>
+                        <Link href="/about">About Us</Link>
+                    </li>
+                    <li onClick={() => toggleMenu(false)}>
+                        <Link href="/faq">FAQ</Link>
+                    </li>
+                    <li onClick={() => toggleMenu(false)}>
+                        <Link href="/contact">Contact</Link>
+                    </li>
+                    <li onClick={() => toggleMenu(false)}>
+                        <Link href="/blog">Blog</Link>
+                    </li>
+                </ul>
+                <Link href="/schedule-carpet-cleaning">
+                    <a onClick={() => toggleMenu(true)} className="btn">
+                        Book Appointment
+                    </a>
+                </Link>
             </div>
-            <Link href="/">
-                <a onClick={() => toggleMenu(true)} className={styles.imageContainer}>
-                    <Image src={logo} layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo"   />
-                </a>
-            </Link>
-            <Link href="tel:3604850028">
-                <a onClick={() => toggleMenu(true)} className={styles.phoneCall}>
-                    <Image src="/phone-icon.webp" layout="fill" objectFit="contain" objectPosition="left" alt="Mikes carpet cleaning logo"   />
-                </a>
-            </Link>
-            
-            <ul ref={menu} className={styles.menuLinks}>
-                <li onClick={() => toggleMenu(false)}>
-                    <Link href="/services">Services / Pricing</Link>
-                </li>
-                {/* <li onClick={() => toggleMenu(false)}>
-                    <Link href="/estimator">Estimator</Link>
-                </li> */}
-                <li onClick={() => toggleMenu(false)}>
-                    <Link href="/about">About Us</Link>
-                </li>
-                <li onClick={() => toggleMenu(false)}>
-                    <Link href="/faq">FAQ</Link>
-                </li>
-                <li onClick={() => toggleMenu(false)}>
-                    <Link href="/contact">Contact</Link>
-                </li>
-                <li onClick={() => toggleMenu(false)}>
-                    <Link href="/blog">Blog</Link>
-                </li>
-            </ul>
-            <Link href="/schedule-carpet-cleaning">
-                <a onClick={() => toggleMenu(true)} className="btn">
-                    Book Appointment
-                </a>
-            </Link>
         </nav>
     )
 }

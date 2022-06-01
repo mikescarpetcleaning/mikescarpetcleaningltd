@@ -7,10 +7,13 @@ import styles from "../styles/Vollara.module.css";
 export default function Vollara() {
     return (
         <section className={styles.vollara}>
+            <div className={styles.banner}>
+                <h2>The Air Quality in your home and work space is more important than ever!</h2>
+            </div>
             <div className={styles.maxWidth}>
                 <div className={styles.row}>
                     <div className={styles.textBox}>
-                        <h2>No matter where you live, work, teach or play,<span className={styles.split}></span>live fully with <span className="underline">confidence.</span></h2>
+                        <h3>No matter where you live, work, teach or play, live fully with <span className="underline">confidence.</span></h3>
                         {/* <h2>live fully with <span className="underline">confidence.</span><span className={styles.split}></span>Wherever you live, work, teach or play.</h2> */}
                         <p>
                             The Vollara® Air &amp; Surface Pro combines multiple complementary technologies,

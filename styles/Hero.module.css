@@ -27,7 +27,6 @@
     font-style: italic;
     font-family: var(--bask);
     color: var(--yellow);
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.25);
     font-weight: 500;
     line-height: 64px;
     letter-spacing: 0em;
@@ -53,7 +52,6 @@
     max-width: 600px;
     margin: 12px 0;
     color: var(--dark);
-    text-shadow: 5px 5px 5px rgba(0,0,0,0.25);
     font-size: 42px;
     font-family: var(--bask);
     font-style: italic;

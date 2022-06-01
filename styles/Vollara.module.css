@@ -14,6 +14,15 @@
     margin: 0;
     margin-bottom: 48px;
 }
+.vollara h3 {
+    max-width: 700px;
+    text-align: left;
+    color: white;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 48px;
+    font-size: 32px;
+}
 .split {
     display: block;
     margin-bottom: 12px;
@@ -48,6 +57,17 @@
 .disclaimer {
     margin: 0 !important;
 }
+.banner {
+    width: calc(100% + 72px);
+    margin: -72px 0 16px -36px;
+    padding: 32px 15%;
+    background: var(--dark);
+}
+.banner h2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
 
 @media screen and (min-width: 1536px) {
     .vollara {
@@ -61,7 +81,7 @@
         flex-direction: column-reverse;
     }
     .vollara {
-        background: linear-gradient(to bottom, var(--yellow) 400px, var(--dark) 400px);
+        background: linear-gradient(to bottom, var(--yellow) 500px, var(--dark) 500px);
     }
 }
 @media screen and (max-width: 820px) {
@@ -70,7 +90,7 @@
     }
     .vollara {
         padding: 32px 16px;
-        background: linear-gradient(to bottom, var(--yellow) 250px, var(--dark) 250px);
+        background: linear-gradient(to bottom, var(--yellow) 500px, var(--dark) 500px);
     }
     .imageContainer {
         height: 300px;
@@ -78,5 +98,13 @@
     .imageBox {
         height: fit-content;
         margin-bottom: 32px;
+    }
+    .banner {
+        padding: 32px 16px 16px;
+        width: calc(100% + 32px) !important;
+        margin: -32px 0 16px -16px !important;
+    }
+    .banner h2 {
+        font-size: 32px;
     }
 }

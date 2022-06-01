@@ -91,15 +91,15 @@ const Home: NextPage = () => {
           padding: 0 !important;
           box-shadow: 0 0 0 rgba(0,0,0,0) !important;
         }
-        .docked > :nth-child(2) {
+        .docked > :first-child > :nth-child(2) {
           width: 0;
           height: 0;
         }
-        .docked > :nth-child(4) {
+        .docked > :first-child >  :nth-child(4) {
           margin-left: 210px;
           justify-content: center;
         }
-        .docked > :nth-child(5) {
+        .docked > :first-child >  :nth-child(5) {
           width: 0;
           height: 0;
           opacity: 0;

@@ -8,7 +8,7 @@ export default function PreHero<FC>() {
     return (
         <div className={styles.preHero}>
             <div className={styles.imgContainer}>
-                <Image src="/logo-with-text.png" alt="mikes carpet cleaning logo" layout="fill" objectFit="contain" />
+                <Image src="/mike-no-drop.png" alt="mikes carpet cleaning logo" layout="fill" objectFit="contain" />
             </div>
             <div className={styles.socials}>
                 <div className={styles.iconRow}>
