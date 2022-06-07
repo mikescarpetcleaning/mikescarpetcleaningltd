@@ -6,14 +6,16 @@ import styles from "../serviceStyles/ServiceNav.module.css";
 const ServiceNav: FC = () => {
     const serviceNav = useRef<any>(null);
     const scrollHandler = () => {
-        if (serviceNav.current.getBoundingClientRect().top <= 0) {
-            serviceNav.current.style.boxShadow = 'none';
-            serviceNav.current.children[0].style.opacity = 1;
-            serviceNav.current.children[2].style.opacity = 1;
-        } else {
-            serviceNav.current.style.boxShadow = '';
-            serviceNav.current.children[0].style.opacity = 0;
-            serviceNav.current.children[2].style.opacity = 0;
+        if (serviceNav.current) {
+            if (serviceNav.current.getBoundingClientRect().top <= 0) {
+                serviceNav.current.style.boxShadow = 'none';
+                serviceNav.current.children[0].style.opacity = 1;
+                serviceNav.current.children[2].style.opacity = 1;
+            } else {
+                serviceNav.current.style.boxShadow = '';
+                serviceNav.current.children[0].style.opacity = 0;
+                serviceNav.current.children[2].style.opacity = 0;
+            }
         }
     }
     useEffect(() => {

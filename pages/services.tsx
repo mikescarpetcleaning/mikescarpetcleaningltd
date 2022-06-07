@@ -182,6 +182,11 @@ const Services: NextPage<any> = (props: any) => {
           content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
         />
       </Head>
+      <style>{`
+        * {
+          scroll-behavior: smooth;
+        }
+      `}</style>
       <ServiceHero />
       <ServiceNav />
       <ServiceItem itemDetails={carpetList} />
