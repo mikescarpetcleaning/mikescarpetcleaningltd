@@ -1,4 +1,5 @@
 import type { NextPage } from 'next';
+import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Appointment from '../estimatorComponents/Appointment';
@@ -225,8 +226,22 @@ const Estimator: NextPage = () => {
         if (allScotch && estimate.rooms !== estimate.scotchRooms) setEstimate({...estimate, 'scotchRooms': estimate.rooms})
     }, [allScotch, estimate])
     return (
+        <>
+        <Head>
+            <script dangerouslySetInnerHTML={{__html: `
+                (function(h,o,t,j,a,r){
+                    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                    h._hjSettings={hjid:3007112,hjsv:6};
+                    a=o.getElementsByTagName('head')[0];
+                    r=o.createElement('script');r.async=1;
+                    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                    a.appendChild(r);
+                })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            `}}></script>
+        </Head>
         <section className={styles.estimator}>
-            {/* <Appointment /> */}
+            <h1>Coming Soon</h1>
+            {/* <Appointment />
             <div className={styles.disclaimer}>
                 <h1>ESTIMATOR</h1>
                 <p>Specials and minimums are automatically calculated</p>
@@ -441,24 +456,6 @@ const Estimator: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className={styles.formRow}>
-                        <h3 onClick={toggleDropdown}>SEAT CUSHIONS</h3>
-                        <div className={styles.formGroup}>
-                            <div className={styles.formItem}>
-                                <div className={styles.switcher}>
-                                    <button type="button" onClick={decreaseEstimate}>-</button>
-                                    <input 
-                                        id="seatCushions" 
-                                        name="seatCushions"
-                                        type="text"
-                                        value={estimate.seatCushions}
-                                        onChange={updateEstimate} 
-                                    />
-                                    <button type="button" onClick={incrementEstimate}>+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                 </div>
                 <h2 onClick={toggleDropdown}>Hard Surface Cleaning</h2>
                 <div className={styles.formSection}>
@@ -468,7 +465,6 @@ const Estimator: NextPage = () => {
                             <div className={styles.formItem}>
                                 <label htmlFor="tile">Clean<br/>(sq. ft.)</label>
                                 <div className={styles.switcher}>
-                                    {/* <button type="button" onClick={decreaseEstimate}>-</button> */}
                                     <input 
                                         id="tile" 
                                         name="tile"
@@ -484,13 +480,11 @@ const Estimator: NextPage = () => {
                                         value={estimate.tile.toString()}
                                         onChange={updateEstimate} 
                                     />
-                                    {/* <button type="button" onClick={incrementEstimate}>+</button> */}
                                 </div>
                             </div>
                             <div className={styles.formItem}>
                                 <label htmlFor="tileSealant">Seal<br/>(sq. ft.)</label>
                                 <div className={styles.switcher}>
-                                    {/* <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button> */}
                                     <input 
                                         id="tileSealant" 
                                         name="tileSealant"
@@ -506,7 +500,6 @@ const Estimator: NextPage = () => {
                                         value={estimate.tileSealant.toString()}
                                         onChange={updateEstimate} 
                                     />
-                                    {/* <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button> */}
                                     <div className={styles.allBox}>
                                         <label htmlFor="allPet">all?</label>
                                         <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
@@ -521,7 +514,6 @@ const Estimator: NextPage = () => {
                             <div className={styles.formItem}>
                                 <label htmlFor="hardwoods">Clean<br/>(sq. ft.)</label>
                                 <div className={styles.switcher}>
-                                    {/* <button type="button" onClick={decreaseEstimate}>-</button> */}
                                     <input 
                                         id="hardwoods" 
                                         name="hardwoods"
@@ -537,13 +529,11 @@ const Estimator: NextPage = () => {
                                         value={estimate.hardwoods.toString()}
                                         onChange={updateEstimate} 
                                     />
-                                    {/* <button type="button" onClick={incrementEstimate}>+</button> */}
                                 </div>
                             </div>
                             <div className={styles.formItem}>
                                 <label htmlFor="hardwoodSealant">Seal<br/>(sq. ft.)</label>
                                 <div className={styles.switcher}>
-                                    {/* <button type="button" onClick={decreaseEstimate} disabled={allPet ? true : false}>-</button> */}
                                     <input 
                                         id="hardwoodSealant" 
                                         name="hardwoodSealant"
@@ -559,7 +549,6 @@ const Estimator: NextPage = () => {
                                         value={estimate.hardwoodSealant.toString()}
                                         onChange={updateEstimate} 
                                     />
-                                    {/* <button type="button" onClick={incrementEstimate} disabled={allPet ? true : false}>+</button> */}
                                     <div className={styles.allBox}>
                                         <label htmlFor="allPet">all?</label>
                                         <input type="checkbox" id="allPet" onChange={() => setAllPet(!allPet)} />
@@ -587,42 +576,6 @@ const Estimator: NextPage = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className={styles.formRowAir}>
-                        <h4 onClick={toggleDropdown}>CEILING DUCTS</h4>
-                        <div className={styles.formGroupAir}>
-                            <div className={styles.formItem}>
-                                <div className={styles.switcher}>
-                                    <button type="button" onClick={decreaseEstimate}>-</button>
-                                    <input 
-                                        id="ceilingDucts" 
-                                        name="ceilingDucts"
-                                        type="text"
-                                        value={estimate.ceilingDucts}
-                                        onChange={updateEstimate} 
-                                    />
-                                    <button type="button" onClick={incrementEstimate}>+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
-                    {/* <div className={styles.formRowAir}>
-                        <h4 onClick={toggleDropdown}>AIR RETURNS</h4>
-                        <div className={styles.formGroupAir}>
-                            <div className={styles.formItem}>
-                                <div className={styles.switcher}>
-                                    <button type="button" onClick={decreaseEstimate}>-</button>
-                                    <input 
-                                        id="returns" 
-                                        name="returns"
-                                        type="text"
-                                        value={estimate.returns}
-                                        onChange={updateEstimate} 
-                                    />
-                                    <button type="button" onClick={incrementEstimate}>+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */}
                     <div className={styles.formRowAir}>
                         <h4 onClick={toggleDropdown}>DRYER VENT</h4>
                         <div className={styles.formGroupAir}>
@@ -660,8 +613,9 @@ const Estimator: NextPage = () => {
                 nav .btn{display:none}
                 footer{display:none}
                 #__next section:last-of-type{display:none}
-                #__next{margin-bottom:300px}`}</style>
+                #__next{margin-bottom:300px}`}</style> */}
         </section>
+        </>
     )
 }
 

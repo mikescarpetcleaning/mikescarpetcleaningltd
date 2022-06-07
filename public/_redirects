@@ -1,0 +1,2 @@
+# redirect sub domain to main
+https://mikescarpetcleaningltd.netlify.app/* https://www.mikescarpetcleaningltd.com/:splat 301!
