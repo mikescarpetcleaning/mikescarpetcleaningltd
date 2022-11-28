@@ -102,7 +102,6 @@ const hardSurfaceList = {
         <p><span class="bold">Cleaning:</span> $1/sqft. for first 500 square feet, $0.75/sqft. after 500 square feet</p>
               
         <p class="disclaimer">*145 sq ft. minimum</p>
-        <p class="disclaimer">*Sealant must include purchase of tile cleaning</p>
         <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
         </div>`,
       imgSrc: "/tile-floor.webp",
