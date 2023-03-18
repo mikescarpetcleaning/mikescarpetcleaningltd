@@ -99,7 +99,7 @@ const hardSurfaceList = {
       process: "We use a high pressure water spinner to give your tile an unmatched clean. The powerful detergent, high powered jets, and incredible vacuum can make even the oldest tile look brand new.",
       pricing: `
         <div class="pricing-box">
-        <p><span class="bold">Cleaning:</span> $1/sqft. for first 500 square feet, $0.75/sqft. after 500 square feet</p>
+        <p><span class="bold">Cleaning:</span> $1/sqft.</p>
               
         <p class="disclaimer">*145 sq ft. minimum</p>
         <p class="disclaimer">*Minimum charge of $145 applies to all apointments</p>
@@ -112,7 +112,7 @@ const hardSurfaceList = {
       process:"Hardwood floor cleaning applies only to solid wood floors with Swedish finish. Cleaning includes detergent pre treatment, agitation, rinse & extraction of detergent & application of a luster enhancer.",
       pricing: `
         <div class="pricing-box">
-        <p><span class="bold">Cleaning:</span> $1/sqft. for first 500 square feet, $0.75/sqft. after 500 square feet</p>
+        <p><span class="bold">Cleaning:</span> $1/sqft.</p>
        
         <p><span class="bold">Preservation Finish:</span> $0.50/sqft.</p>
        
