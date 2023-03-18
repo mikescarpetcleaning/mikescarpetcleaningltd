@@ -252,17 +252,17 @@ const Estimator: NextPage = () => {
             <Head>
             <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <title>Mike's Carpet Cleaning Estimator Tool</title>
+            <title>Mike&apos; Carpet Cleaning Estimator Tool</title>
             <link rel="canonical" href="https://www.mikescarpetcleaningltd.com/estimator"/>
-            <meta property="og:site_name" content="Mike's Carpet Cleaning LTD"/>
-            <meta property="og:title" content="Mike's Carpet Cleaning Estimator Tool"/>
+            <meta property="og:site_name" content="Mike&apos; Carpet Cleaning LTD"/>
+            <meta property="og:title" content="Mike&apos; Carpet Cleaning Estimator Tool"/>
             <meta property="og:url" content="https://www.mikescarpetcleaningltd.com/estimator"/>
             <meta property="og:type" content="website"/>
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-            <meta itemProp="name" content="Mike's Carpet Cleaning LTD"/>
+            <meta itemProp="name" content="Mike&apos; Carpet Cleaning LTD"/>
             <meta itemProp="url" content="https://www.mikescarpetcleaningltd.com/estimator"/>
-            <meta name="twitter:title" content="Mike's Carpet Cleaning Estimator Tool"/>
+            <meta name="twitter:title" content="Mike&apos; Carpet Cleaning Estimator Tool"/>
             <meta name="twitter:url" content="https://www.mikescarpetcleaningltd.com/estimator"/>
             <meta name="twitter:card" content="summary"/>
             <meta name="description" content="Build your own carpet and upholstery cleaning quote in just seconds!"/>
@@ -270,7 +270,7 @@ const Estimator: NextPage = () => {
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
                 h._hjSettings={hjid:3003356,hjsv:6};
                 a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
+                r=o.createElement(&apos;cript');r.async=1;
                 r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
                 a.appendChild(r);
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');`}}></script>
