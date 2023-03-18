@@ -185,24 +185,16 @@ const Estimator: NextPage = () => {
                     let minimum = 0;
                     let special = 0;
                     let current = estimate[rate[0] as keyof Estimate];
+                    console.log(current)
                     if (current < 0) current = 0;
         
                     if (rate[0] === 'areas') {
-                        if (current > 0 && current < 5) {
+                        if (current > 0 && current < 3) {
                             minimum = 145;
-                            current  = current as number - 2 > 0 ? current as number - 2 : 0;
-                        }
-                        if (current >= 5) {
-                            special = 265;
-                            minimum = 0
-                            current = current as number - 5
-                        }
-                    }
-        
-                    if (rate[0] === 'pet') {
-                        if (current > 0 && current < 2) {
-                            minimum = 50;
-                            current = 0;
+                            current = 0
+                        } else {
+                            minimum = 145
+                            current = current as number - 2
                         }
                     }
         
@@ -217,7 +209,6 @@ const Estimator: NextPage = () => {
                             current = 145;
                         }
                     }
-
                     return acc += current as number * rate[1] + minimum + special;
                 } else {
                     return acc
