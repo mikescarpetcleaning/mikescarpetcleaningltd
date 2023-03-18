@@ -252,20 +252,18 @@ const Estimator: NextPage = () => {
             <Head>
             <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
-            <title>Excel Carpet Cleaning Estimator Tool</title>
-            <link rel="shortcut icon" type="image/x-icon" href="https://images.squarespace-cdn.com/content/v1/5f28d64858759f2fc1e07652/e776c5a2-1be6-459f-8947-7534111b93d0/favicon.ico?format=100w"/>
-            <link rel="canonical" href="https://www.excelcarpetcleaningwa.com/estimator"/>
-            <meta property="og:site_name" content="Excel Carpet Cleaning Services"/>
-            <meta property="og:title" content="Excel Carpet Cleaning Estimator Tool"/>
-            <meta property="og:url" content="https://www.excelcarpetcleaningwa.com/estimator"/>
+            <title>Mike's Carpet Cleaning Estimator Tool</title>
+            <link rel="canonical" href="https://www.mikescarpetcleaningltd.com/estimator"/>
+            <meta property="og:site_name" content="Mike's Carpet Cleaning LTD"/>
+            <meta property="og:title" content="Mike's Carpet Cleaning Estimator Tool"/>
+            <meta property="og:url" content="https://www.mikescarpetcleaningltd.com/estimator"/>
             <meta property="og:type" content="website"/>
-            <meta property="og:image:width" content="1500"/>
-            <meta property="og:image:height" content="195"/>
-            <meta itemProp="name" content="Excel Carpet Cleaning Services"/>
-            <meta itemProp="url" content="https://www.excelcarpetcleaningwa.com/estimator"/>
-            <meta name="twitter:title" content="Excel Carpet Cleaning Estimator Tool"/>
-            <meta name="twitter:image" content="http://static1.squarespace.com/static/5f28d64858759f2fc1e07652/t/5f7b37e6562dae19d4df5584/1601910762830/Banner+bold.png?format=1500w"/>
-            <meta name="twitter:url" content="https://www.excelcarpetcleaningwa.com/estimator"/>
+            <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+            <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+            <meta itemProp="name" content="Mike's Carpet Cleaning LTD"/>
+            <meta itemProp="url" content="https://www.mikescarpetcleaningltd.com/estimator"/>
+            <meta name="twitter:title" content="Mike's Carpet Cleaning Estimator Tool"/>
+            <meta name="twitter:url" content="https://www.mikescarpetcleaningltd.com/estimator"/>
             <meta name="twitter:card" content="summary"/>
             <meta name="description" content="Build your own carpet and upholstery cleaning quote in just seconds!"/>
             <script dangerouslySetInnerHTML={{__html: `(function(h,o,t,j,a,r){
