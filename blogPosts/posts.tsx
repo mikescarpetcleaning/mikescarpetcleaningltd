@@ -116,10 +116,10 @@ export const posts: any[] = [
   },
   {
     title: "Unlocking the Beauty of Your Tiles: The Advantages of Professional Tile Cleaning Services",
-    featured_image: `<img src="/green-tile-very-clean.jpg" alt="Very clean green tiles" width="auto" height="auto" />`,
+    featured_image: `<img src="/green-tile-very-clean.webp" alt="Very clean green tiles" width="auto" height="auto" />`,
     excerpt: "Are your tile floors losing their luster, plagued by stubborn stains and grime that seem impossible to remove? It's a common frustration for many homeowners. However, there's a solution that goes beyond DIY efforts: professional tile cleaning services.",
     content: `
-    <img src="/green-tile-very-clean.jpg" alt="very clean green tiles" width="auto" height="auto" />
+    <img src="/green-tile-very-clean.webp" alt="very clean green tiles" width="auto" height="auto" />
     <div style="padding: 2.5%">
         <!-- Title Section -->
         <h1 class="text-3xl md:text-4xl mb-8 font-bold">The Benefits of Professional Tile Cleaning Services</h1>
@@ -132,7 +132,7 @@ export const posts: any[] = [
                 Are you tired of struggling with DIY tile cleaning methods that often leave your floors less than perfect? It's time to discover the remarkable advantages of turning to professional tile cleaning services. In this comprehensive guide, we'll explore why entrusting your tile cleaning needs to experts can make a world of difference in the appearance and longevity of your tiles.
             </p>
         </section>
-        <img src="/clean-kitchen-tile.jpg" alt="some very clean kitchen tiles" width="auto" height="auto" />
+        <img src="/clean-kitchen-tile.webp" alt="some very clean kitchen tiles" width="auto" height="auto" />
 
         <!-- Chapter 1: Expertise and Experience -->
         <section class="mb-8">
@@ -154,7 +154,7 @@ export const posts: any[] = [
                 </p>
             </div>
         </section>
-        <img src="/pink-tile-very-clean.jpg" alt="pretty pink tile" width="auto" height="auto" />
+        <img src="/pink-tile-very-clean.webp" alt="pretty pink tile" width="auto" height="auto" />
         <!-- Chapter 2: Specialized Equipment -->
         <section class="mb-8">
             <h2 class="text-2xl font-semibold mb-4">Chapter 2: Specialized Equipment</h2>
@@ -183,7 +183,7 @@ export const posts: any[] = [
                 </p>
             </div>
         </section>
-        <img src="/outdoor-tile.jpg" alt="Outdoor tile" width="auto" height="auto" />
+        <img src="/outdoor-tile.webp" alt="Outdoor tile" width="auto" height="auto" />
 
         <!-- Chapter 3: Time and Effort Savings -->
         <section class="mb-8">
