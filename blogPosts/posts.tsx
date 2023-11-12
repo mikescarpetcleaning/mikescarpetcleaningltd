@@ -299,5 +299,133 @@ export const posts: any[] = [
           }
         </style>
         `,
+  },
+  {
+    title: "Pet-Friendly Carpet Cleaning Tips for a Fresh and Odor-Free Home",
+    featured_image: `<img src="/getting-your-carpets-looking-and-smelling-new.webp" alt="Very clean green tiles" width="auto" height="auto" />`,
+    excerpt: "Pets bring immeasurable joy to our homes, but they can also leave behind a trail of fur, stains, and odors on our carpets.",
+    content: `
+    <img src="/getting-your-carpets-looking-and-smelling-new.webp" alt="Very clean green tiles" width="auto" height="auto" />
+      <div style="padding: 2.5%">
+        <!-- Article Header -->
+        <h2 class="text-3xl font-bold mb-6">Pet-Friendly Carpet Cleaning Tips for a Fresh and Odor-Free Home</h2>
+        <!-- Introduction -->
+        <p class="mb-4">Pets bring immeasurable joy to our homes, but they can also leave behind a trail of fur, stains, and odors
+          on our carpets. At Mike's Carpet Cleaning LTD, we understand the unique challenges pet owners face when it comes to
+          maintaining a clean and odor-free home. In this article, we'll share expert tips on pet-friendly carpet cleaning to
+          ensure your space remains fresh and inviting for both your furry friends and your family.</p>
+        <!-- Tips List -->
+        <div>
+        <div class="mb-4">
+        <img src="/Effective-Pet-Friendly-Carpet-Cleaning-with-Regular-Vacuuming.webp" alt="Pet-friendly carpet cleaning: A vacuum cleaner removing embedded fur from carpets." width="auto" height="auto" />
+        <h2 class="text-lg font-semibold mb-2">Regular Vacuuming is Key:</h2>
+        <p>
+            Start your pet-friendly carpet cleaning routine with regular vacuuming. Pet hair and dander can quickly accumulate,
+            leading to unpleasant odors. Use a high-quality vacuum cleaner with a pet hair attachment to effectively lift and
+            remove embedded fur from your carpets.
+        </p>
+    </div>
+    <div class="mb-4">
+        <img src="/Swift-Stain-Removal-Tips-for-Pet-Friendly-Carpet-Maintenance.webp" alt="Pet-friendly carpet cleaning: Quick stain removal process for a clean home." width="auto" height="auto" />
+        <h2 class="text-lg font-semibold mb-2">Address Stains Promptly:</h2>
+        <p>
+            Accidents happen, and when they involve your pets, it's crucial to address stains promptly. Blot the stain with a
+            clean cloth to absorb as much moisture as possible. For stubborn stains, consider using a pet-friendly stain
+            remover, and always test it in an inconspicuous area first.
+        </p>
+    </div>
+    <div class="mb-4">
+        <img src="/Choosing-Safe-and-Effective-Pet-Friendly-Cleaning-Solutions.webp" alt="Pet-friendly carpet cleaning: Safe and eco-friendly cleaning solutions for carpets." width="auto" height="auto" />
+        <h2 class="text-lg font-semibold mb-2">Pet-Friendly Cleaning Solutions:</h2>
+        <p>
+            Opt for cleaning solutions that are safe for both your pets and your carpets. Choose products labeled as pet-friendly
+            or consider natural solutions like a mixture of white vinegar and water. These options effectively eliminate odors
+            without harming your pets or the environment.
+        </p>
+    </div>
+    <div class="mb-4">
+        <img src="/Thorough-Pet-Safe-Deep-Cleaning-for-Odor-Free-Carpets.webp" alt="Pet-friendly carpet cleaning: Professional deep cleaning services for fresh and odor-free carpets." width="auto" height="auto" />
+        <h2 class="text-lg font-semibold mb-2">Professional Deep Cleaning:</h2>
+        <p>
+            Despite your best efforts, carpets can trap odors over time. Schedule professional deep cleaning services to eliminate
+            deep-seated odors and refresh your carpets. Our advanced cleaning techniques ensure a thorough and pet-safe cleaning
+            process.
+        </p>
+    </div>
+    <div class="mb-4">
+        <img src="/Upgrade-Your-Home-with-Stain-Resistant-Pet-Friendly-Carpets.webp" alt="Pet-friendly carpet options: Stain-resistant carpets for a pet-friendly and stylish home." width="auto" height="auto" />
+        <h2 class="text-lg font-semibold mb-2">Invest in Pet-Friendly Carpets:</h2>
+        <p>
+            Consider replacing your current carpets with pet-friendly alternatives. Stain-resistant and easy-to-clean carpets can
+            make your life much easier while providing a comfortable space for your pets.
+        </p>
+    </div>    
+        </div>
+        <!-- Conclusion -->
+        <p class="mb-6">Maintaining a fresh and odor-free home with pets is not only possible but also achievable with the
+          right strategies. At Mike's Carpet Cleaning LTD, we are dedicated to providing tailored solutions for pet owners.
+          Follow these pet-friendly carpet cleaning tips and consider our professional services to ensure a clean and welcoming
+          home for both you and your beloved pets. Contact us today to schedule your next carpet cleaning appointment!</p>
+      </div>
+      <style>
+          main {
+           
+            margin: 0 auto;
+          }
+          h1 {
+            font-size: 48px;
+            line-height: 48px;
+            text-transform: uppercase;
+            text-align: center;
+            background: var(--dark);
+            color: white;
+            padding: 48px 25%;
+            margin: 0;
+          }
+          main > img:first-of-type {
+            width: 100%;
+            max-width: none;
+          }
+          main img {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+            display: block;
+          }
+          main p {
+            font-size: 20px;
+            font-weight: 200;
+            max-width: 700px;
+            margin: 64px auto;
+            padding: 0 16px
+          }
+          main h2 {
+            margin-top: 48px;
+          }
+          main a {
+            margin: 24px auto 64px;
+            display: block;
+            width: fit-content;
+            font-size: 24px;
+            text-decoration: underline;
+          }
+          @media screen and (max-width: 820px) {
+            h1 {
+              padding: 32px 16px;
+              font-size: 32px;
+              line-height: 32px;
+            }
+            main p {
+              margin: 32px auto;
+            }
+            main a {
+              font-size: 20px;
+              text-align: center;
+              margin: 0 auto 64px;
+              max-width: 288px;
+            }
+          }
+        </style>
+    `
   }
 ];
