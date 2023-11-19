@@ -52,6 +52,30 @@ const Home: NextPage = () => {
           name="description"
           content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
         />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
+          {
+            "@context": "https://schema.org",
+            "@type": "ProfessionalService",
+            "name": "Mikes Carpet Cleaning",
+            "description": "Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!",
+            "url": "https://www.mikescarpetcleaningltd.com",
+            "telephone": "3604850028",
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday"
+                ],
+                "opens": "09:00",
+                "closes": "17:00"
+            },
+            "sameAs": "https:///www.facebook.com/Mikes-Carpet-Cleaning-Ltd-111268126937343/" 
+          }
+        `}}></script>   
         <script dangerouslySetInnerHTML={{__html: `
             (function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
