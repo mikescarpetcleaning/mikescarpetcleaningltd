@@ -38,7 +38,7 @@ const post = posts.find(p => {
             href="/favicon-16x16.png"
             />
             <link rel="manifest" href="/site.webmanifest" />
-            <link rel="canonical" href="https://mikescarpetcleaningltd.com" />
+            <link rel="canonical" href="https://www.mikescarpetcleaningltd.com" />
             <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta property="og:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta

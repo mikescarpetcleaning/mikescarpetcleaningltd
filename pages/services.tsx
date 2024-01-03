@@ -138,7 +138,7 @@ const Services: NextPage<any> = (props: any) => {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link
           rel="canonical"
-          href="https://mikescarpetcleaningltd.com/services"
+          href="https://www.mikescarpetcleaningltd.com/services"
         />
         <meta
           property="og:site_name"

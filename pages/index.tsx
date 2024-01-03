@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link rel="manifest" href="/site.webmanifest" />
-        <link rel="canonical" href="https://mikescarpetcleaningltd.com" />
+        <link rel="canonical" href="https://www.mikescarpetcleaningltd.com" />
         <meta
           property="og:site_name"
           content="Mike&apos;s Carpet Cleaning LTD"
@@ -57,6 +57,7 @@ const Home: NextPage = () => {
             "@context": "https://schema.org",
             "@type": "ProfessionalService",
             "name": "Mikes Carpet Cleaning",
+            "address": "1309 Bonneville Ave Suite D, Snohomish, WA 98290",
             "description": "Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!",
             "url": "https://www.mikescarpetcleaningltd.com",
             "telephone": "3604850028",

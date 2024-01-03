@@ -16,7 +16,7 @@ const Scheduling: NextPage = () => {
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
             <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
             <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-            <link rel="canonical" href="https://mikescarpetcleaningltd.com/schedule-carpet-cleaning"/>
+            <link rel="canonical" href="https://www.mikescarpetcleaningltd.com/schedule-carpet-cleaning"/>
             <meta property="og:site_name" content="Mikes Carpet Cleaning LTD"/>
             <meta property="og:title" content="Schedule Carpet Cleaning Online | Mikes Carpet Cleaning LTD"/>
             <meta property="og:url" content="https://mikescarpetcleaningltd.com/schedule-carpet-cleaning"/>

@@ -17,7 +17,7 @@ const About: NextPage = () => {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
         <link
           rel="canonical"
-          href="https://mikescarpetcleaningltd.com/about"
+          href="https://www.mikescarpetcleaningltd.com/about"
         />
         <meta property="og:site_name" content="Mike's Carpet Cleaning LTD" />
         <meta property="og:title" content="About Mike's Carpet Cleaning LTD" />
