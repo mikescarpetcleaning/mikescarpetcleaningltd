@@ -59,7 +59,7 @@ const post = posts.find(p => {
             <meta name="twitter:card" content="summary" />
             <meta
             name="description"
-            content={post.excerpt}
+            content={post ? post.excerpt : ""}
             />
         </Head>
         {post && <><section>
