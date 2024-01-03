@@ -266,7 +266,7 @@ const Estimator: NextPage = () => {
             <meta name="twitter:title" content="Mike&apos; Carpet Cleaning Estimator Tool"/>
             <meta name="twitter:url" content="https://www.mikescarpetcleaningltd.com/estimator"/>
             <meta name="twitter:card" content="summary"/>
-            <meta name="description" content="Build your own carpet and upholstery cleaning quote in just seconds!"/>
+            <meta name="description" content="Now you can build your own carpet cleaning estimate anytime you want. Simply plug in the information and let the computer do all of the calculations!"/>
             <script dangerouslySetInnerHTML={{__html: `(function(h,o,t,j,a,r){
                 h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
                 h._hjSettings={hjid:3003356,hjsv:6};
@@ -660,7 +660,7 @@ const Estimator: NextPage = () => {
                         <p>TOTAL: ${price}</p>
                         <button onClick={() => setEstimate(defaultEstimate)}>CLEAR</button>
                     </div>
-                    <Link href="/scheduling">
+                    <Link href="/schedule-carpet-cleaning">
                         <a className="btn" onClick={() => triggerEvent("checkout", price)}>
                             Book Appointment
                         </a>

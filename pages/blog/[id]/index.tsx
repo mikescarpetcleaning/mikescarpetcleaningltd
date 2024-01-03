@@ -38,7 +38,7 @@ const post = posts.find(p => {
             href="/favicon-16x16.png"
             />
             <link rel="manifest" href="/site.webmanifest" />
-            <link rel="canonical" href="https://www.mikescarpetcleaningltd.com" />
+            <link rel="canonical" href={`https://www.mikescarpetcleaningltd.com/blog/${title}`} />
             <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta property="og:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta
@@ -59,7 +59,7 @@ const post = posts.find(p => {
             <meta name="twitter:card" content="summary" />
             <meta
             name="description"
-            content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
+            content={post.excerpt}
             />
         </Head>
         {post && <><section>

@@ -50,7 +50,7 @@ const Home: NextPage = () => {
         <meta name="twitter:card" content="summary" />
         <meta
           name="description"
-          content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
+          content="Looking to fix those dirty carpets? Mike's got you covered! Carpet, tile, and upholstery cleaning service serving from Snohomish to Shoreline and beyond!"
         />
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `
           {

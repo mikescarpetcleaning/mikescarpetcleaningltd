@@ -45,7 +45,7 @@ const About: NextPage = () => {
         <meta name="twitter:card" content="summary" />
         <meta
           name="description"
-          content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
+          content="Mike gets carpets cleaner than anyone! We have top-of-the-line equipment and a team that cares. Come see what makes Mike's carpet cleaning shine today!"
         />
        <script dangerouslySetInnerHTML={{__html: `
             (function(h,o,t,j,a,r){

@@ -27,7 +27,7 @@ const Contact: NextPage = () => {
                 <meta name="twitter:image" content="http://static1.squarespace.com/static/5f28d64858759f2fc1e07652/t/5f7b37e6562dae19d4df5584/1601910762830/Banner+bold.png?format=1500w"/>
                 <meta name="twitter:url" content="https://mikescarpetcleaningltd.com/contact"/>
                 <meta name="twitter:card" content="summary"/>
-                <meta name="description" content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"/>
+                <meta name="description" content="We are standing by, ready to answer all of you carpet cleaning questions! Send us a message, call, or text and someone will get back to you as soon as possible."/>
                 <script dangerouslySetInnerHTML={{__html: `
                     (function(h,o,t,j,a,r){
                         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};

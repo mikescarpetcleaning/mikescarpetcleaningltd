@@ -12,7 +12,7 @@ const Home: NextPage = () => {
             <meta httpEquiv="X-UA-Compatible" content="IE=edge,chrome=1" />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-            <title>Mike&apos;s Carpet Cleaning LTD</title>
+            <title>Mike&apos;s Carpet Cleaning LTD Blog</title>
             <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
             href="/favicon-16x16.png"
             />
             <link rel="manifest" href="/site.webmanifest" />
-            <link rel="canonical" href="https://www.mikescarpetcleaningltd.com" />
+            <link rel="canonical" href="https://www.mikescarpetcleaningltd.com/blog" />
             <meta property="og:site_name" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta property="og:title" content="Mike&apos;s Carpet Cleaning LTD" />
             <meta
@@ -52,7 +52,7 @@ const Home: NextPage = () => {
             <meta name="twitter:card" content="summary" />
             <meta
             name="description"
-            content="Carpet, tile, and upholstery cleaning service company serving the Northwest from Snohomish to Shoreline and beyond!"
+            content="A collection of the best tips, tricks and more surrounding carpet cleaning. Come check out all of the articles we've got and learn all about carpet cleaning."
             />
         </Head>
         <section className={styles.header}>
