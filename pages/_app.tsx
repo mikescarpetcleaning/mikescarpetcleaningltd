@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import Layout from '../components/Layout'
 import { useEffect } from 'react'
+import Script from 'next/script'
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -18,6 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   })
   return (
     <Layout>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11464544016" />
+      <Script src="/googleDataLayer.js" />
       <Component {...pageProps} />
     </Layout>
   )
