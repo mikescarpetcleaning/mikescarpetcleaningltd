@@ -19,8 +19,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   })
   return (
     <Layout>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11464544016" />
-      <Script src="/googleDataLayer.js" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=AW-11464544016" async />
+      <Script src="/googleDataLayer.js" defer />
       <Component {...pageProps} />
     </Layout>
   )
