@@ -43,14 +43,13 @@ const Scheduling: NextPage = () => {
             `}}></script>
         </Head>
             <style>{`.contactFlag{display:none;}`}</style>
-            <main style={{height: "1300px", overflow: "auto"}}>
+            <main>
                 <iframe 
                     src="https://app.acuityscheduling.com/schedule.php?owner=15583479" 
                     title="Schedule Appointment" 
                     width="100%" 
                     height="1200" 
                     frameBorder="0"></iframe>
-                
                 <Script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></Script>
             </main>
         </>
