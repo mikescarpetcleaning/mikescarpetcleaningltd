@@ -10,6 +10,7 @@ import { Modal } from "../components/Modal";
 import Easy from "../components/Easy";
 import PreHero from "../components/PreHero";
 import Vollara from "../components/Vollara";
+import FiveAreaSpecial from "../components/FiveAreaSpecial";
 
 const Home: NextPage = () => {
   return (
@@ -88,8 +89,9 @@ const Home: NextPage = () => {
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
         `}}></script>
       </Head>
-      <PreHero />
+      {/* <PreHero /> */}
       <Hero />
+      <FiveAreaSpecial />
       <Easy />
       <Vollara />
       <Why />

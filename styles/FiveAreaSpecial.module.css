@@ -1,0 +1,89 @@
+.fiveAreaSpecial {
+    position: relative;
+}
+.mainHeading {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.image {
+    z-index: -1;
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    object-fit: cover;
+    right: 0;
+    top: 0;
+}
+
+.half {
+    padding: 48px 36px;
+    width: 60%;
+    padding-right: 10%;
+    background: linear-gradient(to right, white 85%, transparent)
+}
+
+.special {
+    width: fit-content;
+    text-align: center;
+    margin: 16px auto;
+    background: var(--yellow);
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgb(0,0,0,0.25);
+    padding: 16px;
+    margin-bottom: 32px;
+}
+.small {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.big {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+.accent {
+    margin: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--yellow);
+    background: var(--dark);
+    margin: 8px 0;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .fiveAreaSpecial {
+        padding: 32px;
+    }
+    .half {
+        padding: 32px;
+        width: 100%;
+        background: rgb(255, 255, 255, 0.8)
+    }
+    .image {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .fiveAreaSpecial {
+        padding: 8px;
+    }
+    .special {
+        padding: 8px;
+    }
+    .half {
+        padding: 16px;
+        width: 100%;
+        background: rgb(255, 255, 255, 0.75)
+    }
+    .image {
+        width: 100%;
+    }
+}

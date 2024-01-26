@@ -20,17 +20,17 @@ const Nav: FC<any> = () => {
         }
         
     }
-    useEffect(() => {
-        const scrollHandler = () => {
-            if (window.pageYOffset <= 0) nav.current.classList.add('docked');
-            else nav.current.classList.remove('docked')
-        }
-        document.addEventListener('scroll', scrollHandler);
+    // useEffect(() => {
+    //     const scrollHandler = () => {
+    //         if (window.pageYOffset <= 0) nav.current.classList.add('docked');
+    //         else nav.current.classList.remove('docked')
+    //     }
+    //     document.addEventListener('scroll', scrollHandler);
 
-        return () => document.removeEventListener('scroll', scrollHandler);
-    }, [])
+    //     return () => document.removeEventListener('scroll', scrollHandler);
+    // }, [])
     return (
-        <nav ref={nav} className={styles.nav + " docked"}>
+        <nav ref={nav} className={styles.nav}>
             <div className={styles.navInner}>
                 <div ref={burger} onClick={() => toggleMenu(false)} className={styles.burger}>
                     &nbsp;

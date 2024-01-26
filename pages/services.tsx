@@ -16,7 +16,7 @@ const carpetList = {
         "Our Truck Mounted Steam Cleaning includes Eco-Green detergent pre-spray, edging, spot and stain removal at no additional charge, as well as a steam neutralizing rinse and extraction.",
       pricing: `
         <div class="pricing-box">
-        <p class="bold">Any 2 Rooms/Areas only $145</p>
+        <p class="bold">Any 5 Rooms/Areas only $259</p>
         <p>Additional Rooms/Areas: $45 (Each)</p>
         <p>An area is defined as a room, staircase or hallway up to 200 sq ft.. Living room and dining room combos are equal to 2 areas. Some Master bedrooms, bonus & living rooms can be oversized and count as 2 or more areas based on size.</p>
         <p class="disclaimer">*Travel charge may be added for out of service area jobs</p>

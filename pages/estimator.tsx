@@ -190,12 +190,14 @@ const Estimator: NextPage = () => {
                     if (current < 0) current = 0;
         
                     if (rate[0] === 'areas') {
-                        if (current > 0) minimum = 145;
-                        if (current > 0 && current < 3) {
-                            current = 0
-                        } else if (current >= 3) {
-                            current = current as number - 2
-
+                        if (current > 0 && current < 5) {
+                            minimum = 145;
+                            current  = current as number - 2 > 0 ? current as number - 2 : 0;
+                        }
+                        if (current >= 5) {
+                            special = 259;
+                            minimum = 0
+                            current = current as number - 5
                         }
                     }
         

@@ -17,6 +17,9 @@ const Hero: FC<any> = () => {
                     Your Reliable Carpet, Upholstery, Tile &amp; Hardwood Cleaning Experts
                 </h2>
             </div>
+            <Link href="#five-area-special">
+                <a className={styles.offer}>See our latest offer below!</a>
+            </Link>
         </header>
     )
 }
