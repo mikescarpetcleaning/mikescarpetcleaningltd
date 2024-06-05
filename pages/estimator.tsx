@@ -38,28 +38,6 @@ const Estimator: NextPage = () => {
   const [hardwoodAdded, setHardwoodAdded] = useState(false);
   const [airDuctsAdded, setAirDuctsAdded] = useState(false);
 
-  const triggerEvent = (event: string, price?: number) => {
-    if (price) {
-      fetch("/api/trackEstimator", {
-        method: "POST",
-        body: JSON.stringify({
-          eventType: event,
-          price,
-        }),
-      });
-    } else {
-      fetch("/api/trackEstimator", {
-        method: "POST",
-        body: JSON.stringify({
-          eventType: event,
-        }),
-      });
-    }
-  };
-
-  useEffect(() => {
-    triggerEvent("load");
-  }, []);
   const defaultEstimate: Estimate = {
     areas: 0,
     pet: 0,
@@ -363,7 +341,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!carpetsAdded) {
-                          triggerEvent("carpet");
                           setCarpetsAdded(true);
                         }
                       }}
@@ -390,7 +367,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!petAdded) {
-                          triggerEvent("pet");
                           setPetAdded(true);
                         }
                       }}
@@ -417,7 +393,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!scotchAdded) {
-                          triggerEvent("scotch");
                           setScotchAdded(true);
                         }
                       }}
@@ -449,7 +424,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!carpetsAdded) {
-                          triggerEvent("pet");
                           setCarpetsAdded(true);
                         }
                       }}
@@ -476,7 +450,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!petAdded) {
-                          triggerEvent("pet");
                           setPetAdded(true);
                         }
                       }}
@@ -503,7 +476,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!scotchAdded) {
-                          triggerEvent("scotch");
                           setScotchAdded(true);
                         }
                       }}
@@ -535,7 +507,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!carpetsAdded) {
-                          triggerEvent("carpet");
                           setCarpetsAdded(true);
                         }
                       }}
@@ -562,7 +533,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!petAdded) {
-                          triggerEvent("pet");
                           setPetAdded(true);
                         }
                       }}
@@ -589,7 +559,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!scotchAdded) {
-                          triggerEvent("scotch");
                           setScotchAdded(true);
                         }
                       }}
@@ -624,7 +593,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!upholsteryAdded) {
-                          triggerEvent("upholstery");
                           setUpholsteryAdded(true);
                         }
                       }}
@@ -658,7 +626,6 @@ const Estimator: NextPage = () => {
                       onClick={(e: any) => {
                         incrementEstimate(e);
                         if (!upholsteryAdded) {
-                          triggerEvent("upholstery");
                           setUpholsteryAdded(true);
                         }
                       }}
@@ -718,7 +685,6 @@ const Estimator: NextPage = () => {
                       onChange={(e: any) => {
                         updateEstimate(e);
                         if (!tileAdded) {
-                          triggerEvent("tile");
                           setTileAdded(true);
                         }
                       }}
@@ -781,7 +747,6 @@ const Estimator: NextPage = () => {
                       onChange={(e: any) => {
                         updateEstimate(e);
                         if (!hardwoodAdded) {
-                          triggerEvent("hardwood");
                           setHardwoodAdded(true);
                         }
                       }}
@@ -824,9 +789,7 @@ const Estimator: NextPage = () => {
             <button onClick={() => setEstimate(defaultEstimate)}>CLEAR</button>
           </div>
           <Link href="/schedule-carpet-cleaning">
-            <a className="btn" onClick={() => triggerEvent("checkout", price)}>
-              Book Appointment
-            </a>
+            <a className="btn">Book Appointment</a>
           </Link>
         </div>
         <style>{`
