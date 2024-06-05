@@ -40,7 +40,7 @@ const Nav: FC<any> = () => {
         <Link href="/">
           <a onClick={() => toggleMenu(true)} className={styles.imageContainer}>
             <Image
-              src="/public/logo.webp"
+              src="/logo.webp"
               layout="fill"
               objectFit="contain"
               objectPosition="left"
